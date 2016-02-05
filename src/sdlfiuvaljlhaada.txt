@@ -1,4 +1,4 @@
 hello world this is a test of git justin sucks at rowing
-Sam is awesome end of story
-
 so does dylan
+
+Sam is awesome end of story
