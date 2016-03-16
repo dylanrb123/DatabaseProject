@@ -91,4 +91,14 @@ public class Movie {
     public void setPosterUrl(String posterUrl) {
         this.posterUrl = posterUrl;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        Movie m;
+        if(o instanceof Movie) m = (Movie) o;
+        else return false;
+        // movies are equal if they have the same ID or same name and release date
+        return this.getMovieID() == m.getMovieID() ||
+                (this.getMovieName().equals(m.getMovieName()) && this.getReleaseDate().equals(m.getReleaseDate()));
+    }
 }
