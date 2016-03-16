@@ -1,3 +1,5 @@
+package Enums;
+
 /**
  * Dylan Bannon <drb2857@rit.edu>
  */

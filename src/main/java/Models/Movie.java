@@ -1,3 +1,6 @@
+package Models;
+
+import Enums.MpaaRating;
 import org.joda.time.DateTime;
 import org.joda.time.Duration;
 
