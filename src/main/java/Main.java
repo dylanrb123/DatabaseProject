@@ -10,10 +10,5 @@ public class Main {
         // Sample route for webserver
         get("/hello", (req, res) -> "Hello World");
 
-        // sample DB connection
-        Class.forName("org.h2.Driver");
-        Connection conn = DriverManager.getConnection("jdbc:h2:~/test", "sa", "");
-        System.out.println(conn);
-        conn.close();
     }
 }
