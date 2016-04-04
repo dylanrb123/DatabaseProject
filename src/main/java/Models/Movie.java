@@ -3,6 +3,7 @@ package Models;
 import Enums.MpaaRating;
 import org.joda.time.DateTime;
 import org.joda.time.Duration;
+import sun.util.resources.cldr.aa.CurrencyNames_aa;
 
 import java.util.List;
 
@@ -19,6 +20,19 @@ public class Movie {
     private String summary;
     private String trailerUrl;
     private String posterUrl;
+
+    public Movie(int movieID, String movieName, Duration runtime, DateTime releaseDate, MpaaRating rating,
+                 List<String> genres, String summary, String trailerUrl, String posterUrl) {
+        this.movieID = movieID;
+        this.movieName = movieName;
+        this.runtime = runtime;
+        this.releaseDate = releaseDate;
+        this.rating = rating;
+        this.genres = genres;
+        this.summary = summary;
+        this.trailerUrl = trailerUrl;
+        this.posterUrl = posterUrl;
+    }
 
     public int getMovieID() {
         return movieID;
