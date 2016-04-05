@@ -94,7 +94,15 @@ public class MovieDataSourceH2 implements MovieDao {
     }
 
     @Override
-    public void addMovie(Movie movie) {
+    public void addMovie(Movie movie) throws SQLException{
+        Connection conn = DatabaseScripts.getConnection();
+        Statement stmt = conn.createStatement();
+
+        stmt.execute("INSERT INTO Movie " +
+                "(id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url) " +
+                "VALUES (" + movie.getMovieID() + ", " + movie.getMovieName() + ", " + movie.getReleaseDate() +
+                ", " + movie.getRating() + ", " + movie.getGenres() + ", " + movie.getSummary() + ", " +
+                movie.getTrailerUrl() + ", " + movie.getPosterUrl() + ")");
 
     }
 }

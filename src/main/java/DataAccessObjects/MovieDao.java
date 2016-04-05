@@ -15,5 +15,5 @@ public interface MovieDao {
     Movie getMovie(String name, DateTime releaseDate) throws SQLException;
     void deleteMovie(int movieId) throws SQLException;
     void deleteMovie(String name, DateTime releaseDate) throws SQLException;
-    void addMovie(Movie movie);
+    void addMovie(Movie movie) throws SQLException;
 }
