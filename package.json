@@ -1,0 +1,24 @@
+{
+  "name": "databaseproject",
+  "version": "1.0.0",
+  "description": "Project for Principles of Data Management",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylanrb123/DatabaseProject.git"
+  },
+  "author": "Dylan Bannon, Justin Carter, Megan O'Connor, Sam Hobson, Grant Salk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dylanrb123/DatabaseProject/issues"
+  },
+  "homepage": "https://github.com/dylanrb123/DatabaseProject#readme"
+}

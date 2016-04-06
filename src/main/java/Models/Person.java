@@ -12,7 +12,7 @@ public class Person {
     private DateTime DOB;
     private String biography;
 
-    public Person(int personID, String name; DateTime DOB; String biography){
+    public Person(int personID, String name, DateTime DOB, String biography){
         this.personID = personID;
         this.name = name;
         this.DOB = DOB;
