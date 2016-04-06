@@ -18,6 +18,7 @@ import java.util.List;
 
 /**
  * @author Dylan Bannon <drb2857@rit.edu>
+ * @author Grant Salk <gas7933@rit.edu>
  *         3/16/2016
  */
 public class MovieDataSourceH2 implements MovieDao {
@@ -39,7 +40,7 @@ public class MovieDataSourceH2 implements MovieDao {
             DateTime date = new DateTime(Integer.parseInt(dateList[0]), Integer.parseInt(dateList[1]),
                     Integer.parseInt(dateList[2]), 0, 0);
             MpaaRating rating = MpaaRating.valueOf(resultSet.getString("mpaa_rating"));
-            String summary = resultSet.getString("summery");
+            String summary = resultSet.getString("summary");
             String trailerUrl = resultSet.getString("trailer_url");
             String posterUrl = resultSet.getString("poster_url");
 
@@ -79,7 +80,7 @@ public class MovieDataSourceH2 implements MovieDao {
     public void deleteMovie(int movieId) throws SQLException {
         Connection conn = DatabaseScripts.getConnection();
         Statement stmt = conn.createStatement();
-        stmt.execute("DELETE FROM movie WHERE id = " + movieId);
+        stmt.execute("DELETE FROM Movie WHERE id = " + movieId);
     }
 
     @Override
@@ -90,7 +91,7 @@ public class MovieDataSourceH2 implements MovieDao {
         DateTimeFormatter fmt = DateTimeFormat.forPattern("yyyy-MM-dd");
         String releaseDateString = fmt.print(releaseDate);
 
-        stmt.execute("DELETE FROM movie WHERE name = " + name + " AND release_date = " + releaseDateString);
+        stmt.execute("DELETE FROM Movie WHERE name = " + name + " AND release_date = " + releaseDateString);
     }
 
     @Override
@@ -101,8 +102,19 @@ public class MovieDataSourceH2 implements MovieDao {
         stmt.execute("INSERT INTO Movie " +
                 "(id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url) " +
                 "VALUES (" + movie.getMovieID() + ", " + movie.getMovieName() + ", " + movie.getReleaseDate() +
-                ", " + movie.getRating() + ", " + movie.getGenres() + ", " + movie.getSummary() + ", " +
-                movie.getTrailerUrl() + ", " + movie.getPosterUrl() + ")");
+                ", " + movie.getRating() + ", " + movie.getSummary() + ", " + movie.getTrailerUrl() + ", " +
+                movie.getPosterUrl() + ")");
+
+        List<String> genres = movie.getGenres();
+        ResultSet resultSet = stmt.executeQuery("SELECT * from Genre");
+
+        int id = 0; //What value do we pass as the Genre table's id?
+
+        for(String genreName : genres){
+            stmt.execute("INSERT INTO Genre " +
+                        "(id, name, movie_id, show_id) " +
+                        "VALUES (" + id + ", " + genreName + ", " + movie.getMovieID() + ", " + null + ")");
+        }
 
     }
 }

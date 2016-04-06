@@ -1,5 +1,5 @@
 CREATE TABLE Movie (
-  id        int   AUTO_INCREMENT,
+  id              int   AUTO_INCREMENT,
   name            varchar(50),
   length          int,
   release_date    date,
@@ -11,37 +11,37 @@ CREATE TABLE Movie (
   PRIMARY KEY (id));
 
 CREATE TABLE Person (
-  id      int AUTO_INCREMENT,
+  id              int AUTO_INCREMENT,
   name            varchar(15),
-  d_o_b             date,
+  d_o_b           date,
   bio             varchar(500),
 
   PRIMARY KEY (id));
 
 
 CREATE TABLE Award (
-  id       int AUTO_INCREMENT,
+  id              int AUTO_INCREMENT,
   isWinner        int,
-  award_name      varchar(30),
+  name            varchar(30),
   year            int,
   category        varchar(20),
 
   PRIMARY KEY (id));
 
 CREATE TABLE Show (
-  id        int AUTO_INCREMENT,
+  id              int AUTO_INCREMENT,
   name            varchar(50),
   start_year      int,
   end_year        int,
-  rating          varchar(5), //PG-13, etc. --we doing a user rating, like 3.5/5?
+  rating          varchar(5), //PG-13, etc., we doing a user rating, like 3.5/5?
   summary         varchar(500),
 
   PRIMARY KEY (id));
 
 
 CREATE TABLE Season (
-  id              int AUTO_INCREMENT,
-  season_number           int,
+  id                      int AUTO_INCREMENT,
+  number                  int,
   start_date              date,
   end_date                date,
   poster_url              varchar(100),
@@ -50,9 +50,9 @@ CREATE TABLE Season (
 
 
 CREATE TABLE Episode (
-  id     int AUTO_INCREMENT,
-  episode_name    varchar(50),
-  episode_number  int,
+  id              int AUTO_INCREMENT,
+  name            varchar(50),
+  number          int,
   length          time,
   air_date        date,
   description     varchar(100),
@@ -61,7 +61,7 @@ CREATE TABLE Episode (
 
 
 CREATE TABLE User_Review (
-  id      int AUTO_INCREMENT,
+  id              int AUTO_INCREMENT,
   username        varchar(30),
   star_rating     real,
   review_date     date,
@@ -71,16 +71,16 @@ CREATE TABLE User_Review (
   PRIMARY KEY (id));
 
 CREATE TABLE review_movie (
-  id             int AUTO_INCREMENT,
+  id              int AUTO_INCREMENT,
   review_id       int,
-  movie_id      int,
+  movie_id        int,
 
   PRIMARY KEY (id),
   FOREIGN KEY (review_id) REFERENCES User_Review,
   FOREIGN KEY (movie_id) REFERENCES Movie);
 
 CREATE TABLE Genre (
-  id             int AUTO_INCREMENT,
+  id              int AUTO_INCREMENT,
   name            varchar(20),
   movie_id        int,
   show_id         int,
