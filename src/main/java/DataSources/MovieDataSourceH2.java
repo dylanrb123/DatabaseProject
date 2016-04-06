@@ -39,7 +39,7 @@ public class MovieDataSourceH2 implements MovieDao {
             DateTime date = new DateTime(Integer.parseInt(dateList[0]), Integer.parseInt(dateList[1]),
                     Integer.parseInt(dateList[2]), 0, 0);
             MpaaRating rating = MpaaRating.valueOf(resultSet.getString("mpaa_rating"));
-            String summary = resultSet.getString("summery");
+            String summary = resultSet.getString("summary");
             String trailerUrl = resultSet.getString("trailer_url");
             String posterUrl = resultSet.getString("poster_url");
 

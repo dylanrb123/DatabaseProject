@@ -11,10 +11,10 @@ CREATE TABLE Movie (
   PRIMARY KEY (id));
 
 CREATE TABLE Person (
-  id      int AUTO_INCREMENT,
+  id              int AUTO_INCREMENT,
   name            varchar(15),
-  d_o_b             date,
-  bio             varchar(500),
+  DOB             date,
+  biography       varchar(500),
 
   PRIMARY KEY (id));
 
@@ -22,7 +22,7 @@ CREATE TABLE Person (
 CREATE TABLE Award (
   id       int AUTO_INCREMENT,
   isWinner        int,
-  award_name      varchar(30),
+  name            varchar(30),
   year            int,
   category        varchar(20),
 
