@@ -1,5 +1,5 @@
 CREATE TABLE Movie (
-  id              int   AUTO_INCREMENT,
+  id        int   AUTO_INCREMENT,
   name            varchar(50),
   length          int,
   release_date    date,
@@ -11,16 +11,16 @@ CREATE TABLE Movie (
   PRIMARY KEY (id));
 
 CREATE TABLE Person (
-  id              int AUTO_INCREMENT,
+  id      int AUTO_INCREMENT,
   name            varchar(15),
-  d_o_b           date,
-  bio             varchar(500),
+  DOB             date,
+  biography       varchar(500),
 
   PRIMARY KEY (id));
 
 
 CREATE TABLE Award (
-  id              int AUTO_INCREMENT,
+  id       int AUTO_INCREMENT,
   isWinner        int,
   name            varchar(30),
   year            int,
@@ -29,19 +29,19 @@ CREATE TABLE Award (
   PRIMARY KEY (id));
 
 CREATE TABLE Show (
-  id              int AUTO_INCREMENT,
+  id        int AUTO_INCREMENT,
   name            varchar(50),
   start_year      int,
   end_year        int,
-  rating          varchar(5), //PG-13, etc., we doing a user rating, like 3.5/5?
+  rating          varchar(5), //PG-13, etc. --we doing a user rating, like 3.5/5?
   summary         varchar(500),
 
   PRIMARY KEY (id));
 
 
 CREATE TABLE Season (
-  id                      int AUTO_INCREMENT,
-  number                  int,
+  id              int AUTO_INCREMENT,
+  number           int,
   start_date              date,
   end_date                date,
   poster_url              varchar(100),
