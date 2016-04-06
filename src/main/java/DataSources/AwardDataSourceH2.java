@@ -19,7 +19,7 @@ public class AwardDataSourceH2 {
     public List<Award> getAllAwards() throws SQLException{
         Connection conn = DatabaseScripts.getConnection();
         Statement stmt = conn.createStatement();
-        ResultSet resultSet = stmt.executeQuery("SELECT * from Award");
+        ResultSet resultSet = stmt.executeQuery("SELECT * from Award;");
 
         List<Award> awards = new ArrayList<>();
 
@@ -58,13 +58,13 @@ public class AwardDataSourceH2 {
     public void deleteAward(int awardID)throws SQLException{
         Connection conn = DatabaseScripts.getConnection();
         Statement stmt = conn.createStatement();
-        stmt.execute("DELETE FROM Award WHERE id = " + awardID);
+        stmt.execute("DELETE FROM Award WHERE id = " + awardID + ";");
     }
 
     public void deleteAward(String awardName)throws SQLException{
         Connection conn = DatabaseScripts.getConnection();
         Statement stmt = conn.createStatement();
-        stmt.execute("DELETE FROM Award WHERE name = " + awardName);
+        stmt.execute("DELETE FROM Award WHERE name = " + awardName + ";");
     }
 
     public void addAward(Award award) throws SQLException{
@@ -73,6 +73,6 @@ public class AwardDataSourceH2 {
 
         stmt.execute("INSERT INTO Award (isWinner, name, year, category) VALUES ("
         + award.getIsWinner() + ", " + award.getAwardName() + ", "
-        + award.getYear() + ", " + award.getCategory() + ")");
+        + award.getYear() + ", " + award.getCategory() + ");");
     }
 }

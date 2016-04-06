@@ -24,7 +24,7 @@ public class PersonDataSourceH2 implements PersonDao{
     public List<Person> getAllPeople() throws SQLException{
         Connection conn = DatabaseScripts.getConnection();
         Statement stmt = conn.createStatement();
-        ResultSet resultSet = stmt.executeQuery("SELECT * from Person");
+        ResultSet resultSet = stmt.executeQuery("SELECT * from Person;");
 
         List<Person> people = new ArrayList<>();
 
@@ -68,7 +68,7 @@ public class PersonDataSourceH2 implements PersonDao{
     public void deletePerson(int personID) throws SQLException{
         Connection conn = DatabaseScripts.getConnection();
         Statement stmt = conn.createStatement();
-        stmt.execute("DELETE FROM Person WHERE id = " + personID);
+        stmt.execute("DELETE FROM Person WHERE id = " + personID + ";");
     }
 
     @Override
@@ -79,7 +79,7 @@ public class PersonDataSourceH2 implements PersonDao{
         DateTimeFormatter fmt = DateTimeFormat.forPattern("yyyy-MM-dd");
         String DOBString = fmt.print(DOB);
 
-        stmt.execute("DELETE FROM Person WHERE name = " + name + " AND DOB = " + DOBString);
+        stmt.execute("DELETE FROM Person WHERE name = " + name + " AND DOB = " + DOBString + ";");
     }
 
     @Override
@@ -89,6 +89,6 @@ public class PersonDataSourceH2 implements PersonDao{
 
         stmt.execute("INSERT INTO Person (name, DOB, biography) " +
                 "VALUES (" + person.getName() +
-                ", " + person.getDOB() + ", " + person.getBiography() + ")");
+                ", " + person.getDOB() + ", " + person.getBiography() + ");");
     }
 }

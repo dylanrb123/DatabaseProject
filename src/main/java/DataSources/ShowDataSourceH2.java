@@ -18,7 +18,7 @@ public class ShowDataSourceH2 {
     public List<Show> getAllShows() throws SQLException{
         Connection conn = DatabaseScripts.getConnection();
         Statement stmt = conn.createStatement();
-        ResultSet resultSet = stmt.executeQuery("SELECT * from Show");
+        ResultSet resultSet = stmt.executeQuery("SELECT * from Show;");
 
         List<Show> shows = new ArrayList<Show>();
 
@@ -32,7 +32,7 @@ public class ShowDataSourceH2 {
 
             List<String> genres = new ArrayList<>();
             Statement genreStatement = conn.createStatement();
-            ResultSet genreSet = genreStatement.executeQuery("SELECT name FROM Genre WHERE show_id = " + showID);
+            ResultSet genreSet = genreStatement.executeQuery("SELECT name FROM Genre WHERE show_id = " + showID +";");
             while(genreSet.next()) {
                 genres.add(genreSet.getString("name"));
             }
@@ -66,13 +66,13 @@ public class ShowDataSourceH2 {
     public void deleteShow(int showID) throws SQLException{
         Connection conn = DatabaseScripts.getConnection();
         Statement stmt = conn.createStatement();
-        stmt.execute("DELETE FROM Show WHERE id = " + showID);
+        stmt.execute("DELETE FROM Show WHERE id = " + showID + ";");
     }
 
     public void deleteShow(String showName) throws SQLException{
         Connection conn = DatabaseScripts.getConnection();
         Statement stmt = conn.createStatement();
-        stmt.execute("DELETE FROM Show WHERE name = " + showName);
+        stmt.execute("DELETE FROM Show WHERE name = " + showName + ";");
     }
 
     public void addShow(Show show) throws SQLException{
@@ -81,12 +81,12 @@ public class ShowDataSourceH2 {
 
         stmt.execute("INSERT INTO Show (name, start_year, end_year, rating, summary) VALUES ("
                 + show.getShowName() + ", " + show.getStartYear() + ", " +
-                show.getEndYear() + ", " + show.getRating() + ", " + show.getSummary() + ")");
+                show.getEndYear() + ", " + show.getRating() + ", " + show.getSummary() + ");");
 
         List<String> genres = show.getGenres();
         for(String name : genres){ //not sure what to put for genre_id since auto increment??
             stmt.execute("INSERT INTO Genre (name, movie_id, show_id) VALUES (" + name
-                + ", " + null + ", " + show.getShowId() + ")");
+                + ", null, " + show.getShowId() + ");");
         }
     }
 
