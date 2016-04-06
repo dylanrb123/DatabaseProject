@@ -1,12 +1,9 @@
 package DataSources;
 
 import DataAccessObjects.UserReviewDao;
-import Enums.MpaaRating;
-import Models.Movie;
 import Models.UserReview;
 import Scripts.DatabaseScripts;
 import org.joda.time.DateTime;
-import org.joda.time.Duration;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
@@ -27,7 +24,7 @@ public class UserReviewDataSourceH2 implements UserReviewDao {
     public List<UserReview> getAllUserReviews() throws SQLException {
         Connection conn = DatabaseScripts.getConnection();
         Statement stmt = conn.createStatement();
-        ResultSet resultSet = stmt.executeQuery("SELECT * from UserReview");
+        ResultSet resultSet = stmt.executeQuery("SELECT * from UserReview;");
 
         List<UserReview> userReviews = new ArrayList<>();
 
@@ -71,7 +68,7 @@ public class UserReviewDataSourceH2 implements UserReviewDao {
     public void deleteUserReview(int reviewId) throws SQLException {
         Connection conn = DatabaseScripts.getConnection();
         Statement stmt = conn.createStatement();
-        stmt.execute("DELETE FROM UserReview WHERE id = " + reviewId);
+        stmt.execute("DELETE FROM UserReview WHERE id = " + reviewId + ";");
     }
 
     @Override
@@ -82,7 +79,7 @@ public class UserReviewDataSourceH2 implements UserReviewDao {
         DateTimeFormatter fmt = DateTimeFormat.forPattern("yyyy-MM-dd");
         String dateString = fmt.print(date);
 
-        stmt.execute("DELETE FROM UserReview WHERE username = " + userName + " AND date = " + dateString);
+        stmt.execute("DELETE FROM UserReview WHERE username = " + userName + " AND date = " + dateString + ";");
     }
 
     @Override
@@ -91,10 +88,10 @@ public class UserReviewDataSourceH2 implements UserReviewDao {
         Statement stmt = conn.createStatement();
 
         stmt.execute("INSERT INTO UserReview " +
-                "(id, username, star_rating, review_date, title, body) " +
-                "VALUES (" + userReview.getReviewID() + ", " + userReview.getUserName() + ", " +
+                "(username, star_rating, review_date, title, body) " +
+                "VALUES (" + userReview.getUserName() + ", " +
                 userReview.getStarRating() + ", " + userReview.getDate() + ", " + userReview.getTitle() + ", " +
-                userReview.getBody() + ")");
+                userReview.getBody() + ");");
 
     }
 }

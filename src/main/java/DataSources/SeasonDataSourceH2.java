@@ -1,13 +1,9 @@
 package DataSources;
 
-import DataAccessObjects.MovieDao;
 import DataAccessObjects.SeasonDao;
-import Enums.MpaaRating;
-import Models.Movie;
 import Models.Season;
 import Scripts.DatabaseScripts;
 import org.joda.time.DateTime;
-import org.joda.time.Duration;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
@@ -28,7 +24,7 @@ public class SeasonDataSourceH2 implements SeasonDao {
     public List<Season> getAllSeasons() throws SQLException {
         Connection conn = DatabaseScripts.getConnection();
         Statement stmt = conn.createStatement();
-        ResultSet resultSet = stmt.executeQuery("SELECT * from Season");
+        ResultSet resultSet = stmt.executeQuery("SELECT * from Season;");
 
         List<Season> seasons = new ArrayList<>();
 
@@ -74,7 +70,7 @@ public class SeasonDataSourceH2 implements SeasonDao {
     public void deleteSeason(int seasonId) throws SQLException {
         Connection conn = DatabaseScripts.getConnection();
         Statement stmt = conn.createStatement();
-        stmt.execute("DELETE FROM Season WHERE id = " + seasonId);
+        stmt.execute("DELETE FROM Season WHERE id = " + seasonId + ";");
     }
 
     @Override
@@ -85,7 +81,8 @@ public class SeasonDataSourceH2 implements SeasonDao {
         DateTimeFormatter fmt = DateTimeFormat.forPattern("yyyy-MM-dd");
         String startDateString = fmt.print(startDate);
 
-        stmt.execute("DELETE FROM Season WHERE number = " + seasonNumber + " AND start_date = " + startDateString);
+        stmt.execute("DELETE FROM Season WHERE number = " + seasonNumber + " AND start_date = " + startDateString +
+                ";");
     }
 
     @Override

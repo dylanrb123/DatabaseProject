@@ -27,7 +27,7 @@ public class MovieDataSourceH2 implements MovieDao {
     public List<Movie> getAllMovies() throws SQLException {
         Connection conn = DatabaseScripts.getConnection();
         Statement stmt = conn.createStatement();
-        ResultSet resultSet = stmt.executeQuery("SELECT * from Movie");
+        ResultSet resultSet = stmt.executeQuery("SELECT * from Movie;");
 
         List<Movie> movies = new ArrayList<>();
 
@@ -46,7 +46,8 @@ public class MovieDataSourceH2 implements MovieDao {
 
             List<String> genres = new ArrayList<>();
             Statement genreStatement = conn.createStatement();
-            ResultSet genreSet = genreStatement.executeQuery("SELECT name FROM Genre WHERE movie_id = " + movieId);
+            ResultSet genreSet = genreStatement.executeQuery("SELECT name FROM Genre WHERE movie_id = " + movieId +
+                    ";");
             while(genreSet.next()) {
                 genres.add(genreSet.getString("name"));
             }
@@ -80,7 +81,7 @@ public class MovieDataSourceH2 implements MovieDao {
     public void deleteMovie(int movieId) throws SQLException {
         Connection conn = DatabaseScripts.getConnection();
         Statement stmt = conn.createStatement();
-        stmt.execute("DELETE FROM Movie WHERE id = " + movieId);
+        stmt.execute("DELETE FROM Movie WHERE id = " + movieId + ";");
     }
 
     @Override
@@ -91,7 +92,7 @@ public class MovieDataSourceH2 implements MovieDao {
         DateTimeFormatter fmt = DateTimeFormat.forPattern("yyyy-MM-dd");
         String releaseDateString = fmt.print(releaseDate);
 
-        stmt.execute("DELETE FROM Movie WHERE name = " + name + " AND release_date = " + releaseDateString);
+        stmt.execute("DELETE FROM Movie WHERE name = " + name + " AND release_date = " + releaseDateString + ";");
     }
 
     @Override
@@ -100,20 +101,17 @@ public class MovieDataSourceH2 implements MovieDao {
         Statement stmt = conn.createStatement();
 
         stmt.execute("INSERT INTO Movie " +
-                "(id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url) " +
-                "VALUES (" + movie.getMovieID() + ", " + movie.getMovieName() + ", " + movie.getReleaseDate() +
+                "(name, length, release_date, mpaa_rating, summary, trailer_url, poster_url) " +
+                "VALUES (" + movie.getMovieName() + ", " + movie.getReleaseDate() +
                 ", " + movie.getRating() + ", " + movie.getSummary() + ", " + movie.getTrailerUrl() + ", " +
-                movie.getPosterUrl() + ")");
+                movie.getPosterUrl() + ");");
 
         List<String> genres = movie.getGenres();
-        ResultSet resultSet = stmt.executeQuery("SELECT * from Genre");
-
-        int id = 0; //What value do we pass as the Genre table's id?
 
         for(String genreName : genres){
             stmt.execute("INSERT INTO Genre " +
-                        "(id, name, movie_id, show_id) " +
-                        "VALUES (" + id + ", " + genreName + ", " + movie.getMovieID() + ", " + null + ")");
+                        "(name, movie_id, show_id) " +
+                        "VALUES (" + genreName + ", " + movie.getMovieID() + ", " + null + ");");
         }
 
     }
