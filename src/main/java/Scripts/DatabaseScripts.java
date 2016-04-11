@@ -45,13 +45,12 @@ public final class DatabaseScripts {
 
     public static void createTables() throws SQLException {
         try {
-            createConnection("", "", "~");
+            createConnection("", "", "~/test");
         } catch(SQLException e) {
             e.printStackTrace();
         }
         if(DEBUG) cleanDatabase();
         Statement stmt = conn.createStatement();
-        System.out.println(System.getProperty("user.dir"));
         stmt.execute(readTableFile("src/main/java/db_tables.sql"));
     }
 
