@@ -3,6 +3,8 @@ package Models;
 import Enums.MpaaRating;
 import org.joda.time.DateTime;
 import org.joda.time.Duration;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
 import sun.util.resources.cldr.aa.CurrencyNames_aa;
 
 import java.util.List;
@@ -58,6 +60,11 @@ public class Movie {
         this.runtime = runtime;
     }
 
+    public String getReleaseDateString() {
+        DateTimeFormatter dtf = DateTimeFormat.forPattern("yyyy-MM-dd");
+        return dtf.print(releaseDate);
+    }
+
     public DateTime getReleaseDate() {
         return releaseDate;
     }
@@ -77,6 +84,8 @@ public class Movie {
     public List<String> getGenres() {
         return genres;
     }
+
+    public void addGenre(String genre) { genres.add(genre); }
 
     public void setGenres(List<String> genres) {
         this.genres = genres;
@@ -114,5 +123,10 @@ public class Movie {
         // movies are equal if they have the same ID or same name and release date
         return this.getMovieID() == m.getMovieID() ||
                 (this.getMovieName().equals(m.getMovieName()) && this.getReleaseDate().equals(m.getReleaseDate()));
+    }
+
+    @Override
+    public String toString() {
+        return this.movieName;
     }
 }
