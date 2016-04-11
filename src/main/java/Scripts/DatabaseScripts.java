@@ -23,10 +23,15 @@ public final class DatabaseScripts {
             e.printStackTrace();
         }
         conn = DriverManager.getConnection("jdbc:h2:" + location, user, password);
-        if(DEBUG) cleanDatabase();
     }
 
-    public static Connection getConnection() {
+    public static Connection getConnection() throws SQLException {
+        if(conn == null) {
+            if(DEBUG) {
+                createTables();
+            }
+
+        }
         return conn;
     }
 
@@ -44,12 +49,10 @@ public final class DatabaseScripts {
         } catch(SQLException e) {
             e.printStackTrace();
         }
-
+        if(DEBUG) cleanDatabase();
         Statement stmt = conn.createStatement();
         System.out.println(System.getProperty("user.dir"));
         stmt.execute(readTableFile("src/main/java/db_tables.sql"));
-        dumpTables();
-
     }
 
     private static String readTableFile(String location) {

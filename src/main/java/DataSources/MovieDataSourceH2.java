@@ -99,12 +99,13 @@ public class MovieDataSourceH2 implements MovieDao {
     public void addMovie(Movie movie) throws SQLException{
         Connection conn = DatabaseScripts.getConnection();
         Statement stmt = conn.createStatement();
-
-        stmt.execute("INSERT INTO Movie " +
+        String sql = "INSERT INTO Movie " +
                 "(name, length, release_date, mpaa_rating, summary, trailer_url, poster_url) " +
-                "VALUES (" + movie.getMovieName() + ", " + movie.getReleaseDate() +
-                ", " + movie.getRating() + ", " + movie.getSummary() + ", " + movie.getTrailerUrl() + ", " +
-                movie.getPosterUrl() + ");");
+                "VALUES ('" + movie.getMovieName() + "', " + movie.getRuntime().getStandardSeconds() + ", '" + movie.getReleaseDateString() + "'" +
+                ", '" + movie.getRating() + "', '" + movie.getSummary() + "', '" + movie.getTrailerUrl() + "', '" +
+                movie.getPosterUrl() + "');";
+        System.out.println(sql);
+        stmt.execute(sql);
 
         List<String> genres = movie.getGenres();
 
