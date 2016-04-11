@@ -6,6 +6,7 @@ import DataAccessObjects.MovieDao;
 import DataSources.MovieDataSourceH2;
 import Enums.MpaaRating;
 import Models.Movie;
+import j2html.TagCreator;
 import org.joda.time.DateTime;
 import org.joda.time.Duration;
 
@@ -17,6 +18,7 @@ import java.io.FileReader;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
 
@@ -33,20 +35,40 @@ public class Main {
         List<String> genres = new ArrayList<>();
         genres.add("Action");
         genres.add("Romance");
+
+        List<Movie> moviesTemp;
         try {
             movieDao.addMovie(new Movie(0, "TEST: THE MOVIE", new Duration(1000000), new DateTime(1993, 12, 29, 0, 0, 0), MpaaRating.G, genres, "This is a movie about a test", "www.google.com", "www.youtube.com"));
             movieDao.addMovie(new Movie(0, "TEST2: RETURN OF THE TEST", new Duration(1000000), new DateTime(1993, 12, 29, 0, 0, 0), MpaaRating.G, genres, "This is a movie about a test", "www.google.com", "www.youtube.com"));
-            List<Movie> movies = movieDao.getAllMovies();
-            System.out.println(movies);
+            moviesTemp = movieDao.getAllMovies();
         } catch (SQLException e) {
             e.printStackTrace();
+            moviesTemp = new ArrayList<>();
         }
 
+        final List<Movie> movies = moviesTemp;
+
+        get("/movies", (req, res) ->
+                body().with(
+                        h1("All Movies"),
+                        div().with(
+                                movies.stream().map((movie) ->
+                                        div().with(
+                                                h2(movie.getMovieName()),
+                                                h3(Integer.toString(movie.getMovieID())),
+                                                p(movie.getSummary()),
+                                                h3("Genres: "),
+                                                ul().with(movie.getGenres().stream().map(TagCreator::li).collect(Collectors.toList())
+                                                )
+                                        )
+                                ).collect(Collectors.toList())
+                        )
+                ).render()
+        );
         get("/", (req, res) ->
-        body().with(
-                h1("This is a test"),
-                div().with()
-        ).render()
+                body().with(
+                        a("All movies").withHref("/movies")
+                )
         );
 
 
