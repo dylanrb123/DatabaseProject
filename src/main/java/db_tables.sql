@@ -81,7 +81,7 @@ CREATE TABLE review_movie (
 
 CREATE TABLE Genre (
   id              int AUTO_INCREMENT,
-  name            varchar(20),
+  name            varchar(50),
   movie_id        int,
   show_id         int,
 

@@ -85,6 +85,8 @@ public class Movie {
         return genres;
     }
 
+    public void addGenre(String genre) { genres.add(genre); }
+
     public void setGenres(List<String> genres) {
         this.genres = genres;
     }

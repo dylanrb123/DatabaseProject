@@ -35,6 +35,7 @@ public class Main {
         genres.add("Romance");
         try {
             movieDao.addMovie(new Movie(0, "TEST: THE MOVIE", new Duration(1000000), new DateTime(1993, 12, 29, 0, 0, 0), MpaaRating.G, genres, "This is a movie about a test", "www.google.com", "www.youtube.com"));
+            movieDao.addMovie(new Movie(0, "TEST2: RETURN OF THE TEST", new Duration(1000000), new DateTime(1993, 12, 29, 0, 0, 0), MpaaRating.G, genres, "This is a movie about a test", "www.google.com", "www.youtube.com"));
             List<Movie> movies = movieDao.getAllMovies();
             System.out.println(movies);
         } catch (SQLException e) {

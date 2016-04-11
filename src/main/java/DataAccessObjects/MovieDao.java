@@ -1,5 +1,6 @@
 package DataAccessObjects;
 
+import Enums.MpaaRating;
 import Models.Movie;
 import org.joda.time.DateTime;
 
@@ -16,4 +17,7 @@ public interface MovieDao {
     void deleteMovie(int movieId) throws SQLException;
     void deleteMovie(String name, DateTime releaseDate) throws SQLException;
     void addMovie(Movie movie) throws SQLException;
+    List<Movie> getByGenre(String genre) throws SQLException;
+    List<Movie> getByMPAA(MpaaRating mpaa_rating) throws SQLException;
+    List<Movie> getByRelDate(DateTime relDate) throws SQLException;
 }
