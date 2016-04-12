@@ -51,7 +51,7 @@ public class Main {
             e.printStackTrace();
         }
 
-
+        // route to get movies page
         get("/movies", (req, res) -> {
                     List<Movie> moviesTemp;
                     try {
@@ -92,43 +92,69 @@ public class Main {
                                     input().withType("url").withName("movie-poster-url").withPlaceholder("Poster URL").isRequired(),
                                     textarea().withName("movie-summary").withName("movie-summary").withPlaceholder("Summary").attr("form", "movie-form").isRequired(),
                                     input().withType("submit").withValue("Submit")
+                            ),
+                            h2("Delete movie"),
+                            form().withMethod("post").withAction("/delete-movie").withId("delete-movie").with(
+                                    label().withText("Movie to delete: "),
+                                    select().withName("delete-movie").with(
+                                            movies.stream().map(movie ->
+                                                div().with(
+                                                        option().withValue(Integer.toString(movie.getMovieID())).withText(movie.getMovieName() + ": " + movie.getReleaseDateString())
+                                                )
+                                            ).collect(Collectors.toList())
+                                    ),
+                                    input().withType("submit").withValue("Submit")
                             )
                     ).render();
                 }
         );
+
+        // route for homepage
         get("/", (req, res) ->
                 body().with(
                         a("All movies").withHref("/movies")
                 )
         );
+
+        // route to add movie
         post("/add-movie", (req, res) -> {
-            String movieName = req.queryParams("movie-name");
-            String runtimeString = req.queryParams("movie-runtime");
-            String releaseDateString = req.queryParams("movie-release");
-            String ratingString = req.queryParams("movie-rating");
-            String genresString = req.queryParams("movie-genres");
-            String summary = req.queryParams("movie-summary");
-            String trailerUrl = req.queryParams("movie-trailer-url");
-            String posterUrl = req.queryParams("movie-poster-url");
+                String movieName = req.queryParams("movie-name");
+                String runtimeString = req.queryParams("movie-runtime");
+                String releaseDateString = req.queryParams("movie-release");
+                String ratingString = req.queryParams("movie-rating");
+                String genresString = req.queryParams("movie-genres");
+                String summary = req.queryParams("movie-summary");
+                String trailerUrl = req.queryParams("movie-trailer-url");
+                String posterUrl = req.queryParams("movie-poster-url");
 
-            DateTimeFormatter fmt = DateTimeFormat.forPattern("HH:mm");
-            Duration runtime = new Duration(fmt.parseMillis(runtimeString));
+                DateTimeFormatter fmt = DateTimeFormat.forPattern("HH:mm");
+                Duration runtime = new Duration(fmt.parseMillis(runtimeString));
 
-            fmt = DateTimeFormat.forPattern("yyyy-MM-dd");
-            DateTime releaseDate = fmt.parseDateTime(releaseDateString);
+                fmt = DateTimeFormat.forPattern("yyyy-MM-dd");
+                DateTime releaseDate = fmt.parseDateTime(releaseDateString);
 
-            List<String> genresList = Arrays.asList(genresString.split(","));
+                List<String> genresList = Arrays.asList(genresString.split(","));
 
-            MpaaRating rating = MpaaRating.valueOf(ratingString);
+                MpaaRating rating = MpaaRating.valueOf(ratingString);
 
-            Movie newMovie = new Movie(0, movieName, runtime, releaseDate, rating, genresList, summary, trailerUrl, posterUrl);
-            movieDao.addMovie(newMovie);
+                Movie newMovie = new Movie(0, movieName, runtime, releaseDate, rating, genresList, summary, trailerUrl, posterUrl);
+                movieDao.addMovie(newMovie);
 
+                res.status(200);
+                res.redirect("/movies");
+                return res;
+            }
+        );
+        post("/delete-movie", (req, res) -> {
+            if (req.queryParams("delete-movie") != null) {
+                movieDao.deleteMovie(Integer.parseInt(req.queryParams("delete-movie")));
+            }
             res.status(200);
             res.redirect("/movies");
             return res;
-        }
-        );
+        });
+
+
 
 
     }
