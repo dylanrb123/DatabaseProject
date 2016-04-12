@@ -60,6 +60,7 @@ public final class DatabaseScripts {
         } catch(SQLException e) {
             e.printStackTrace();
         }
+        createTables();
         Statement stmt = conn.createStatement();
         stmt.execute(readSQLFile("src/main/java/movietabledata.sql"));
     }

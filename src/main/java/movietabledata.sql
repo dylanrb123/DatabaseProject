@@ -41,7 +41,7 @@ VALUES ('Drama', 3, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (4, 'Mean Girls', 5820000, '2004-30-04', 'PG_13',
+VALUES (4, 'Mean Girls', 5820000, '2004-03-04', 'PG_13',
 	'Cady Heron is a hit with The Plastics, the A-list girl clique at her new school, until she makes the mistake of falling for Aaron Samuels, the ex-boyfriend of alpha Plastic Regina George.',
 	'https://www.youtube.com/watch?v=KAOmTMCtGkI',
 	'http://ia.media-imdb.com/images/M/MV5BMjE1MDQ4MjI1OV5BMl5BanBnXkFtZTcwNzcwODAzMw@@._V1_UY268_CR3,0,182,268_AL_.jpg');
@@ -92,7 +92,7 @@ VALUES ('Sci-Fi', 6, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (7, 'Star Wars: Episode III - Revenge of the Sith', 8400000, '2005-05-19', 'PG-13',
+VALUES (7, 'Star Wars: Episode III - Revenge of the Sith', 8400000, '2005-05-19', 'PG_13',
 				'During the near end of the clone wars, Darth Sidious has revealed himself and is ready to execute the last part of his plan to rule the Galaxy. Sidious is ready for his new apprentice, Lord Vader, to step into action and kill the remaining Jedi. Vader, however, struggles to choose the dark side and save his wife or remain loyal to the Jedi order.',
 				'https://www.youtube.com/watch?v=a3Cdj3GpobM',
 				'http://ia.media-imdb.com/images/M/MV5BNTc4MTc3NTQ5OF5BMl5BanBnXkFtZTcwOTg0NjI4NA@@._V1_UY268_CR9,0,182,268_AL_.jpg');
@@ -172,7 +172,7 @@ VALUES ('Sci-Fi', 10, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (11, 'Star Wars: Episode VII - The Force Awakens', 8160000, '2015-12-18', 'PG-13',
+VALUES (11, 'Star Wars: Episode VII - The Force Awakens', 8160000, '2015-12-18', 'PG_13',
 				'Three decades after the defeat of the Galactic Empire, a new threat arises. The First Order attempts to rule the galaxy and only a ragtag group of heroes can stop them, along with the help of the Resistance.',
 				'https://www.youtube.com/watch?v=sGbxmsDFVnE',
 				'http://ia.media-imdb.com/images/M/MV5BOTAzODEzNDAzMl5BMl5BanBnXkFtZTgwMDU1MTgzNzE@._V1_SY317_CR0,0,214,317_AL_.jpg');

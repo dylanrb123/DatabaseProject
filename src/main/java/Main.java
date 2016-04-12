@@ -16,14 +16,12 @@ import static spark.Spark.*;
 import static j2html.TagCreator.*;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
-import javax.swing.text.DateFormatter;
 import java.io.FileReader;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.Map;
 
 //this is here to read the inserts into the movie table.
 //Can be removed later when a more elegant solution to adding movies exists.
