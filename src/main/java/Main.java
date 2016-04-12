@@ -143,8 +143,9 @@ public class Main {
             }
         );
         post("/delete-movie", (req, res) -> {
-            movieDao.deleteMovie(Integer.parseInt(req.queryParams("delete-movie")));
-
+            if (req.queryParams("delete-movie") != null) {
+                movieDao.deleteMovie(Integer.parseInt(req.queryParams("delete-movie")));
+            }
             res.status(200);
             res.redirect("/movies");
             return res;
