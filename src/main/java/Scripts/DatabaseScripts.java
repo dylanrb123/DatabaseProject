@@ -51,10 +51,20 @@ public final class DatabaseScripts {
         }
         if(DEBUG) cleanDatabase();
         Statement stmt = conn.createStatement();
-        stmt.execute(readTableFile("src/main/java/db_tables.sql"));
+        stmt.execute(readSQLFile("src/main/java/db_tables.sql"));
     }
 
-    private static String readTableFile(String location) {
+    public static void insertMovies() throws SQLException {
+        try {
+            createConnection("", "", "~/test");
+        } catch(SQLException e) {
+            e.printStackTrace();
+        }
+        Statement stmt = conn.createStatement();
+        stmt.execute(readSQLFile("src/main/java/movietabledata.sql"));
+    }
+
+    private static String readSQLFile(String location) {
         String tableScript = "";
         try {
             tableScript = new String(Files.readAllBytes(Paths.get(location)));

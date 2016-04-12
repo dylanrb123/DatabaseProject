@@ -5,8 +5,8 @@ CREATE TABLE Movie (
   release_date    date,
   mpaa_rating     varchar(5),
   summary         varchar(500),
-  trailer_url     varchar(100),
-  poster_url      varchar(100),
+  trailer_url     varchar(200),
+  poster_url      varchar(200),
 
   PRIMARY KEY (id));
 
@@ -44,7 +44,7 @@ CREATE TABLE Season (
   number           int,
   start_date              date,
   end_date                date,
-  poster_url              varchar(100),
+  poster_url              varchar(200),
 
   PRIMARY KEY (id));
 

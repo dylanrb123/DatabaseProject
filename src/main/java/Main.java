@@ -25,6 +25,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.Map;
 
+//this is here to read the inserts into the movie table.
+//Can be removed later when a more elegant solution to adding movies exists.
+import Scripts.DatabaseScripts;
+
 public class Main {
 
     private ScriptEngine se;
@@ -42,8 +46,7 @@ public class Main {
         genres.add("Romance");
 
         try {
-            movieDao.addMovie(new Movie(0, "TEST: THE MOVIE", new Duration(1000000), new DateTime(1993, 12, 29, 0, 0, 0), MpaaRating.G, genres, "This is a movie about a test", "www.google.com", "www.youtube.com"));
-            movieDao.addMovie(new Movie(0, "TEST2: RETURN OF THE TEST", new Duration(1000000), new DateTime(1993, 12, 29, 0, 0, 0), MpaaRating.G, genres, "This is a movie about a test", "www.google.com", "www.youtube.com"));
+            DatabaseScripts.insertMovies();
         } catch (SQLException e) {
             e.printStackTrace();
         }
