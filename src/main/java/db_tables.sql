@@ -86,7 +86,7 @@ CREATE TABLE Genre (
   show_id         int,
 
   PRIMARY KEY (id),
-  FOREIGN KEY (movie_id) REFERENCES Movie,
+  FOREIGN KEY (movie_id) REFERENCES Movie ON DELETE SET NULL,
   FOREIGN KEY (show_id) REFERENCES Show);
 
 CREATE TABLE movie_doer(

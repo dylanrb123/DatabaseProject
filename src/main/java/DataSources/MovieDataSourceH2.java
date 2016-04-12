@@ -120,7 +120,7 @@ public class MovieDataSourceH2 implements MovieDao {
     public Movie getMovie(int movieId) throws SQLException {
         // Prepare SQL query
         String q = "SELECT"+attributes+
-                   "FROM movie INNER JOIN genre on movie.id=movie_id" +
+                   "FROM movie INNER JOIN genre on movie.id=movie_id " +
                    "WHERE movie.id = %d;";
 
         // SQL Sequence
@@ -160,7 +160,9 @@ public class MovieDataSourceH2 implements MovieDao {
         String q = "DELETE FROM movie WHERE id = %d;";
 
         // SQL sequence
-        exeSQL( String.format(q, movieId) );
+        Connection conn = DatabaseScripts.getConnection();
+        Statement stmt = conn.createStatement();
+        stmt.execute( String.format(q, movieId) );
     }
 
     @Override
@@ -174,7 +176,9 @@ public class MovieDataSourceH2 implements MovieDao {
         String releaseDateString = fmt.print(releaseDate);
 
         // SQL sequence
-        exeSQL( String.format(q, name, releaseDateString) );
+        Connection conn = DatabaseScripts.getConnection();
+        Statement stmt = conn.createStatement();
+        stmt.execute( String.format(q, name, releaseDateString) );
     }
 
     @Override
