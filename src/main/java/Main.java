@@ -7,6 +7,7 @@ import DataSources.MovieDataSourceH2;
 import Enums.MpaaRating;
 import Models.Movie;
 import j2html.TagCreator;
+import jdk.internal.org.objectweb.asm.commons.JSRInlinerAdapter;
 import org.joda.time.DateTime;
 import org.joda.time.Duration;
 import org.joda.time.format.DateTimeFormat;
@@ -152,6 +153,56 @@ public class Main {
             return res;
         });
 
+        get("/api/movies", (req, res) -> movieDao.getAllMovies(), JsonUtil.json());
+        get("/api/movies/:id", (req, res) -> {
+            String id = req.params(":id");
+            Movie movie = movieDao.getMovie(Integer.parseInt(id));
+            if(movie != null) return movie;
+            res.status(400);
+            return new ResponseError("No movie with ID %s found", id);
+        }, JsonUtil.json());
+        post("/api/movies", (req, res) -> {
+            String movieName = req.queryParams("movie-name");
+            String runtimeString = req.queryParams("movie-runtime");
+            String releaseDateString = req.queryParams("movie-release");
+            String ratingString = req.queryParams("movie-rating");
+            String genresString = req.queryParams("movie-genres");
+            String summary = req.queryParams("movie-summary");
+            String trailerUrl = req.queryParams("movie-trailer-url");
+            String posterUrl = req.queryParams("movie-poster-url");
+
+            System.out.println(movieName);
+            System.out.println(runtimeString);
+            System.out.println(releaseDateString);
+            System.out.println(ratingString);
+            System.out.println(genresString);
+            System.out.println(summary);
+            System.out.println(trailerUrl);
+            System.out.println(posterUrl);
+
+            DateTimeFormatter fmt = DateTimeFormat.forPattern("HH:mm");
+            Duration runtime = new Duration(fmt.parseMillis(runtimeString));
+
+            fmt = DateTimeFormat.forPattern("yyyy-MM-dd");
+            DateTime releaseDate = fmt.parseDateTime(releaseDateString);
+
+            List<String> genresList = Arrays.asList(genresString.split(","));
+
+            MpaaRating rating = MpaaRating.valueOf(ratingString);
+
+            Movie newMovie = new Movie(0, movieName, runtime, releaseDate, rating, genresList, summary, trailerUrl, posterUrl);
+            movieDao.addMovie(newMovie);
+
+            res.status(200);
+            return res;
+        });
+        delete("/api/movies/:id", (req, res) -> {
+            movieDao.deleteMovie(Integer.parseInt(req.params(":id")));
+            res.status(200);
+            return res;
+        });
+
+        after("/api/*", (req, res) -> res.type("application/json"));
 
 
 

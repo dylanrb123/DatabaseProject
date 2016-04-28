@@ -130,7 +130,9 @@ public class MovieDataSourceH2 implements MovieDao {
         List<Movie> m = createList(resultSet);
 
         // Since this should only be one movie, return first index
-        return m.get(0);
+        if(m.size() > 0) return m.get(0);
+        // return null if not found
+        return null;
     }
 
     @Override
