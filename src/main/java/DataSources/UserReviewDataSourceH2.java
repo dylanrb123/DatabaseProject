@@ -31,7 +31,7 @@ public class UserReviewDataSourceH2 implements UserReviewDao {
         while(resultSet.next()) {
             int reviewId = resultSet.getInt("id");
             String userName = resultSet.getString("username");
-            float star_rating = resultSet.getFloat("star_rating");
+            int star_rating = resultSet.getInt("star_rating");
             String review_date = resultSet.getString("review_date");
             String[] dateList = review_date.split("-");
             DateTime date = new DateTime(Integer.parseInt(dateList[0]), Integer.parseInt(dateList[1]),

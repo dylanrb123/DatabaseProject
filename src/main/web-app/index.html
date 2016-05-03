@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Movie Info</title>
+    <script src="react.js"></script>
+    <script src="react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="content"></div>
+<script type="text/babel">
+    var data = [];
+
+    var MovieBox = React.createClass({
+        loadInfoFromServer: function() {
+            $.ajax({
+                url: this.props.url,
+                dataType: 'json',
+                cache: false,
+                success: function(data) {
+                    this.setState({data: data})
+                }.bind(this),
+                error: function(xhr, status, err) {
+                    console.error(this.props.url, status, err.toString())
+                }.bind(this)
+            })
+        },
+        handleMovieFormSubmit: function() {
+            console.log('adding a movie')
+        },
+        getInitialState: function() {
+            return {data: []};
+        },
+        componentDidMount: function() {
+            this.loadInfoFromServer();
+            //setInterval(this.loadInfoFromServer, this.props.pollInterval)
+        },
+
+        render: function() {
+            return (
+                    <div className="movieBox">
+                        <h1>Movies</h1>
+                        <MovieList data={this.state.data} />
+                        <MovieForm onMovieSubmit={this.handleMovieFormSubmit} />
+                    </div>
+            )
+        }
+    });
+
+    var MovieList = React.createClass({
+        render: function() {
+            var movieNodes = this.props.data.map(function(movie) {
+                return (
+                        <Movie movieName={movie.movieName} rating={movie.rating} key={movie.movieID}>
+                            {movie.summary}
+                        </Movie>
+                )
+            });
+            return (
+                    <div className="movieList">
+                        {movieNodes}
+                    </div>
+            );
+        }
+    });
+
+    var Movie = React.createClass({
+        render: function() {
+            return (
+                    <div className="movie">
+                        <h2 className="movieTitle">
+                            {this.props.movieName}
+                        </h2>
+                        <span>
+                            {this.props.children.toString()}
+                        </span>
+                    </div>
+            );
+        }
+    });
+
+    var MovieForm = React.createClass({
+        getInitialState: function () {
+            return {movieName: '', summary: ''};
+        },
+        handleTitleChange: function(e) {
+            this.setState({movieName: e.target.value});
+        },
+        handleSummaryChange: function(e) {
+            this.setState({summary: e.target.value});
+        },
+        handleSubmit: function(e) {
+            e.preventDefault();
+            var movieName = this.state.movieName.trim();
+            var summary = this.state.summary.trim();
+            if (!movieName || !summary) {
+                return;
+            }
+            this.props.onMovieSubmit({movieName: movieName, summary: summary});
+            this.setState({movieName: '', summary: ''});
+        },
+        render: function() {
+            return (
+                <form className="movieForm" onSubmit={this.handleSubmit}>
+                    <input type="text" placeholder="Movie title" value={this.state.movieName} onChange={this.handleTitleChange} />
+                    <textarea placeholder="Movie summary" value={this.state.summary} onChange={this.handleSummaryChange} />
+                    <input type="submit" value="Post"/>
+                </form>
+            )
+        }
+    });
+
+    ReactDOM.render(
+            <MovieBox url="/api/movies" />,
+            document.getElementById('content')
+    );
+</script>
+</body>
+</html>

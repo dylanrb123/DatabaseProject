@@ -5,7 +5,9 @@
   "main": "index.js",
   "dependencies": {
     "react": "^0.14.8",
-    "react-dom": "^0.14.8"
+    "react-dom": "^0.14.8",
+    "react-youtube": "^6.1.0",
+    "reactable": "^0.13.0"
   },
   "devDependencies": {
     "react": "^0.14.8",

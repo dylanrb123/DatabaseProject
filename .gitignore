@@ -2,3 +2,5 @@
 target
 *.db
 node_modules
+src/main/web-app/.idea
+

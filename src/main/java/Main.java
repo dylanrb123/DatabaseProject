@@ -7,7 +7,7 @@ import DataSources.MovieDataSourceH2;
 import Enums.MpaaRating;
 import Models.Movie;
 import j2html.TagCreator;
-import jdk.internal.org.objectweb.asm.commons.JSRInlinerAdapter;
+import org.apache.commons.io.FileUtils;
 import org.joda.time.DateTime;
 import org.joda.time.Duration;
 import org.joda.time.format.DateTimeFormat;
@@ -17,12 +17,16 @@ import static spark.Spark.*;
 import static j2html.TagCreator.*;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
+import java.io.File;
 import java.io.FileReader;
+import java.nio.charset.Charset;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.net.URL;
+import java.net.URLClassLoader;
 
 //this is here to read the inserts into the movie table.
 //Can be removed later when a more elegant solution to adding movies exists.
@@ -49,6 +53,7 @@ public class Main {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        externalStaticFileLocation("src/main/web-app");
 
         // route to get movies page
         get("/movies", (req, res) -> {
@@ -109,11 +114,7 @@ public class Main {
         );
 
         // route for homepage
-        get("/", (req, res) ->
-                body().with(
-                        a("All movies").withHref("/movies")
-                )
-        );
+        get("/", (req, res) -> FileUtils.readFileToString(new File("src/main/web-app/index.html"), Charset.defaultCharset()));
 
         // route to add movie
         post("/add-movie", (req, res) -> {

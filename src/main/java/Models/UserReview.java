@@ -8,12 +8,12 @@ import org.joda.time.DateTime;
 public class UserReview {
     private int reviewId;
     private String userName;
-    private float starRating;
+    private int starRating;
     private DateTime date;
     private String title;
     private String body;
 
-    public UserReview(int reviewID, String userName, float starRating,
+    public UserReview(int reviewID, String userName, int starRating,
                       DateTime date, String title, String body) {
         this.reviewId = reviewId;
         this.userName = userName;
@@ -43,7 +43,7 @@ public class UserReview {
         return starRating;
     }
 
-    public void setStarRating(float starRating) {
+    public void setStarRating(int starRating) {
         this.starRating = starRating;
     }
 
