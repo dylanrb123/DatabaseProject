@@ -55,6 +55,11 @@ public class Main {
         }
         externalStaticFileLocation("src/main/web-app");
 
+        before((req, res) -> {
+            res.header("Access-Control-Allow-Origin", "*");
+            res.header("Access-Control-Request-Method", "*");
+            res.header("Access-Control-Allow-Headers", "*");
+        });
         // route to get movies page
         get("/movies", (req, res) -> {
                     List<Movie> moviesTemp;
