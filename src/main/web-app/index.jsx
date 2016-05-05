@@ -33,7 +33,45 @@ var ActorBoxWrapper = React.createClass({
 var MovieBoxWrapper = React.createClass({
     render: function() {
         return (
-            <MovieBox url="http://localhost:4567/api/movies" />
+            <div>
+                <MovieBox url="http://localhost:4567/api/movies"/>
+            </div>
+        )
+    }
+});
+
+var MovieWrapper = React.createClass({
+    getInfoFromServer: function() {
+        var url = "http://localhost:4567/api/movies/" + this.props.params.movieId;
+        $.ajax({
+            url: url,
+            dataType: 'json',
+            cache: false,
+            success: function(data) {
+                var videoId = data.trailerUrl.split('v=')[1];
+                var ampersandPos = videoId.indexOf('&');
+                if(ampersandPos != -1) {
+                    videoId = videoId.substring(0, ampersandPos);
+                }
+                this.setState({movie: data, videoId: videoId});
+            }.bind(this),
+            error: function(xhr, status, err) {
+                console.error(url, status, err.toString())
+            }.bind(this)
+        })
+    },
+    componentDidMount: function() {
+        this.getInfoFromServer();
+    },
+    getInitialState: function() {
+        return {movie: [], videoId: ''};
+    },
+    render: function() {
+        console.log(this.state);
+        return (
+            <div>
+                <Movie movie={this.state.movie} videoId={this.state.videoId} />
+            </div>
         )
     }
 });
@@ -53,9 +91,8 @@ ReactDOM.render(
     <Router history={hashHistory}>
         <Route path="/" component={Index}>
             <IndexRedirect to="/movies" />
-            <Route path="movies" component={MovieBoxWrapper}>
-                <Route path="/movies/:movieID" component={Movie}/>
-            </Route>
+            <Route path="movies" component={MovieBoxWrapper} />
+            <Route path="/movies/:movieId" component={MovieWrapper}/>
             <Route path="tv-shows" component={TvShowBoxWrapper} />
             <Route path="actors" component={ActorBoxWrapper} />
         </Route>
