@@ -5,8 +5,8 @@ CREATE TABLE Movie (
   release_date    date,
   mpaa_rating     varchar(5),
   summary         varchar(500),
-  trailer_url     varchar(100),
-  poster_url      varchar(100),
+  trailer_url     varchar(200),
+  poster_url      varchar(200),
 
   PRIMARY KEY (id));
 
@@ -44,7 +44,7 @@ CREATE TABLE Season (
   number           int,
   start_date              date,
   end_date                date,
-  poster_url              varchar(100),
+  poster_url              varchar(200),
 
   PRIMARY KEY (id));
 
@@ -81,12 +81,12 @@ CREATE TABLE review_movie (
 
 CREATE TABLE Genre (
   id              int AUTO_INCREMENT,
-  name            varchar(20),
+  name            varchar(50),
   movie_id        int,
   show_id         int,
 
   PRIMARY KEY (id),
-  FOREIGN KEY (movie_id) REFERENCES Movie,
+  FOREIGN KEY (movie_id) REFERENCES Movie ON DELETE SET NULL,
   FOREIGN KEY (show_id) REFERENCES Show);
 
 CREATE TABLE movie_doer(

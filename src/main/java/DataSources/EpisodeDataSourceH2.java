@@ -1,9 +1,7 @@
 package DataSources;
 
 import DataAccessObjects.EpisodeDao;
-import Enums.MpaaRating;
 import Models.Episode;
-import Models.Movie;
 import Scripts.DatabaseScripts;
 import org.joda.time.DateTime;
 import org.joda.time.Duration;
@@ -28,7 +26,7 @@ public class EpisodeDataSourceH2 implements EpisodeDao {
     public List<Episode> getAllEpisodes() throws SQLException {
         Connection conn = DatabaseScripts.getConnection();
         Statement stmt = conn.createStatement();
-        ResultSet resultSet = stmt.executeQuery("SELECT * from Movie");
+        ResultSet resultSet = stmt.executeQuery("SELECT * from Movie;");
 
         List<Episode> episodes = new ArrayList<>();
 
@@ -72,7 +70,7 @@ public class EpisodeDataSourceH2 implements EpisodeDao {
     public void deleteEpisode(int episodeId) throws SQLException {
         Connection conn = DatabaseScripts.getConnection();
         Statement stmt = conn.createStatement();
-        stmt.execute("DELETE FROM Episode WHERE id = " + episodeId);
+        stmt.execute("DELETE FROM Episode WHERE id = " + episodeId + ";");
     }
 
     @Override
@@ -83,7 +81,7 @@ public class EpisodeDataSourceH2 implements EpisodeDao {
         DateTimeFormatter fmt = DateTimeFormat.forPattern("yyyy-MM-dd");
         String airDateString = fmt.print(airDate);
 
-        stmt.execute("DELETE FROM Episode WHERE name = " + episodeName + " AND air_date = " + airDateString);
+        stmt.execute("DELETE FROM Episode WHERE name = " + episodeName + " AND air_date = " + airDateString + ";");
     }
 
     @Override
@@ -92,8 +90,8 @@ public class EpisodeDataSourceH2 implements EpisodeDao {
         Statement stmt = conn.createStatement();
 
         stmt.execute("INSERT INTO Episode " +
-                "(id, name, number, length, air_date, description) " +
-                "VALUES (" + episode.getEpisodeId() + ", " + episode.getEpisodeName() + ", " +
+                "(name, number, length, air_date, description) " +
+                "VALUES (" + episode.getEpisodeName() + ", " +
                 episode.getEpisodeNumber() + ", " + episode.getLength() + ", " + episode.getAirDate() + ", " +
                 episode.getDescription() + ")");
 
