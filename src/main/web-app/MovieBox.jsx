@@ -32,7 +32,6 @@ module.exports = React.createClass({
     render: function() {
         return (
             <div className="movieBox">
-                <h1>Movies</h1>
                 <MovieList data={this.state.data} />
                 <MovieForm onMovieSubmit={this.handleMovieFormSubmit} />
             </div>
