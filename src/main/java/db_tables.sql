@@ -55,7 +55,7 @@ CREATE TABLE Episode (
   number          int,
   length          time,
   air_date        date,
-  description     varchar(100),
+  description     varchar(500),
 
   PRIMARY KEY (id));
 

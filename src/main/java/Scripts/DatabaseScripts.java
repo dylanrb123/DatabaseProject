@@ -54,7 +54,7 @@ public final class DatabaseScripts {
         stmt.execute(readSQLFile("src/main/java/db_tables.sql"));
     }
 
-    public static void insertMovies() throws SQLException {
+    public static void insertData() throws SQLException {
         try {
             createConnection("", "", "~/test");
         } catch(SQLException e) {
@@ -62,7 +62,8 @@ public final class DatabaseScripts {
         }
         createTables();
         Statement stmt = conn.createStatement();
-        stmt.execute(readSQLFile("src/main/java/movietabledata.sql"));
+        stmt.execute(readSQLFile("src/main/java/movietabledata.sql") +
+                    readSQLFile("src/main/java/tvtabledata.sql"));
     }
 
     private static String readSQLFile(String location) {
