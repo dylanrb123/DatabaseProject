@@ -1,0 +1,59 @@
+#http://imdbpy.sourceforge.net/ <-- You can get the imdb library here
+#You also need Python 2.7 to use this library
+from imdb import IMDb
+ia = IMDb()
+
+
+movieID = 300 #The starting movieId
+while(movieID < 401):
+    movies = ia.search_movie(raw_input("Movie: "))
+
+    # Retrieves default information for the first result (a Movie object).
+    movie = movies[0]
+    ia.update(movie)
+
+
+    name = movie['smart canonical title']
+
+    length = int(movie['runtime'][0]) * 60000
+
+    release_date = raw_input("Release Date (YYYY-MM-DD): ")
+
+    for i in range(len(movie['certificate'])-1,-1,-1):
+        c = movie['certificate'][i].split(":")
+        if c[0] == "USA":
+            mpaa_rating = c[1]
+
+    plot = movie['plot summary'][0]
+    #Adds the \ in front of ' so it doesn't fuck up SQL strings
+    summary = ""
+    j = 0
+    for j in range(len(plot)):
+        if plot[j] == "'":
+            summary += "\\"
+        summary += plot[j]
+
+    trailer_url = raw_input("Youtube URL: ")
+
+    poster_url = movie['cover url']
+
+
+
+    with open('C:\Users\GrantS\IdeaProjects\DatabaseProject\src\main\java\movietabledata.sql','a+') as f:
+        f.write("INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)\n"
+            +   "VALUES (" + str(movieID) + ", '" + name + "', " + str(length) + ", '" + release_date + "', '" + mpaa_rating + "',\n"
+            +   "\t\t\t\t'" + summary + "',\n"
+            +   "\t\t\t\t'" + trailer_url + "',\n"
+            +   "\t\t\t\t'" + str(poster_url) + "');\n\n")
+
+        for genre in movie['genres']:
+            f.write("INSERT INTO GENRE (name, movie_id, show_id)\n"
+                +    "VALUES ('" + genre + "', " + str(movieID) + ", NULL);\n\n")
+
+        f.write("\n\n\n\n")
+
+    movieID += 1
+    print "Next!"
+    print str(movieID)
+
+print "Done!"
