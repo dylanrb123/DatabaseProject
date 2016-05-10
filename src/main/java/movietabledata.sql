@@ -1,7 +1,7 @@
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
 VALUES (1, 'The Avengers', 8580000, '2012-05-04', 'PG_13',
 	'Earths mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity.',
-	'https://www.youtube.com/watch?v=kq84NymZYJE',
+	'https://www.youtube.com/watch?v=eOrNdBpGMv8',
 	'http://ia.media-imdb.com/images/M/MV5BMTk2NTI1MTU4N15BMl5BanBnXkFtZTcwODg0OTY0Nw@@._V1_SX640_SY720_.jpg');
 
 INSERT INTO GENRE (name, movie_id, show_id)
