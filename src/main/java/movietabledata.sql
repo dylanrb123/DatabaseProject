@@ -190,6 +190,1395 @@ INSERT INTO GENRE (name, movie_id, show_id)
 VALUES ('Sci-Fi', 11, NULL);
 
 
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (100, 'The Uninvited', 5220000, '2009-01-30', 'PG_13',
+				'Anna Ivers returns home to her sister Alex after a stint in a mental hospital, though her recovery is jeopardized thanks to her cruel stepmother. Her dismay quickly turns to horror when she is visited by ghastly visions of her dead mother.',
+				'https://www.youtube.com/watch?v=j47xLHZEvb4',
+				'http://ia.media-imdb.com/images/M/MV5BOTY0OTc3OTkyNV5BMl5BanBnXkFtZTcwMTg4Nzc5MQ@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 100, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (101, 'Sinister', 6600000, '2012-10-12', 'R',
+				'Washed-up true-crime writer Ellison Oswalt finds a box of super 8 home movies that suggest the murder he is currently researching is the work of a serial killer whose work dates back to the 1960s.',
+				'https://www.youtube.com/watch?v=pgYxydrVlDk',
+				'http://ia.media-imdb.com/images/M/MV5BMjI5MTg1Njg0Ml5BMl5BanBnXkFtZTcwNzg2Mjc4Nw@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 101, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (102, 'The Conjuring', 6720000, '2013-07-19', 'R',
+				'Paranormal investigators Ed and Lorraine Warren work to help a family terrorized by a dark presence in their farmhouse.',
+				'https://www.youtube.com/watch?v=k10ETZ41q5o',
+				'http://ia.media-imdb.com/images/M/MV5BMTM3NjA1NDMyMV5BMl5BanBnXkFtZTcwMDQzNDMzOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 102, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (103, 'The Others', 6240000, '2001-08-10', 'PG_13',
+				'A woman who lives in a darkened old house with her two photosensitive children becomes convinced that her family home is haunted.',
+				'https://www.youtube.com/watch?v=2YQotG1UZ0Y',
+				'http://ia.media-imdb.com/images/M/MV5BMTAxMDE4Mzc3ODNeQTJeQWpwZ15BbWU4MDY2Mjg4MDcx._V1_UY268_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 103, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Thriller', 103, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Fantasy', 103, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (104, 'He''s Just Not That Into You', 7740000, '2009-02-06', 'PG_13',
+				'The Baltimore-set movie of interconnecting story arcs deals with the challenges of reading or misreading human behavior.',
+				'https://www.youtube.com/watch?v=3_DHhPckJNo',
+				'http://ia.media-imdb.com/images/M/MV5BMTY5MTUyNDgwMF5BMl5BanBnXkFtZTcwNzYzMDQyMg@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 104, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 104, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Romance', 104, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (105, '13 Going on 30', 5880000, '2004-04-23', 'PG_13',
+				'A 13 year old girl plays a game on her 13th birthday and wakes up the next day as a 30 year old woman.',
+				'https://www.youtube.com/watch?v=RCNmY7QX4I0',
+				'http://ia.media-imdb.com/images/M/MV5BMjA1MTI3ODEwNF5BMl5BanBnXkFtZTcwOTA4NDUyMQ@@._V1_UY268_CR4,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 105, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Fantasy', 105, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Romance', 105, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (106, 'The Notebook', 7380000, '2004-06-25', 'PG_13',
+				'A poor and passionate young man falls in love with a rich young woman and gives her a sense of freedom. They soon are separated by their social differences.',
+				'https://www.youtube.com/watch?v=4M7LIcH8C9U',
+				'http://ia.media-imdb.com/images/M/MV5BMTk3OTM5Njg5M15BMl5BanBnXkFtZTYwMzA0ODI3._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 106, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Romance', 106, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (107, 'Paranormal Activity', 5160000, '2009-10-16', 'R',
+				'After moving into a suburban home, a couple becomes increasingly disturbed by a nightly demonic presence.',
+				'https://www.youtube.com/watch?v=7TC9bKyDB5Y',
+				'http://ia.media-imdb.com/images/M/MV5BMjY1NjcxODQ4MV5BMl5BanBnXkFtZTcwMzUxNjM4Mg@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 107, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (108, 'Paranormal Activity 2', 5460000, 'R', '2010-10-22',
+				'After experiencing what they think are a series of "break-ins", a family sets up security cameras around their home, only to realize that the events unfolding before them are more sinister than they seem.',
+				'https://www.youtube.com/watch?v=Dg4mPJdyg_E',
+				'http://ia.media-imdb.com/images/M/MV5BMjE4NDgwMzAxNF5BMl5BanBnXkFtZTcwNTE3OTk4Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 108, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (109, 'Paranormal ACtivity 3', 4980000, '2011-10-21', 'R',
+				'In 1988, young sisters Katie and Kristi befriend an invisible entity who resides in their home.',
+				'https://www.youtube.com/watch?v=aCJWNM1a3F8',
+				'http://ia.media-imdb.com/images/M/MV5BMTk0MTQzODQzOV5BMl5BanBnXkFtZTcwMDQ2NzQ3Ng@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 109, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (110, 'Paranormal ACtivity 4', 5280000, '2012-10-19', 'R',
+				'It has been five years since the disappearance of Katie and Hunter, and a suburban family witness strange events in their neighborhood when a woman and a mysterious child move in.',
+				'https://www.youtube.com/watch?v=g7Xn2JqH5ng',
+				'http://ia.media-imdb.com/images/M/MV5BNjAxMzM0MjYwM15BMl5BanBnXkFtZTcwMjMwMjAyOA@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 110, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (111, 'Paranormal Activity: The Marked Ones', 5040000, '2014-01-03', 'R',
+				'When a young man becomes the target of a malevolent entity, he must uncover its true intentions before it takes complete control of him.',
+				'https://www.youtube.com/watch?v=ccE9LeAbPU4',
+				'http://ia.media-imdb.com/images/M/MV5BMjAwNDAxMjc0N15BMl5BanBnXkFtZTgwNDcyNDU3MDE@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 111, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Fantasy', 111, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Thriller', 111, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (112,'Paranormal Activity: The Ghost Dimension', 5280000, '2015-10-23', 'R',
+				'Using a special camera that can see spirits, a family must protect their daughter from an evil entity with a sinister plan.',
+				'https://www.youtube.com/watch?v=Y9Jy2T0uQ9Y',
+				'http://ia.media-imdb.com/images/M/MV5BMjQxMjE5OTA3OF5BMl5BanBnXkFtZTgwMDAxNTg4NjE@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 112, NULL);
+
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (113, 'Sisters', 7080000, '2015-12-18', 'R',
+				'Two sisters decide to throw one last house party before their parents sell their family home.',
+				'https://www.youtube.com/watch?v=vRnhEjP3R-c',
+				'http://ia.media-imdb.com/images/M/MV5BMjM3MzQ5NDE5MF5BMl5BanBnXkFtZTgwODE5OTQyNzE@._V1_SX214_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 113, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (114, 'Hairspray', 7020000, '2007-07-20', 'PG',
+				'Pleasantly plump teenager Tracy Turnblad teaches 1962 Baltimore a thing or two about integration after landing a spot on a local TV dance show.',
+				'https://www.youtube.com/watch?v=iJ53mRO80c0',
+				'http://ia.media-imdb.com/images/M/MV5BMTIyMTMzNzIyNV5BMl5BanBnXkFtZTcwMjM1NDk0MQ@@._V1_UY268_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 114, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Musical', 114, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Romance', 114, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (115, 'Les Misérables', 9480000, '2012-12-25', 'PG_13',
+				'In 19th-century France, Jean Valjean, who for decades has been hunted by the ruthless policeman Javert after breaking parole, agrees to care for a factory workers daughter. The decision changes their lives forever.',
+				'https://www.youtube.com/watch?v=YmvHzCLP6ug',
+				'http://ia.media-imdb.com/images/M/MV5BMTQ4NDI3NDg4M15BMl5BanBnXkFtZTcwMjY5OTI1OA@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 115, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Musical', 115, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Romance', 115, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (116, 'Harry Potter and the Sorcerer''s Stone', 9120000, '2001-11-16', 'PG',
+				'Rescued from the outrageous neglect of his aunt and uncle, a young boy with a great destiny proves his worth while attending Hogwarts School of Witchcraft and Wizardry.',
+				'https://www.youtube.com/watch?v=PbdM1db3JbY',
+				'http://ia.media-imdb.com/images/M/MV5BMTYwNTM5NDkzNV5BMl5BanBnXkFtZTYwODQ4MzY5._V1_UY268_CR6,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Adventure', 116, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Family', 116, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Fantasy', 116, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (117, 'Harry Potter and the Chamber of Secrets', 9660000, '2002-11-15', 'PG',
+				'Harry ignores warnings not to return to Hogwarts, only to find the school plagued by a series of mysterious attacks and a strange voice haunting him.',
+				'https://www.youtube.com/watch?v=1bq0qff4iF8',
+				'http://ia.media-imdb.com/images/M/MV5BMTcxODgwMDkxNV5BMl5BanBnXkFtZTYwMDk2MDg3._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Adventure', 117, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Family', 117, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Fantasy', 117, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (118, 'Harry Potter and the Prisoner of Azkaban', 8640000, '2004-06-04', 'PG',
+				'It''s Harry''s third year at Hogwarts; not only does he have a new "Defense Against the Dark Arts" teacher, but there is also trouble brewing. Convicted murderer Sirius Black has escaped the Wizards'' Prison and is coming after Harry.',
+				'https://www.youtube.com/watch?v=1ZdlAg3j8nI',
+				'http://ia.media-imdb.com/images/M/MV5BMTY4NTIwODg0N15BMl5BanBnXkFtZTcwOTc0MjEzMw@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Adventure', 118, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Family', 118, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Fantasy', 118, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (119, 'Harry Potter and the Goblet of Fire', 9420000, '2005-11-18', 'PG_13',
+				'Harry finds himself mysteriously selected as an under-aged competitor in a dangerous tournament between three schools of magic.',
+				'https://www.youtube.com/watch?v=PFWAOnvMd1Q',
+				'http://ia.media-imdb.com/images/M/MV5BMTI1NDMyMjExOF5BMl5BanBnXkFtZTcwOTc4MjQzMQ@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Adventure', 119, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Family', 119, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Fantasy', 119, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (120, 'Harry Potter and the Order of the Phoenix', 8280000, '2007-07-11', 'PG_13',
+				'With their warning about Lord Voldemort''s return scoffed at, Harry and Dumbledore are targeted by the Wizard authorities as an authoritarian bureaucrat slowly seizes power at Hogwarts.',
+				'https://www.youtube.com/watch?v=y6ZW7KXaXYk',
+				'http://ia.media-imdb.com/images/M/MV5BMTM0NTczMTUzOV5BMl5BanBnXkFtZTYwMzIxNTg3._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Adventure', 120, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Family', 120, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Fantasy', 120, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (121, 'Harry Potter and the Half-Blood Prince', 9180000, '2009-07-15', 'PG',
+				'As Harry Potter begins his sixth year at Hogwarts, he discovers an old book marked as "the property of the Half-Blood Prince" and begins to learn more about Lord Voldemort''s dark past.',
+				'https://www.youtube.com/watch?v=JYLdTuL9Wjw',
+				'http://ia.media-imdb.com/images/M/MV5BNzU3NDg4NTAyNV5BMl5BanBnXkFtZTcwOTg2ODg1Mg@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Adventure', 121, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Family', 121, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Fantasy', 121, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (122, 'Harry Potter and the Deathly Hallows: Part 1', 8760000, '2010-11-19', 'PG_13',
+				'As Harry races against time and evil to destroy the Horcruxes, he uncovers the existence of three most powerful objects in the wizarding world: the Deathly Hallows.',
+				'https://www.youtube.com/watch?v=_EC2tmFVNNE',
+				'http://ia.media-imdb.com/images/M/MV5BMTQ2OTE1Mjk0N15BMl5BanBnXkFtZTcwODE3MDAwNA@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Adventure', 122, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Family', 122, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Fantasy', 122, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (123, 'Harry Potter and the Deathly Hallows: Part 2', 7800000, '2011-07-15', 'PG_13',
+				'Harry, Ron and Hermione search for Voldemort''s remaining Horcruxes in their effort to destroy the Dark Lord as the final battle rages on at Hogwarts.',
+				'https://www.youtube.com/watch?v=5NYt1qirBWg',
+				'http://ia.media-imdb.com/images/M/MV5BMTY2MTk3MDQ1N15BMl5BanBnXkFtZTcwMzI4NzA2NQ@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Adventure', 123, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 123, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Fantasy', 123, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (124, 'Scream', 6660000, '1996-12-20', 'R',
+				'Attempting to cope with her mother''s murder, Sidney and her horror movie-obsessed friends are stalked by a murderer who seems to have a hard time letting the past go.',
+				'https://www.youtube.com/watch?v=23jmjs-rMGI',
+				'http://ia.media-imdb.com/images/M/MV5BMjA2NjU5MTg5OF5BMl5BanBnXkFtZTgwOTkyMzQxMDE@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 124, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Mystery', 124, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (125, 'Scream 2', 7200000, '1997-12-12', 'R',
+				'Two years after the first series of murders, a new psychopath dons the Ghostface costume and a new string of killings begins.',
+				'https://www.youtube.com/watch?v=t-KSPVGLia4',
+				'http://ia.media-imdb.com/images/M/MV5BMTk3MzM3MDQzNV5BMl5BanBnXkFtZTcwNDY0ODQ4NA@@._V1_UY268_CR4,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 125, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Mystery', 125, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (126, 'Scream 3', 6960000, '200-02-04', 'R',
+				'While Sidney and her friends visit the Hollywood set of Stab 3, the third film based on the Woodsboro murders, a new Ghostface begins to terrorize them once again.',
+				'https://www.youtube.com/watch?v=53l0f5LwfdQ',
+				'http://ia.media-imdb.com/images/M/MV5BMTgxMzg2NzQ5NV5BMl5BanBnXkFtZTcwNTY0ODQ4NA@@._V1_UY268_CR4,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 126, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Mystery', 126, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (127, 'Scream 4', 6660000, '2011-04-15', 'R',
+				'Ten years have passed, and Sidney Prescott, who has put herself back together thanks in part to her writing, is visited by the Ghostface Killer.',
+				'https://www.youtube.com/watch?v=IaCvEwm3SXs',
+				'http://ia.media-imdb.com/images/M/MV5BMTQzMzk2OTI3MF5BMl5BanBnXkFtZTcwMTQ0NTk0NA@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 127, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Mystery', 127, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (128, 'Final Destination', 5880000, '200-03-17', 'R',
+				'After a teenager has a terrifying vision of him and his friends dying in a plane crash, he prevents the accident only to have Death hunt them down, one by one.',
+				'https://www.youtube.com/watch?v=lP4Psj7d1ZI',
+				'http://ia.media-imdb.com/images/M/MV5BMTU4OTI4OTI4OF5BMl5BanBnXkFtZTgwMDA1MzkyMTE@._V1_UY268_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 128, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (129, 'Final Destination 2', 5400000, '2003-01-31', 'R',
+				'When Kimberly has a violent premonition of a highway pileup she blocks the freeway, keeping a few others meant to die, safe...Or are they? The survivors mysteriously start dying and it''s up to Kimberly to stop it before she''s next.',
+				'https://www.youtube.com/watch?v=_S9V0uFGKSs',
+				'http://ia.media-imdb.com/images/M/MV5BMjEwMDc5MDg1NV5BMl5BanBnXkFtZTYwNzIzMTg5._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 129, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (130, 'Final Destination 3', 5580000, '2006-02-10', 'R',
+				'In this third installment of the Final Destination series, a student''s premonition of a deadly rollercoaster ride saves her life and a lucky few, but not from death itself which seeks out those who escaped their fate.',
+				'https://www.youtube.com/watch?v=QdG7A377boY',
+				'http://ia.media-imdb.com/images/M/MV5BMTg2MzI0MzczOF5BMl5BanBnXkFtZTcwNzAyODExMw@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 130, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (131, 'The Final Destination', 4920000, '2009-08-28', 'R',
+				'After a young man''s premonition of a deadly race-car crash helps saves the lives of his peers, Death sets out to collect those who evaded their end.',
+				'https://www.youtube.com/watch?v=bkmaPmf8Od0',
+				'http://ia.media-imdb.com/images/M/MV5BMTQyMzQ5NjI2MF5BMl5BanBnXkFtZTcwNDA5MjM2Mg@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 131, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (132, 'Final Destination 5', 5520000, '2011-08-12', 'R',
+				'Survivors of a suspension-bridge collapse learn there''s no way you can cheat Death.',
+				'https://www.youtube.com/watch?v=ugUDNpKurXU',
+				'http://ia.media-imdb.com/images/M/MV5BMTgyOTExNDc1M15BMl5BanBnXkFtZTcwMDA0MTA4NQ@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 132, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (133, 'Scary Movie', 5280000, '200-07-07', 'R',
+				'A year after disposing the body of a man they accidently killed, a group of dumb teenagers are stalked by a bumbling serial killer.',
+				'https://www.youtube.com/watch?v=_dktIVAfjzY',
+				'http://ia.media-imdb.com/images/M/MV5BMTYzMTI3NjQzM15BMl5BanBnXkFtZTcwOTkzMzMyMQ@@._V1_UY268_CR1,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 133, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (134, 'Scary Movie 2', 4980000, '2001-07-04', 'R',
+				'Four teens are tricked by their professor into visiting a haunted house for a school project.',
+				'https://www.youtube.com/watch?v=wsHCoKGxjLk',
+				'http://ia.media-imdb.com/images/M/MV5BMTM5MTY3MDk5OF5BMl5BanBnXkFtZTcwMjc0ODQ4NA@@._V1_UY268_CR4,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 134, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (135, 'Scary Movie 3', 5040000, '2003-10-24', 'PG_13',
+				'In the third installment of the Scary Movie franchise, Cindy has to investigate mysterious crop circles and video tapes, and help the President in preventing an alien invasion.',
+				'https://www.youtube.com/watch?v=g06k4HOlEbg',
+				'http://ia.media-imdb.com/images/M/MV5BNDE2NTIyMjg2OF5BMl5BanBnXkFtZTYwNDEyMTg3._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 135, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (136, 'Scary Movie 4', 4980000, '2006-04-14', 'PG_13',
+				'Cindy finds out the house she lives in is haunted by a little boy and goes on a quest to find out who killed him and why. Also, Alien "Tr-iPods" are invading the world and she has to uncover the secret in order to stop them.',
+				'https://www.youtube.com/watch?v=h0zAlXr1UOs',
+				'http://ia.media-imdb.com/images/M/MV5BMjA5MjM1NDMxOF5BMl5BanBnXkFtZTcwNzkzMjIzMQ@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 136, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (137, 'Scary Movie 5', 5160000, '2013-04-12', 'PG_13',
+				'A couple begin to experience some unusual activity after bringing their lost nieces and nephew home. With the help of home-surveillance cameras, they learn they''re being stalked by a nefarious demon.',
+				'https://www.youtube.com/watch?v=RMDZ8M47j0I',
+				'http://ia.media-imdb.com/images/M/MV5BMTc5OTIxMjQ4NF5BMl5BanBnXkFtZTcwOTAyNDcyOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 137, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (138, 'The Chronicles of Narnia: The Lion, the Witch and the Wardrobe', 8580000, '2005-12-09', 'PG',
+				'Four kids travel through a wardrobe to the land of Narnia and learn of their destiny to free it with the guidance of a mystical lion.',
+				'https://www.youtube.com/watch?v=lWKj41HZBzM',
+				'http://ia.media-imdb.com/images/M/MV5BMTc0NTUwMTU5OV5BMl5BanBnXkFtZTcwNjAwNzQzMw@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Adventure', 138, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Family', 138, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Fantasy', 138, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (139, 'The Chronicles of Narnia: Prince Caspian', 9000000, '2008-05-16', 'PG',
+				'The Pevensie siblings return to Narnia, where they are enlisted to once again help ward off an evil king and restore the rightful heir to the land''s throne, Prince Caspian.',
+				'https://www.youtube.com/watch?v=VqzYukVDqy4',
+				'http://ia.media-imdb.com/images/M/MV5BMTIwOTA4NTE4Ml5BMl5BanBnXkFtZTcwOTI2NTg1MQ@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Adventure', 139, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Family', 139, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Fantasy', 139, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (140, 'The Chronicles of Narnia: The Voyage of the Dawn Treader', 6780000, '2010-12-10', 'PG',
+				'Lucy and Edmund Pevensie return to Narnia with their cousin Eustace where they meet up with Prince Caspian for a trip across the sea aboard the royal ship The Dawn Treader. Along the way they encounter dragons, dwarves, merfolk, and a band of lost warriors before reaching the edge of the world.',
+				'https://www.youtube.com/watch?v=hrJQDPpIK6I',
+				'http://ia.media-imdb.com/images/M/MV5BNjQ2MDQzMzExNl5BMl5BanBnXkFtZTcwMTYzOTc5Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Adventure', 140, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Family', 140, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Fantasy', 140, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (141, 'Spy Kids', 5280000, '2001-03-30', 'PG',
+				'The children of secret-agent parents must save them from danger.',
+				'https://www.youtube.com/watch?v=3l6gfHuBd1U',
+				'http://ia.media-imdb.com/images/M/MV5BMTczMDE0NDY5M15BMl5BanBnXkFtZTcwOTg4NDgxMQ@@._V1_UY268_CR4,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Adventure', 141, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Action', 141, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 141, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (142, 'Spy Kids 2: Island of Lost Dreams', 6000000, '2002-08-07', 'PG',
+				'The Cortez siblings set out for a mysterious island, where they encounter a genetic scientist and a set of rival spy kids.',
+				'https://www.youtube.com/watch?v=RLkRbj8sv8E',
+				'http://ia.media-imdb.com/images/M/MV5BMTM0NzA1Njg2NF5BMl5BanBnXkFtZTYwNzA1MTg5._V1_UY268_CR3,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Adventure', 142, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Action', 142, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 142, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (143, 'Spy Kids 3-D: Game Over', 5040000, '2003-07-25', 'PG',
+				'Carmen''s caught in a virtual reality game designed by the Kids'' new nemesis, the Toymaker (Stallone). It''s up to Juni to save his sister, and ultimately the world.',
+				'https://www.youtube.com/watch?v=cc_w59HfVZE',
+				'http://ia.media-imdb.com/images/M/MV5BMTI4MTQyNTUzMF5BMl5BanBnXkFtZTcwNzE2MDAwMQ@@._V1_UY268_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Adventure', 143, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Action', 143, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 143, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (144, 'Spy Kids: All the Time in the World in 4D', 5340000, '2011-08-19', 'PG',
+				'A retired spy is called back into action, and to bond with her new step-children, she invites them along for the adventure to stop the evil Timekeeper from taking over the world.',
+				'https://www.youtube.com/watch?v=C8uZYU-iDCk',
+				'http://ia.media-imdb.com/images/M/MV5BMTgwOTk1NjQ0NV5BMl5BanBnXkFtZTcwNTk4MDI3NQ@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Adventure', 144, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Action', 144, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 144, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (145, 'High School Musical', 5880000, '2006-01-20', 'G',
+				'Troy and Gabriella - two teens who are worlds apart - meet at a karaoke contest and discover their mutual love for music.',
+				'https://www.youtube.com/watch?v=U3G1BogR-68',
+				'http://ia.media-imdb.com/images/M/MV5BMTI4NzMzMDM3Nl5BMl5BanBnXkFtZTcwNjgzMjU0MQ@@._V1_UY268_CR8,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Family', 145, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 145, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 145, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (146, 'High School Musical 2', 6240000, '2007-08-17', 'G',
+				'School''s out for summer and the East High Wildcats are ready to make it the time of their lives after landing jobs in a wealthy country club owned by Sharpay and Ryan''s family.',
+				'https://www.youtube.com/watch?v=8UiHFHF-Nqk',
+				'http://ia.media-imdb.com/images/M/MV5BNjI5ODI4NTc1MF5BMl5BanBnXkFtZTgwMDg3ODYzMjE@._V1_UY268_CR5,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Family', 146, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 146, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 146, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (147, 'High School Musical 3: Senior Year', 6720000, '2008-10-24', 'G',
+				'As seniors in high school, Troy and Gabriella struggle with the idea of being separated from one another as college approaches. Along with the rest of the Wildcats, they stage a spring musical to address their experiences, hopes and fears about their future.',
+				'https://www.youtube.com/watch?v=1S8RTKL5cW8',
+				'http://ia.media-imdb.com/images/M/MV5BNDE1NjU2NTMyNV5BMl5BanBnXkFtZTcwMTg3NDA3MQ@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Family', 147, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 147, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 147, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (148, 'Corpse Bride', 4620000, '2005-09-23', 'PG',
+				'When a shy groom practices his wedding vows in the inadvertent presence of a deceased young woman, she rises from the grave assuming he has married her.',
+				'https://www.youtube.com/watch?v=AGACeWVdFqo',
+				'http://ia.media-imdb.com/images/M/MV5BMTk1MTY1NjU4MF5BMl5BanBnXkFtZTcwNjIzMTEzMw@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Family', 148, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Animation', 148, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Fantasy', 148, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (149, 'The Nightmare Before Christmas', 4560000, '1993-10-29', 'G',
+				'Jack Skellington, king of Halloween Town, discovers Christmas Town, but doesn''t quite understand the concept.',
+				'https://www.youtube.com/watch?v=wr6N_hZyBCk',
+				'http://ia.media-imdb.com/images/M/MV5BMTc5MDY0MjkwNV5BMl5BanBnXkFtZTcwNTk2Njk3OA@@._V1_UY268_CR9,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Family', 149, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Animation', 149, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Fantasy', 149, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (150, 'Coraline', 6000000, '2009-02-06', 'PG',
+				'An adventurous girl finds another world that is a strangely idealized version of her frustrating home, but it has sinister secrets.',
+				'https://www.youtube.com/watch?v=LO3n67BQvh0',
+				'http://ia.media-imdb.com/images/M/MV5BMzQxNjM5NzkxNV5BMl5BanBnXkFtZTcwMzg5NDMwMg@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Animation', 150, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Fantasy', 150, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (151, 'Insidious', 6180000, '2011-04-01', 'PG_13',
+				'A family looks to prevent evil spirits from trapping their comatose child in a realm called The Further.',
+				'https://www.youtube.com/watch?v=zuZnRUcoWos',
+				'http://ia.media-imdb.com/images/M/MV5BMTYyOTAxMDA0OF5BMl5BanBnXkFtZTcwNzgwNTc1NA@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Mystery', 151, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Fantasy', 151, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 151, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (152, 'Insidious: Chapter 2', 6360000, '2013-09-13', 'PG_13',
+				'The Lamberts believe that they have defeated the spirits that have haunted their family, but they soon discover that evil is not beaten so easily.',
+				'https://www.youtube.com/watch?v=fBbi4NeebAk',
+				'http://ia.media-imdb.com/images/M/MV5BMTg0OTA5ODIxNF5BMl5BanBnXkFtZTcwNTUzNDg4OQ@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Thriller', 152, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Fantasy', 152, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 152, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (153, 'Insidious: Chapter 3', 5820000, '2015-06-05', 'PG_13',
+				'A prequel set before the haunting of the Lambert family that reveals how gifted psychic Elise Rainier reluctantly agrees to use her ability to contact the dead in order to help a teenage girl who has been targeted by a dangerous supernatural entity.',
+				'https://www.youtube.com/watch?v=7DNXUvHm-S8',
+				'http://ia.media-imdb.com/images/M/MV5BMTUwNDU4NjE1N15BMl5BanBnXkFtZTgwOTc0MzA5NDE@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Thriller', 153, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Fantasy', 153, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 153, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (154, 'Divergent', 8340000, '2014-03-21', 'PG_13',
+				'In a world divided by factions based on virtues, Tris learns she''s Divergent and won''t fit in. When she discovers a plot to destroy Divergents, Tris and the mysterious Four must find out what makes Divergents dangerous before it''s too late.',
+				'https://www.youtube.com/watch?v=Aw7Eln_xuWc',
+				'http://ia.media-imdb.com/images/M/MV5BMTYxMzYwODE4OV5BMl5BanBnXkFtZTgwNDE5MzE2MDE@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Sci-Fi', 154, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Mystery', 154, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Adventure', 154, NULL);
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (155, 'Insurgent', 7140000, '2015-03-20', 'PG_13',
+				'Beatrice Prior must confront her inner demons and continue her fight against a powerful alliance which threatens to tear her society apart with the help from others on her side.',
+				'https://www.youtube.com/watch?v=suZcGoRLXkU',
+				'http://ia.media-imdb.com/images/M/MV5BMTgxOTYxMTg3OF5BMl5BanBnXkFtZTgwMDgyMzA2NDE@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Sci-Fi', 155, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Thriller', 155, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Adventure', 155, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (156, 'Allegiant', 7200000, '2016-03-18', 'PG_13',
+				'After the earth-shattering revelations of Insurgent, Tris must escape with Four beyond the wall that encircles Chicago, to finally discover the shocking truth of the world around them.',
+				'https://www.youtube.com/watch?v=fe-P2iv4Vxw',
+				'http://ia.media-imdb.com/images/M/MV5BMjEyOTI3NDQwN15BMl5BanBnXkFtZTgwNjExOTIwODE@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Mystery', 156, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Action', 156, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Adventure', 156, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (157, 'The Hunger Games', 8520000, '2012-03-23', 'PG_13',
+				'Katniss Everdeen voluntarily takes her younger sister''s place in the Hunger Games, a televised competition in which two teenagers from each of the twelve Districts of Panem are chosen at random to fight to the death.',
+				'https://www.youtube.com/watch?v=mfmrPu43DF8',
+				'http://ia.media-imdb.com/images/M/MV5BMjA4NDg3NzYxMF5BMl5BanBnXkFtZTcwNTgyNzkyNw@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Sci-Fi', 157, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 157, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Adventure', 157, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (158, 'The Hunger Games: Catching Fire', 8760000, '2013-11-22', 'PG_13',
+				'Katniss Everdeen and Peeta Mellark become targets of the Capitol after their victory in the 74th Hunger Games sparks a rebellion in the Districts of Panem.',
+				'https://www.youtube.com/watch?v=MkvUNfySGQU',
+				'http://ia.media-imdb.com/images/M/MV5BMTAyMjQ3OTAxMzNeQTJeQWpwZ15BbWU4MDU0NzA1MzAx._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Sci-Fi', 158, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Thriller', 158, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Adventure', 158, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (159, 'The Hunger Games: Mockingjay - Part 1', 7380000, '2014-11-21', 'PG_13',
+				'Katniss Everdeen is in District 13 after she shatters the games forever. Under the leadership of President Coin and the advice of her trusted friends, Katniss spreads her wings as she fights to save Peeta and a nation moved by her courage.',
+				'https://www.youtube.com/watch?v=C_Tsj_wTJkQ',
+				'http://ia.media-imdb.com/images/M/MV5BMTcxNDI2NDAzNl5BMl5BanBnXkFtZTgwODM3MTc2MjE@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Sci-Fi', 159, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Thriller', 159, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Adventure', 159, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (160, 'The Hunger Games: Mockingjay - Part 2', 8220000, '2015-11-20', 'PG_13',
+				'As the war of Panem escalates to the destruction of other districts, Katniss Everdeen, the reluctant leader of the rebellion, must bring together an army against President Snow, while all she holds dear hangs in the balance.',
+				'https://www.youtube.com/watch?v=KmYNkasYthg',
+				'http://ia.media-imdb.com/images/M/MV5BNjQzNDI2NTU1Ml5BMl5BanBnXkFtZTgwNTAyMDQ5NjE@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Sci-Fi', 160, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Adventure', 160, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (161, 'Memento', 6780000, '2001-05-25', 'R',
+				'A man creates a strange system to help him remember things; so he can hunt for the murderer of his wife without his short-term memory loss being an obstacle.',
+				'https://www.youtube.com/watch?v=nHozKtsvag0',
+				'http://ia.media-imdb.com/images/M/MV5BMTc4MjUxNDAwN15BMl5BanBnXkFtZTcwMDMwNDg3OA@@._V1_UY268_CR9,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Mystery', 161, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Thriller', 161, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (162, 'Silver Linings Playbook', 7320000, '2012-12-25', 'R',
+				'After a stint in a mental institution, former teacher Pat Solitano moves back in with his parents and tries to reconcile with his ex-wife. Things get more challenging when Pat meets Tiffany, a mysterious girl with problems of her own.',
+				'https://www.youtube.com/watch?v=tFvMk983Il8',
+				'http://ia.media-imdb.com/images/M/MV5BMTM2MTI5NzA3MF5BMl5BanBnXkFtZTcwODExNTc0OA@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 162, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 162, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Romance', 162, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (163, 'Joy', 7440000, '2015-12-25', 'PG_13',
+				'Joy is the story of the title character, who rose to become founder and matriarch of a powerful family business dynasty.',
+				'https://www.youtube.com/watch?v=eylIwirzos8',
+				'http://ia.media-imdb.com/images/M/MV5BMjIwODU1NzgxMl5BMl5BanBnXkFtZTgwNDUwMzc1ODE@._V1_UY268_CR35,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 163, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 163, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Biography', 163, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (164, 'The Lovely Bones', 8100000, '2010-01-15', 'PG_13',
+				'Centers on a young girl who has been murdered and watches over her family - and her killer - from purgatory. She must weigh her desire for vengeance against her desire for her family to heal.',
+				'https://www.youtube.com/watch?v=jvWXV-c2hWo',
+				'http://ia.media-imdb.com/images/M/MV5BMjAwNDA1MTM2MF5BMl5BanBnXkFtZTcwMzg3NDcwMw@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 164, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Fantasy', 164, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (165, 'The Witch', 5520000, '2016-02-19', 'R',
+				'A family in 1630s New England is torn apart by the forces of witchcraft, black magic and possession.',
+				'https://www.youtube.com/watch?v=iQXmlf3Sefg',
+				'http://ia.media-imdb.com/images/M/MV5BMTY4MTU2NjMyNV5BMl5BanBnXkFtZTgwMzUwMDk4NzE@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 165, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Mystery', 165, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (166, 'The Babadook', 5580000, '2014-11-28', 'R',
+				'A single mother, plagued by the violent death of her husband, battles with her son''s fear of a monster lurking in the house, but soon discovers a sinister presence all around her.',
+				'https://www.youtube.com/watch?v=k5WQZzDRVtw',
+				'http://ia.media-imdb.com/images/M/MV5BMTk0NzMzODc2NF5BMl5BanBnXkFtZTgwOTYzNTM1MzE@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 166, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 166, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Thriller', 166, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (167, 'The Blair Witch Project', 4860000, '1999-07-30', 'R',
+				'Three film students vanish after traveling into a Maryland forest to film a documentary on the local Blair Witch legend, leaving only their footage behind.',
+				'https://www.youtube.com/watch?v=a_Hw4bAUj8A',
+				'http://ia.media-imdb.com/images/M/MV5BMTg0NjMyNTY4OF5BMl5BanBnXkFtZTYwOTMxOTY4._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 167, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (168, 'Quarantine', 5340000, '2008-10-10', 'R',
+				'A television reporter and her cameraman are trapped inside a building quarantined by the CDC, after the outbreak of a mysterious virus which turns humans into bloodthirsty killers.',
+				'https://www.youtube.com/watch?v=GQ4EyBGKDM4',
+				'http://ia.media-imdb.com/images/M/MV5BMjY0MDgwNTQ4OF5BMl5BanBnXkFtZTcwMzQzNjY3MQ@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 168, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Sci-Fi', 168, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Thriller', 168, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (169, 'Bring It On', 5880000, '2000-08-25', 'PG_13',
+				'A champion high school cheerleading squad discovers its previous captain stole all their best routines from an inner-city school and must scramble to compete at this year''s championships.',
+				'https://www.youtube.com/watch?v=IP6mF9YffvQ',
+				'http://ia.media-imdb.com/images/M/MV5BMzY5NTA3Mjg1OV5BMl5BanBnXkFtZTgwMDI5MDgxMTE@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Sport', 169, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 169, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (170, 'Bring It On Again', 54000000, '2004-01-13', 'PG_13',
+				'When new students can''t get onto their college cheerleading team, they form their own squad and prepare for a cheer off.',
+				'https://www.youtube.com/watch?v=mN-ms0ainlk',
+				'http://ia.media-imdb.com/images/M/MV5BMjExODY0NDI3OV5BMl5BanBnXkFtZTcwNDU3ODUyMQ@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Sport', 170, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 170, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (171, 'Bring It On: All or Nothing', 5940000, '2006-08-08', 'PG_13',
+				'A transfer student to a rough high school tries joining the cheer-leading squad and she not only faces off against the head cheerleader, but against her former school in preparation for a cheer-off competition.',
+				'https://www.youtube.com/watch?v=R6p03mczWbE',
+				'http://ia.media-imdb.com/images/M/MV5BMTMxMjk3MzIyMl5BMl5BanBnXkFtZTcwODAyNjMzMQ@@._V1_UY268_CR5,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Sport', 171, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 171, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (172, 'Bring It On: In It to Win It', 5400000, '2007-12-18','PG_13',
+				'Southern California high school senior Carson arrives at the all-important "Cheer Camp Nationals" determined to lead her squad, the West High Sharks, to victory. But chic New Yorker Brooke and her team, the East High Jets, are equally steadfast in their pursuit of the competition''s coveted "Spirit Stick."',
+				'https://www.youtube.com/watch?v=Fp1R9hAxwMs',
+				'http://ia.media-imdb.com/images/M/MV5BMTgxMDkxNTQ0MF5BMl5BanBnXkFtZTcwMDM2MDU1MQ@@._V1_UY268_CR5,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Sport', 172, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 172, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (173, 'Bring It On: Fight to the Finish', 6120000, '2009-09-01', 'PG_13',
+				'Lina Cruz is a tough, sharp-witted Latina cheerleader from East L.A. who transfers to a posh, West Los Angeles high school after her widowed mother remarries a wealthy man and Lina not only finds herself a fish-out-of-her-environment at her new high school but she faces off against Avery, the snobbish and ultra-competitive all-star cheer-leading captain to qualify for a spot on her new school''s cheer-leading team with the help of her new sheltered stepsister, Skylar, and her former teammates whom she calls up to help her.',
+				'https://www.youtube.com/watch?v=X6ZQltG65sI',
+				'http://ia.media-imdb.com/images/M/MV5BMTg3NjMzOTExNl5BMl5BanBnXkFtZTcwNTY4ODc3Mg@@._V1_UY268_CR3,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Sport', 173, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 173, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (174, 'Step Up', 6240000, '2006-08-11', 'PG_13',
+				'Tyler Gage receives the opportunity of a lifetime after vandalizing a performing arts school, gaining him the chance to earn a scholarship and dance with an up and coming dancer, Nora.',
+				'https://www.youtube.com/watch?v=ZgnmCqA25-o',
+				'http://ia.media-imdb.com/images/M/MV5BMTIxMDM5Mjc1Nl5BMl5BanBnXkFtZTcwMDkyODQzMQ@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Crime', 174, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 174, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Music', 174, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (175, 'Step Up 2: The Streets', 5880000, '2008-02-14', 'PG_13',
+				'Romantic sparks occur between two dance students from different backgrounds at the Maryland School of the Arts.',
+				'https://www.youtube.com/watch?v=IwckbmyfmwQ',
+				'http://ia.media-imdb.com/images/M/MV5BMTc0NzYxOTgxOF5BMl5BanBnXkFtZTcwMTgxMjc1MQ@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Musical', 175, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 175, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Music', 175, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (176, 'Step Up 3D', 6420000, '2010-08-06', 'PG_13',
+				'A tight-knit group of New York City street dancers find themselves pitted against the world''s best hip hop dancers in a high-stakes showdown.',
+				'https://www.youtube.com/watch?v=TZe1Qz2twbE',
+				'http://ia.media-imdb.com/images/M/MV5BMTcxNDU2NTE4Nl5BMl5BanBnXkFtZTcwNzQ1MTEzMw@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Romance', 176, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 176, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Music', 176, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (177, 'Step Up Revolution', 5940000, '2012-07-27', 'PG_13',
+				'Emily arrives in Miami with aspirations to become a professional dancer. She sparks with Sean, the leader of a dance crew whose neighborhood is threatened by Emily''s father''s development plans.',
+				'https://www.youtube.com/watch?v=aEAt9eTi72w',
+				'http://ia.media-imdb.com/images/M/MV5BMjg1NjgyOTM2OF5BMl5BanBnXkFtZTcwMDIxMDE2Nw@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Romance', 177, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 177, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Music', 177, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (178, 'Step Up All In', 6720000, '2014-08-08', 'PG_13',
+				'All-stars from the previous Step Up installments come together in glittering Las Vegas, battling for a victory that could define their dreams and their careers.',
+				'https://www.youtube.com/watch?v=-cBttI0W80U',
+				'http://ia.media-imdb.com/images/M/MV5BMTUzMjUyODA1Nl5BMl5BanBnXkFtZTgwMjIwNTQ5MTE@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Romance', 178, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 178, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Music', 178, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (179, 'Titanic', 11640000, '1997-12-19', 'PG_13',
+				'A seventeen-year-old aristocrat falls in love with a kind, but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.',
+				'https://www.youtube.com/watch?v=zCy5WQ9S4c0',
+				'http://ia.media-imdb.com/images/M/MV5BMjExNzM0NDM0N15BMl5BanBnXkFtZTcwMzkxOTUwNw@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Romance', 179, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 179, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (180, 'The Book Thief', 7860000, '2013-11-27', 'PG_13',
+				'While subjected to the horrors of World War II Germany, young Liesel finds solace by stealing books and sharing them with others. In the basement of her home, a Jewish refugee is being protected by her adoptive parents.',
+				'https://www.youtube.com/watch?v=92EBSmxinus',
+				'http://ia.media-imdb.com/images/M/MV5BOTE3NzkyMjAyNF5BMl5BanBnXkFtZTgwMDc5MTE0MDE@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('War', 180, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 180, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (181, 'Hush', 4860000, '2016-04-08', 'R',
+				'A deaf writer who retreated into the woods to live a solitary life must fight for her life in silence when a masked killer appears at her window.',
+				'https://www.youtube.com/watch?v=Q_P8WCbhC6s',
+				'http://ia.media-imdb.com/images/M/MV5BOWQ4OTdlODQtMDc3Yy00MGVmLWExYjUtOGI0Yjg4MDQzNDNhXkEyXkFqcGdeQXVyNjIzMzkyMzk@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Thriller', 181, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Horror', 181, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (182, 'The Theory of Everything', 7380000, '2014-11-26', 'PG_13',
+				'A look at the relationship between the famous physicist Stephen Hawking and his wife.',
+				'https://www.youtube.com/watch?v=LUayjO_KgsQ',
+				'http://ia.media-imdb.com/images/M/MV5BMTAwMTU4MDA3NDNeQTJeQWpwZ15BbWU4MDk4NTMxNTIx._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Romance', 182, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 182, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Biography', 182, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (183, 'The Choice', 6660000, '2016-02-06', 'PG_13',
+				'Travis and Gabby first meet as neighbors in a small coastal town and wind up in a relationship that is tested by life''s most defining events.',
+				'https://www.youtube.com/watch?v=nWPM1jTnuuo',
+				'http://ia.media-imdb.com/images/M/MV5BMTYzMDA2ODcxMV5BMl5BanBnXkFtZTgwODMzOTMzNzE@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Romance', 183, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 183, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (184, 'The Longest Ride', 7680000, '2015-04-10', 'PG_13',
+				'The lives of a young couple intertwine with a much older man, as he reflects back on a past love.',
+				'https://www.youtube.com/watch?v=tpwHjiubFss',
+				'http://ia.media-imdb.com/images/M/MV5BMzIzMjg0NjQwNF5BMl5BanBnXkFtZTgwODAwOTE4MzE@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Romance', 184, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 184, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (185, 'The Best of Me', 7080000, '2014-10-17', 'PG_13',
+				'A pair of former high school sweethearts reunite after many years when they return to visit their small hometown.',
+				'https://www.youtube.com/watch?v=cQszhfoP_WI',
+				'http://ia.media-imdb.com/images/M/MV5BMzQ5Njg3Njk5N15BMl5BanBnXkFtZTgwODIwODIxMjE@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Romance', 185, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 185, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (186, 'Safe Haven', 6900000, '2013-02-14', 'PG_13',
+				'A young woman with a mysterious past lands in Southport, North Carolina where her bond with a widower forces her to confront the dark secret that haunts her.',
+				'https://www.youtube.com/watch?v=p4vhm3_-3VM',
+				'http://ia.media-imdb.com/images/M/MV5BMTg4MzcxODA3OV5BMl5BanBnXkFtZTcwMTYzNDkwOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Romance', 186, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 186, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Thriller', 186, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (187, 'The Lucky One', 6060000, '2012-04-20', 'PG_13',
+				'A Marine travels to North Carolina after serving three tours in Iraq and searches for the unknown woman he believes was his good luck charm during the war.',
+				'https://www.youtube.com/watch?v=MKqaiQZdv3c',
+				'http://ia.media-imdb.com/images/M/MV5BMTg5NDk3MjAzMF5BMl5BanBnXkFtZTcwMjUyNzExNw@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Romance', 187, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 187, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (188, 'The Last Song', 6420000, '2010-03-31', 'PG',
+				'A rebellious girl is sent to a Southern beach town for the summer to stay with her father. Through their mutual love of music, the estranged duo learn to reconnect.',
+				'https://www.youtube.com/watch?v=7Bmuzr8K5ak',
+				'http://ia.media-imdb.com/images/M/MV5BMjE2MTcyMjMyNF5BMl5BanBnXkFtZTgwODg2ODU1MDE@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Music', 188, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 188, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Family', 188, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (189, 'Dear John', 7080000, '2010-02-05', 'PG_13',
+				'A romantic drama about a soldier who falls for a conservative college student while he''s home on leave.',
+				'https://www.youtube.com/watch?v=r0fq5dd0C60',
+				'http://ia.media-imdb.com/images/M/MV5BMTk1NDEzMTU5NV5BMl5BanBnXkFtZTcwNTI3MTk5Mg@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Romance', 189, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 189, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('War', 189, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (190, 'Nights in Rodanthe', 5820000, '2008-09-26', 'PG_13',
+				'A doctor who is traveling to see his estranged son sparks with an unhappily married woman at a North Carolina inn.',
+				'https://www.youtube.com/watch?v=Cy3zR_mdUXA',
+				'http://ia.media-imdb.com/images/M/MV5BMTI2MDA0MTI0Ml5BMl5BanBnXkFtZTcwMDkzNDMwMg@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Romance', 190, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 190, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (191, 'A Walk to Remember', 6060000, '2002-01-25', 'PG',
+				'Love and loss throughout two very young lives.',
+				'https://www.youtube.com/watch?v=EgdoQ8Oxu2E',
+				'http://ia.media-imdb.com/images/M/MV5BMTM1MTYzNjA3M15BMl5BanBnXkFtZTcwMjk2NTE4Mg@@._V1_UY268_CR2,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Romance', 191, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 191, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (192, 'Message in a Bottle', 7860000, '1999-02-12', 'PG_13',
+				'A woman discovers a tragic love letter in a bottle on a beach, and is determined to track down its author.',
+				'https://www.youtube.com/watch?v=0wCokmQ3wAA',
+				'http://ia.media-imdb.com/images/M/MV5BMTQyMDMxMDkwNV5BMl5BanBnXkFtZTcwMDQ0NzcyMQ@@._V1_UY268_CR9,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Romance', 192, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 192, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (193, 'Se7en', 7620000, '1995-09-22', 'R',
+				'Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his modus operandi.',
+				'https://www.youtube.com/watch?v=J4YV2_TcCoE',
+				'http://ia.media-imdb.com/images/M/MV5BMTQwNTU3MTE4NF5BMl5BanBnXkFtZTcwOTgxNDM2Mg@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Mystery', 193, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Drama', 193, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Crime', 193, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (194, 'The Adjustment Bureau', 6360000, '2011-03-04', 'PG_13',
+				'The affair between a politician and a contemporary dancer is affected by mysterious forces keeping the lovers apart.',
+				'https://www.youtube.com/watch?v=wZJ0TP4nTaE',
+				'http://ia.media-imdb.com/images/M/MV5BMTU3ODg3MDAxMl5BMl5BanBnXkFtZTcwMjc0MDMzNA@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Romance', 194, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Sci-Fi', 194, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Thriller', 194, NULL);
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (195, 'This Is the End', 6420000, '2013-06-12', 'R',
+				'While attending a party at James Franco''s house, Seth Rogen, Jay Baruchel and many other celebrities are faced with the apocalypse.',
+				'https://www.youtube.com/watch?v=Yma-g4gTwlE',
+				'http://ia.media-imdb.com/images/M/MV5BMTQxODE3NjM1Ml5BMl5BanBnXkFtZTcwMzkzNjc4OA@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 195, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Fantasy', 195, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (196, 'Sleepover', 5340000, '2004-07-09', 'PG',
+				'Four best friends, desperate to improve their social status, enter into an all-night scavenger hunt against the popular clique in their school.',
+				'https://www.youtube.com/watch?v=jt7QIaGnm28',
+				'http://ia.media-imdb.com/images/M/MV5BMTA4ODg1OTk2MjJeQTJeQWpwZ15BbWU3MDc4MzIyNzQ@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 196, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Romance', 196, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (197, 'Dodgeball: A True Underdog Story', 5520000, '2004-06-18', 'PG_13',
+				'A group of misfits enter a Las Vegas dodgeball tournament in order to save their cherished local gym from the onslaught of a corporate health fitness chain.',
+				'https://www.youtube.com/watch?v=W-XbDZUnUmw',
+				'http://ia.media-imdb.com/images/M/MV5BMTIwMzE2MjM4MV5BMl5BanBnXkFtZTYwNjA1OTY3._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 197, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Sport', 197, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (198, 'Clueless', 5820000, '1995-07-19', 'PG_13',
+				'A rich high school student tries to boost a new pupil''s popularity, but reckons without affairs of the heart getting in the way.',
+				'https://www.youtube.com/watch?v=RS0KyTZ3Ie4',
+				'http://ia.media-imdb.com/images/M/MV5BMTgxODIxODE2MF5BMl5BanBnXkFtZTgwOTA4NjQxMTE@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 198, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Romance', 198, NULL);
+
+
+INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
+VALUES (199, 'Legally Blonde', 5760000, '2001-07-13', 'PG_13',
+				'When a blonde sorority queen is dumped by her boyfriend, she decides to follow him to law school to get him back and, once there, learns she has more legal savvy than she ever imagined.',
+				'https://www.youtube.com/watch?v=E8I-Qzmbqnc',
+				'http://ia.media-imdb.com/images/M/MV5BNTEyNjUwMTkxMV5BMl5BanBnXkFtZTcwNjk0NDk0NA@@._V1_UX182_CR0,0,182,268_AL_.jpg');
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Comedy', 199, NULL);
+
+INSERT INTO GENRE (name, movie_id, show_id)
+VALUES ('Romance', 199, NULL);
+
+
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
 VALUES (200, 'The Lion King', 5340000, '1994-06-24', 'G',
@@ -1947,7 +3336,7 @@ VALUES ('Drama', 307, NULL);
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
 VALUES (308, 'Joe Dirt 2: Beautiful Loser', 5460000, '2015-07-16', 'PG-13',
 				'Joe Dirt (David Spade) returns with a mop in his hand and a mullet on his noggin. The white-trash hero embarks on a journey through the American heartland and time itself as he finds himself caught in the past.',
-				'https://www.youtube.com/watch?v=Z0zo5W5QUY0'),
+				'https://www.youtube.com/watch?v=Z0zo5W5QUY0',
 				'http://ia.media-imdb.com/images/M/MV5BMTE5NDgxNzU1MV5BMl5BanBnXkFtZTYwODQ4ODE3._V1._SX93_SY140_.jpg');
 
 INSERT INTO GENRE (name, movie_id, show_id)
@@ -2411,7 +3800,7 @@ VALUES ('Fantasy', 332, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (333, 'We're the Millers', 6600000, '2013-08-07', 'R',
+VALUES (333, 'We''re the Millers', 6600000, '2013-08-07', 'R',
 				'After being robbed of a week''s take, small-time pot dealer David is forced by his boss to go to Mexico to pick up a load of marijuana. In order to improve his odds of making it past the border, David asks the broke stripper Rose and two local teenagers to join him and pretend they''re on a family holiday.',
 				'https://www.youtube.com/watch?v=0Vsy5KzsieQ',
 				'http://ia.media-imdb.com/images/M/MV5BMjA5Njc0NDUxNV5BMl5BanBnXkFtZTcwMjYzNzU1OQ@@._V1._SX95_SY140_.jpg');
@@ -2941,7 +4330,7 @@ VALUES ('Thriller', 361, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (362, 'Schindler's List', 11700000, '1993-12-15', 'R',
+VALUES (362, 'Schindler''s List', 11700000, '1993-12-15', 'R',
 				'Oskar Schindler is a vainglorious and greedy German businessman who becomes an unlikely humanitarian amid the barbaric Nazi reign when he feels compelled to turn his factory into a refuge for Jews. Based on the true story of Oskar Schindler who managed to save about 1100 Jews from being gassed at the Auschwitz concentration camp, it is a testament to the good in all of us.',
 				'https://www.youtube.com/watch?v=dwfIf1WMhgc',
 				'http://ia.media-imdb.com/images/M/MV5BMzMwMTM4MDU2N15BMl5BanBnXkFtZTgwMzQ0MjMxMDE@._V1._SX91_SY140_.jpg');
