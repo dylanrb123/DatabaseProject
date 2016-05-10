@@ -292,7 +292,7 @@ VALUES ('Horror', 107, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (108, 'Paranormal Activity 2', 5460000, 'R', '2010-10-22',
+VALUES (108, 'Paranormal Activity 2', 5460000, '2010-10-22', 'R',
 				'After experiencing what they think are a series of "break-ins", a family sets up security cameras around their home, only to realize that the events unfolding before them are more sinister than they seem.',
 				'https://www.youtube.com/watch?v=Dg4mPJdyg_E',
 				'http://ia.media-imdb.com/images/M/MV5BMjE4NDgwMzAxNF5BMl5BanBnXkFtZTcwNTE3OTk4Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg');
@@ -1955,7 +1955,7 @@ VALUES ('Fantasy', 221, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (222, 'Spirited Away', 7500000, '2003-29-28', 'PG',
+VALUES (222, 'Spirited Away', 7500000, '2003-2-28', 'PG',
 				'During her family''s move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.',
 				'https://www.youtube.com/watch?v=ByXuk9QqQkk',
 				'http://ia.media-imdb.com/images/M/MV5BMjYxMDcyMzIzNl5BMl5BanBnXkFtZTYwNDg2MDU3._V1_.jpg');
