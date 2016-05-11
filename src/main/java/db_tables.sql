@@ -1,10 +1,10 @@
 CREATE TABLE Movie (
   id        int   AUTO_INCREMENT,
-  name            varchar(50),
+  name            varchar(500),
   length          int,
   release_date    date,
   mpaa_rating     varchar(5),
-  summary         varchar(500),
+  summary         varchar(5000),
   trailer_url     varchar(200),
   poster_url      varchar(200),
 
@@ -34,7 +34,7 @@ CREATE TABLE Show (
   start_year      int,
   end_year        int,
   rating          varchar(5), //PG-13, etc. --we doing a user rating, like 3.5/5?
-  summary         varchar(500),
+  summary         varchar(5000),
 
   PRIMARY KEY (id));
 
@@ -61,9 +61,9 @@ CREATE TABLE Episode (
 
 
 CREATE TABLE User_Review (
-  id              int AUTO_INCREMENT,
+  id              bigint AUTO_INCREMENT,
   username        varchar(30),
-  star_rating     real,
+  star_rating     int,
   review_date     date,
   title           varchar(50),
   body            varchar(500),
@@ -72,7 +72,7 @@ CREATE TABLE User_Review (
 
 CREATE TABLE review_movie (
   id              int AUTO_INCREMENT,
-  review_id       int,
+  review_id       bigint,
   movie_id        int,
 
   PRIMARY KEY (id),
