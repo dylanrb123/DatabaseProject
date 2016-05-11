@@ -10,12 +10,13 @@ public class Show {
     private String showName;
     private int startYear;
     private int endYear;
-    private int rating;
+    private String rating;
     private List<String> genres;
     private String summary;
+    private List<Season> seasons;
 
-    public Show(int showID, String showName, int startYear, int endYear,int rating,
-        List<String> genres, String summary){
+    public Show(int showID, String showName, int startYear, int endYear, String rating,
+        List<String> genres, String summary, List<Season> seasons){
         this.showID = showID;
         this.showName = showName;
         this.startYear = startYear;
@@ -23,6 +24,7 @@ public class Show {
         this.rating = rating;
         this.genres = genres;
         this.summary = summary;
+        this.setSeasons(seasons);
     }
 
     public int getShowId(){
@@ -57,11 +59,11 @@ public class Show {
         this.endYear = endYear;
     }
 
-    public int getRating(){
+    public String getRating(){
         return rating;
     }
 
-    public void setRating(int rating){
+    public void setRating(String rating){
         this.rating = rating;
     }
 
@@ -94,5 +96,11 @@ public class Show {
     }
 
 
+    public List<Season> getSeasons() {
+        return seasons;
+    }
 
+    public void setSeasons(List<Season> seasons) {
+        this.seasons = seasons;
+    }
 }

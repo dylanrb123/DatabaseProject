@@ -1,6 +1,7 @@
 package DataSources;
 
 import DataAccessObjects.SeasonDao;
+import Models.Episode;
 import Models.Season;
 import Scripts.DatabaseScripts;
 import org.joda.time.DateTime;
@@ -41,7 +42,7 @@ public class SeasonDataSourceH2 implements SeasonDao {
                     Integer.parseInt(endDateList[1]), Integer.parseInt(endDateList[2]), 0, 0);
             String posterUrl = resultSet.getString("poster_url");
 
-            seasons.add(new Season(seasonId, seasonNumber, startDateFinal, endDateFinal, posterUrl));
+            seasons.add(new Season(seasonId, seasonNumber, startDateFinal, endDateFinal, posterUrl, new ArrayList<Episode>()));
         }
 
         return seasons;

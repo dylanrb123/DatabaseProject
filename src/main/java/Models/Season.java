@@ -2,6 +2,8 @@ package Models;
 
 import org.joda.time.DateTime;
 
+import java.util.List;
+
 /**
  * @author Grant Salk <gas7933@rit.edu>
  */
@@ -11,13 +13,15 @@ public class Season {
     private DateTime startDate;
     private DateTime endDate;
     private String posterURL;
+    private List<Episode> episodes;
 
-    public Season(int seasonId, int seasonNumber, DateTime startDate, DateTime endDate, String posterURL){
+    public Season(int seasonId, int seasonNumber, DateTime startDate, DateTime endDate, String posterURL, List<Episode> episodes){
         this.seasonId = seasonId;
         this.seasonNumber = seasonNumber;
         this.startDate = startDate;
         this.endDate = endDate;
         this.posterURL = posterURL;
+        this.setEpisodes(episodes);
     }
 
     public int getSeasonId() {
@@ -67,5 +71,13 @@ public class Season {
         else return false;
         // seasons are equal if they have the same ID
         return this.getSeasonId() == s.getSeasonId();
+    }
+
+    public List<Episode> getEpisodes() {
+        return episodes;
+    }
+
+    public void setEpisodes(List<Episode> episodes) {
+        this.episodes = episodes;
     }
 }

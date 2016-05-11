@@ -22,12 +22,12 @@ VALUES ('Sci-Fi', NULL, 1);
 
 
 INSERT INTO Season (id, number, start_date, end_date, poster_url)
-VALUES (1, 1, '2013-12-02', '2014-04-14', 'http://www.imdb.com/media/rm2439892992/tt2861424?ref_=tt_ov_i');
+VALUES (1, 1, '2013-12-02', '2014-04-14', 'http://ia.media-imdb.com/images/M/MV5BMTQxNDEwNTE0Nl5BMl5BanBnXkFtZTgwMzQ1MTg3MDE@._V1_SX640_SY720_.jpg');
 INSERT INTO show_season (show_id, season_id)
 VALUES (1, 1);
 
 INSERT INTO Season (id, number, start_date, end_date, poster_url)
-VALUES (2, 2, '2015-07-26', '2015-10-04', 'http://www.imdb.com/media/rm2439892992/tt2861424?ref_=tt_ov_i');
+VALUES (2, 2, '2015-07-26', '2015-10-04', 'http://ia.media-imdb.com/images/M/MV5BMTQxNDEwNTE0Nl5BMl5BanBnXkFtZTgwMzQ1MTg3MDE@._V1_SX640_SY720_.jpg');
 INSERT INTO show_season (show_id, season_id)
 VALUES (1, 2);
 

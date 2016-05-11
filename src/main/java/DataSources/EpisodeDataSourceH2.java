@@ -41,7 +41,7 @@ public class EpisodeDataSourceH2 implements EpisodeDao {
                     Integer.parseInt(dateList[2]), 0, 0);
             String description = resultSet.getString("description");
 
-            episodes.add(new Episode(episodeId, episodeName, episodeNumber, length, date, description));
+            episodes.add(new Episode(episodeId, episodeName, episodeNumber, length.toPeriod(), date, description));
         }
 
         return episodes;

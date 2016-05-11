@@ -2,6 +2,7 @@ package Models;
 
 import org.joda.time.DateTime;
 import org.joda.time.Duration;
+import org.joda.time.Period;
 
 /**
  * @author Grant Salk <gas7933@rit.edu>
@@ -10,11 +11,11 @@ public class Episode {
     private int episodeId;
     private String episodeName;
     private int episodeNumber;
-    private Duration length;
+    private Period length;
     private DateTime airDate;
     private String description;
 
-    public Episode(int episodeId, String episodeName, int episodeNumber, Duration length, DateTime airDate,
+    public Episode(int episodeId, String episodeName, int episodeNumber, Period length, DateTime airDate,
                    String description){
         this.episodeId = episodeId;
         this.episodeName = episodeName;
@@ -48,11 +49,11 @@ public class Episode {
         this.episodeNumber = episodeNumber;
     }
 
-    public Duration getLength() {
+    public Period getLength() {
         return length;
     }
 
-    public void setLength(Duration length){
+    public void setLength(Period length){
         this.length = length;
     }
 

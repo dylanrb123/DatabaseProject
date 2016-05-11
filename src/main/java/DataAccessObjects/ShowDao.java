@@ -11,7 +11,7 @@ import java.util.List;
 public interface ShowDao {
     List<Show> getAllShows() throws SQLException;
     Show getShow(int showID) throws SQLException;
-    Show getShot(String showName) throws SQLException;
+    Show getShow(String showName) throws SQLException;
     void deleteShow(int showID) throws SQLException;
     void deleteShow(String showName) throws SQLException;
     void addShow(Show show) throws SQLException;
