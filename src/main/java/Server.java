@@ -27,14 +27,14 @@ import java.util.stream.Collectors;
 //Can be removed later when a more elegant solution to adding movies exists.
 import Scripts.DatabaseScripts;
 
-public class Main {
+public class Server {
 
     private ScriptEngine se;
 
     public static void main(String[] args) {
 //         Sample route for web server
 //         get("/hello", (req, res) -> "Hello World");
-//        Main test = new Main();
+//        Server test = new Server();
 //        test.render("hello");
 //        test.render("hello world");
 
@@ -157,7 +157,7 @@ public class Main {
 
     }
 
-    public Main() throws Throwable {
+    public Server() throws Throwable {
         ScriptEngineManager sem = new ScriptEngineManager();
         se = sem.getEngineByName("nashorn");
 

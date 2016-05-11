@@ -12,9 +12,9 @@ Build the Maven sources: `mvn clean install`
 
 Install Node.js dev dependencies: `npm install`
 
-run Main.main() to start the server:
+run Server.main() to start the server:
 
 ```
-javac Main.java
-java Main
+javac Server.java
+java Server
 ```
