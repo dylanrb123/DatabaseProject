@@ -50,7 +50,7 @@ public class Server {
         genres.add("Romance");
 
         try {
-            DatabaseScripts.insertMovies();
+            DatabaseScripts.insertData();
         } catch (SQLException e) {
             e.printStackTrace();
         }
