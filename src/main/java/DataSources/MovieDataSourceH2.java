@@ -3,6 +3,7 @@ package DataSources;
 import DataAccessObjects.MovieDao;
 import Enums.MpaaRating;
 import Models.Movie;
+import Models.UserReview;
 import Scripts.DatabaseScripts;
 import org.joda.time.DateTime;
 import org.joda.time.Duration;
@@ -60,7 +61,7 @@ public class MovieDataSourceH2 implements MovieDao {
                                          0,0);
 
             // If this movie already exists in the list, just add the genre
-            int i = movies.indexOf( new Movie(id, name, null, date, null, null, null,null,null) );
+            int i = movies.indexOf( new Movie(id, name, null, date, null, null, null,null,null, new ArrayList<>()) );
             if(i >= 0){
                 movies.get(i).addGenre( rs.getString("genre_name") );
                 continue;
@@ -77,7 +78,41 @@ public class MovieDataSourceH2 implements MovieDao {
             List<String> genre_lst = new ArrayList<>();
             genre_lst.add(rs.getString("genre_name"));
 
-            movies.add(new Movie(id, name, length, date, rating, genre_lst, summary, trailerUrl, posterUrl));
+            // Get reviews
+            List<UserReview> reviews = new ArrayList<>();
+            String reviewQuery = "SELECT review_id FROM review_movie WHERE review_movie.movie_id=" + id;
+            long reviewId = -1;
+            ResultSet reviewIdRS = exeSQL(reviewQuery);
+            while(reviewIdRS.next()) {
+                reviewId = reviewIdRS.getLong("review_id");
+                String userName = "";
+                int starRating = 0;
+                String reviewDate = "";
+                String title = "";
+                String body = "";
+
+                if (reviewId != -1) {
+                    String reviewTableQuery = "SELECT * FROM User_Review WHERE id=" + reviewId;
+                    ResultSet reviewRS = exeSQL(reviewTableQuery);
+                    while (reviewRS.next()) {
+                        userName = reviewRS.getString("username");
+                        starRating = reviewRS.getInt("star_rating");
+                        reviewDate = reviewRS.getString("review_date");
+                        title = reviewRS.getString("title");
+                        body = reviewRS.getString("body");
+                    }
+                    String[] reviewDateList = reviewDate.split("-");
+                    DateTime reviewDateTime = new DateTime(Integer.parseInt(reviewDateList[0]),
+                            Integer.parseInt(reviewDateList[1]),
+                            Integer.parseInt(reviewDateList[2]),
+                            0, 0);
+
+                    UserReview review = new UserReview(reviewId, userName, starRating, reviewDateTime, title, body);
+                    reviews.add(review);
+                }
+            }
+
+            movies.add(new Movie(id, name, length, date, rating, genre_lst, summary, trailerUrl, posterUrl, reviews));
         }
 
         return movies;
@@ -274,6 +309,23 @@ public class MovieDataSourceH2 implements MovieDao {
 
         // Create and Return a list from the results
         return createList(resultSet);
+    }
+
+    @Override
+    public void addReview(int movieId, UserReview review) throws SQLException {
+        String addReviewQuery = String.format("INSERT INTO User_Review " +
+                "(id, username, star_rating, review_date, title, body) " +
+                "VALUES (%d, '%s', %d, '%s', '%s', '%s');", review.getReviewID(), review.getUserName(), review.getStarRating(), review.getDateString(), review.getTitle(), review.getBody());
+
+        String createRelation = String.format("INSERT INTO review_movie " +
+                "(review_id, movie_id) " +
+                "VALUES(%d, %d)", review.getReviewID(), movieId);
+
+        Connection conn = DatabaseScripts.getConnection();
+        Statement stmt = conn.createStatement();
+        stmt.execute(addReviewQuery);
+        stmt.execute(createRelation);
+
     }
 
 

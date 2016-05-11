@@ -6,6 +6,7 @@ import DataAccessObjects.MovieDao;
 import DataSources.MovieDataSourceH2;
 import Enums.MpaaRating;
 import Models.Movie;
+import Models.UserReview;
 import j2html.TagCreator;
 import org.apache.commons.io.FileUtils;
 import org.joda.time.DateTime;
@@ -32,14 +33,14 @@ import java.net.URLClassLoader;
 //Can be removed later when a more elegant solution to adding movies exists.
 import Scripts.DatabaseScripts;
 
-public class Main {
+public class Server {
 
     private ScriptEngine se;
 
     public static void main(String[] args) {
 //         Sample route for web server
 //         get("/hello", (req, res) -> "Hello World");
-//        Main test = new Main();
+//        Server test = new Server();
 //        test.render("hello");
 //        test.render("hello world");
 
@@ -55,68 +56,12 @@ public class Main {
         }
         externalStaticFileLocation("src/main/web-app");
 
+        // Allow cross site access
         before((req, res) -> {
             res.header("Access-Control-Allow-Origin", "*");
             res.header("Access-Control-Request-Method", "*");
             res.header("Access-Control-Allow-Headers", "*");
         });
-        // route to get movies page
-        get("/movies", (req, res) -> {
-                    List<Movie> moviesTemp;
-                    try {
-                        moviesTemp = movieDao.getAllMovies();
-                    } catch (SQLException e) {
-                        e.printStackTrace();
-                        moviesTemp = new ArrayList<>();
-                    }
-                    final List<Movie> movies = moviesTemp;
-                    return body().with(
-                            h1("All Movies"),
-                            div().with(
-                                    movies.stream().map((movie) ->
-                                            div().with(
-                                                    h2(movie.getMovieName()),
-                                                    h3(Integer.toString(movie.getMovieID())),
-                                                    p(movie.getSummary()),
-                                                    h3("Genres: "),
-                                                    ul().with(movie.getGenres().stream().map(TagCreator::li).collect(Collectors.toList())
-                                                    )
-                                            )
-                                    ).collect(Collectors.toList())
-                            ),
-                            h2("Add movie"),
-                            form().withMethod("post").withAction("/add-movie").withId("movie-form").with(
-                                    input().withType("text").withName("movie-name").withPlaceholder("Title").isRequired(),
-                                    input().withType("date").withName("movie-release").withPlaceholder("Release Date").isRequired(),
-                                    input().withType("text").withName("movie-genres").withPlaceholder("Genres (comma sep)").isRequired(),
-                                    select().withName("movie-rating").with(
-                                            Arrays.asList(MpaaRating.values()).stream().map(genre ->
-                                                    div().with(
-                                                            option().withValue(genre.toString()).withText(genre.toString())
-                                                    )
-                                            ).collect(Collectors.toList())
-                                    ),
-                                    input().withType("time").withName("movie-runtime").withPlaceholder("Runtime").isRequired(),
-                                    input().withType("url").withName("movie-trailer-url").withPlaceholder("Trailer URL").isRequired(),
-                                    input().withType("url").withName("movie-poster-url").withPlaceholder("Poster URL").isRequired(),
-                                    textarea().withName("movie-summary").withName("movie-summary").withPlaceholder("Summary").attr("form", "movie-form").isRequired(),
-                                    input().withType("submit").withValue("Submit")
-                            ),
-                            h2("Delete movie"),
-                            form().withMethod("post").withAction("/delete-movie").withId("delete-movie").with(
-                                    label().withText("Movie to delete: "),
-                                    select().withName("delete-movie").with(
-                                            movies.stream().map(movie ->
-                                                div().with(
-                                                        option().withValue(Integer.toString(movie.getMovieID())).withText(movie.getMovieName() + ": " + movie.getReleaseDateString())
-                                                )
-                                            ).collect(Collectors.toList())
-                                    ),
-                                    input().withType("submit").withValue("Submit")
-                            )
-                    ).render();
-                }
-        );
 
         // route for homepage
         get("/", (req, res) -> FileUtils.readFileToString(new File("src/main/web-app/index.html"), Charset.defaultCharset()));
@@ -142,7 +87,7 @@ public class Main {
 
                 MpaaRating rating = MpaaRating.valueOf(ratingString);
 
-                Movie newMovie = new Movie(0, movieName, runtime, releaseDate, rating, genresList, summary, trailerUrl, posterUrl);
+                Movie newMovie = new Movie(0, movieName, runtime, releaseDate, rating, genresList, summary, trailerUrl, posterUrl, new ArrayList<>());
                 movieDao.addMovie(newMovie);
 
                 res.status(200);
@@ -160,6 +105,7 @@ public class Main {
         });
 
         get("/api/movies", (req, res) -> movieDao.getAllMovies(), JsonUtil.json());
+
         get("/api/movies/:id", (req, res) -> {
             String id = req.params(":id");
             Movie movie = movieDao.getMovie(Integer.parseInt(id));
@@ -167,6 +113,30 @@ public class Main {
             res.status(400);
             return new ResponseError("No movie with ID %s found", id);
         }, JsonUtil.json());
+
+        get("/api/movies/reviews/:id", (req, res) -> {
+            int id = Integer.parseInt(req.params(":id"));
+            List<UserReview> reviews = movieDao.getMovie(id).getReviews();
+            if(reviews != null) return reviews;
+            return new ResponseError("No reviews found for movie %s", req.params(":id"));
+        }, JsonUtil.json());
+
+        post("/api/movies/reviews/:id", (req, res) -> {
+            int movieId = Integer.parseInt(req.params("id"));
+            long reviewId = Long.parseLong(req.queryParams("reviewId"));
+            String userName = req.queryParams("username");
+            int starRating = Integer.parseInt(req.queryParams("starRating"));
+            DateTime reviewDate = new DateTime(Long.parseLong(req.queryParams("date")));
+            String title = req.queryParams("title");
+            String body = req.queryParams("body");
+
+            UserReview newReview = new UserReview(reviewId, userName, starRating, reviewDate, title, body);
+            movieDao.addReview(movieId, newReview);
+
+            res.status(200);
+            return movieDao.getMovie(movieId).getReviews();
+        }, JsonUtil.json());
+
         post("/api/movies", (req, res) -> {
             String movieName = req.queryParams("movie-name");
             String runtimeString = req.queryParams("movie-runtime");
@@ -196,7 +166,7 @@ public class Main {
 
             MpaaRating rating = MpaaRating.valueOf(ratingString);
 
-            Movie newMovie = new Movie(0, movieName, runtime, releaseDate, rating, genresList, summary, trailerUrl, posterUrl);
+            Movie newMovie = new Movie(0, movieName, runtime, releaseDate, rating, genresList, summary, trailerUrl, posterUrl, new ArrayList<>());
             movieDao.addMovie(newMovie);
 
             res.status(200);
@@ -214,7 +184,7 @@ public class Main {
 
     }
 
-    public Main() throws Throwable {
+    public Server() throws Throwable {
         ScriptEngineManager sem = new ScriptEngineManager();
         se = sem.getEngineByName("nashorn");
 

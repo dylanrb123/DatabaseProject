@@ -64,10 +64,9 @@ var MovieWrapper = React.createClass({
         this.getInfoFromServer();
     },
     getInitialState: function() {
-        return {movie: [], videoId: ''};
+        return {movie: {}, videoId: '', releaseDate: {}, genres: [], runtime: {}};
     },
     render: function() {
-        console.log(this.state);
         return (
             <div>
                 <Movie movie={this.state.movie} videoId={this.state.videoId} />

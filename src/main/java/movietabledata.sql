@@ -1992,7 +1992,7 @@ INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer
 VALUES (224, 'The Secret World of Arrietty', 5640000, '2012-02-17', 'G',
 				'14-year-old Arrietty and the rest of the Clock family live in peaceful anonymity as they make their own home from items that they borrow from the house''s human inhabitants. However, life changes for the Clocks when a human boy discovers Arrietty.',
 				'https://www.youtube.com/watch?v=VlMe7PavaRQ',
-				'http://www.imdb.com/title/tt1568921/mediaviewer/rm778613248');
+				'http://ia.media-imdb.com/images/M/MV5BMTAxNjk3OTYyODReQTJeQWpwZ15BbWU3MDgyODY2OTY@._V1__SX640_SY720_.jpg');
 
 INSERT INTO GENRE (name, movie_id, show_id)
 VALUES ('Animation', 224, NULL);
@@ -2043,7 +2043,7 @@ INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer
 VALUES (227, 'Minority Report', 8700000, '2002-6-21', 'PG_13',
 				'In the year 2054 A.D. crime is virtually eliminated from Washington D.C. thanks to an elite law enforcing squad "Precrime". They use three gifted humans (called "Pre-Cogs") with special powers to see into the future and predict crimes beforehand. John Anderton heads Precrime and believes the system''s flawlessness steadfastly. However one day the Pre-Cogs predict that Anderton will commit a murder himself in the next 36 hours. Worse, Anderton doesn''t even know the victim. He decides to get to the mystery''s core by finding out the ''minority report'' which means the prediction of the female Pre-Cog Agatha that "might" tell a different story and prove Anderton innocent.',
 				'https://www.youtube.com/watch?v=q2bmImPNKbM',
-				'http://www.imdb.com/title/tt0181689/mediaviewer/rm1493147136');
+				'http://ia.media-imdb.com/images/M/MV5BMTc1NDI5NzQyNF5BMl5BanBnXkFtZTYwMjc4NTE5._V1_SX640_SY720_.jpg');
 
 INSERT INTO GENRE (name, movie_id, show_id)
 VALUES ('Action', 227, NULL);
@@ -3236,7 +3236,7 @@ VALUES ('Romance', 302, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (303, 'First Time, The', 5700000, '2012-10-19', 'PG-13',
+VALUES (303, 'First Time, The', 5700000, '2012-10-19', 'PG_13',
 				'A shy senior and a down-to-earth junior fall in love over the weekend.',
 				'https://www.youtube.com/watch?v=-K3DPrrP2nw',
 				'http://ia.media-imdb.com/images/M/MV5BMjMxNDI1OTY5NF5BMl5BanBnXkFtZTcwMDExOTY1OA@@._V1._SX94_SY140_.jpg');
@@ -3274,7 +3274,7 @@ VALUES ('Romance', 304, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (305, 'Ant-Man', 7020000, '2015-06-29', 'PG-13',
+VALUES (305, 'Ant-Man', 7020000, '2015-06-29', 'PG_13',
 				'Armed with the astonishing ability to shrink in scale but increase in strength, con-man Scott Lang must embrace his inner-hero and help his mentor, Dr. Hank Pym, protect the secret behind his spectacular Ant-Man suit from a new generation of towering threats. Against seemingly insurmountable obstacles, Pym and Lang must plan and pull off a heist that will save the world.',
 				'https://www.youtube.com/watch?v=IEVE3KSKQ0o',
 				'http://ia.media-imdb.com/images/M/MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@._V1._SX94_SY140_.jpg');
@@ -3315,7 +3315,7 @@ VALUES ('Crime', 306, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (307, 'Joe Dirt', 5460000, '2001-04-11', 'PG-13',
+VALUES (307, 'Joe Dirt', 5460000, '2001-04-11', 'PG_13',
 				'Joe Dirt is a janitor with a mullet hairdo, acid-washed jeans and a dream to find the parents that he lost at the Grand Canyon when he was a belligerent, trailer park-raised eight-year-old. Now, blasting Van Halen in his jacked-up economy car, the irrepressibly optimistic Joe hits the road alone in search of his folks. As his wandering, misguided search takes him from one hilarious misadventure to another, Joe finds his way to Los Angeles, where a shock-jock brings Joe on his radio show to insult him. But as Joe''s life story unfolds, jeers turn to cheers, and an entire captivated city tunes in to hear the adventures of Joe Dirt.',
 				'https://www.youtube.com/watch?v=FpHIIE9Lois',
 				'http://ia.media-imdb.com/images/M/MV5BMTE5NDgxNzU1MV5BMl5BanBnXkFtZTYwODQ4ODE3._V1._SX93_SY140_.jpg');
@@ -3334,7 +3334,7 @@ VALUES ('Drama', 307, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (308, 'Joe Dirt 2: Beautiful Loser', 5460000, '2015-07-16', 'PG-13',
+VALUES (308, 'Joe Dirt 2: Beautiful Loser', 5460000, '2015-07-16', 'PG_13',
 				'Joe Dirt (David Spade) returns with a mop in his hand and a mullet on his noggin. The white-trash hero embarks on a journey through the American heartland and time itself as he finds himself caught in the past.',
 				'https://www.youtube.com/watch?v=Z0zo5W5QUY0',
 				'http://ia.media-imdb.com/images/M/MV5BMTE5NDgxNzU1MV5BMl5BanBnXkFtZTYwODQ4ODE3._V1._SX93_SY140_.jpg');
@@ -3423,7 +3423,7 @@ VALUES ('Thriller', 312, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (313, 'DUFF, The', 6060000, '2015-02-20', 'PG-13',
+VALUES (313, 'DUFF, The', 6060000, '2015-02-20', 'PG_13',
 				'Bianca is a content high school senior whose world is shattered when she learns the student body knows her as ''The DUFF'' (Designated Ugly Fat Friend) to her prettier, more popular friends. Now, despite the words of caution from her favorite teacher, she puts aside the potential distraction of her crush, Toby, and enlists Wesley, a slick but charming jock, to help reinvent herself. To save her senior year from turning into a total disaster, Bianca must find the confidence to overthrow the school''s ruthless label maker Madison and remind everyone that no matter what people look or act like, we are all someone''s DUFF.',
 				'https://www.youtube.com/watch?v=ci7eKlNRiuw',
 				'http://ia.media-imdb.com/images/M/MV5BMTc3OTg3MDUwN15BMl5BanBnXkFtZTgwMTAwMTkxNDE@._V1._SX94_SY140_.jpg');
@@ -3436,7 +3436,7 @@ VALUES ('Comedy', 313, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (314, 'Just Go With It', 7020000, '2011-02-11', 'PG-13',
+VALUES (314, 'Just Go With It', 7020000, '2011-02-11', 'PG_13',
 				'Danny (Adam Sandler) must engage Katherine (Jennifer Aniston), his faithful assistant, to pretend to be his soon to be ex-wife. Danny must pretend that he is married, because he lied to his dream girl, Palmer (Brooklyn Decker) the most gorgeous woman in the world. To keep the woman he loves, covering up one lie soon turns into many lies.',
 				'https://www.youtube.com/watch?v=Jz5Ubqhru7g',
 				'http://ia.media-imdb.com/images/M/MV5BMjE0MTk3MjE2Nl5BMl5BanBnXkFtZTcwMjE0ODA0NA@@._V1._SX100_SY133_.jpg');
@@ -3468,7 +3468,7 @@ VALUES ('Comedy', 315, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (316, 'San Andreas', 6840000, '2015-05-27', 'PG-13',
+VALUES (316, 'San Andreas', 6840000, '2015-05-27', 'PG_13',
 				'In San Andreas, California is experiencing a statewide earthquake that goes on record as easily the biggest earthquake in history. Dwayne Johnson plays Ray Gaines, a helicopter rescue pilot for the Los Angeles Fire Department, who is trying to find his daughter, Blake (Alexandra Daddario), who is in San Francisco amidst the chaos. Ray''s estranged wife, Emma, is forced to turn to Ray for help, as he is her last resort. Together they journey to save their daughter.',
 				'https://www.youtube.com/watch?v=23VflsU3kZE',
 				'http://ia.media-imdb.com/images/M/MV5BNjI4MTgyOTAxOV5BMl5BanBnXkFtZTgwMjQwOTA4NTE@._V1._SX94_SY140_.jpg');
@@ -3531,7 +3531,7 @@ VALUES ('Crime', 318, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (319, 'Breach', 6600000, '2007-02-16', 'PG-13',
+VALUES (319, 'Breach', 6600000, '2007-02-16', 'PG_13',
 				'In February, 2001, Robert Hanssen, a senior agent with 25 years in the FBI, is arrested for spying. Jump back two months: Eric O''Neill, a computer specialist who wants to be made an agent is assigned to clerk for Hanssen and to write down everything Hanssen does. O''Neill''s told it''s an investigation of Hanssen''s sexual habits. Within weeks, the crusty Hanssen, a devout Catholic, has warmed to O''Neill, who grows to respect Hanssen. O''Neill''s wife resents Hanssen''s intrusiveness; the personal and professional stakes get higher. How they catch Hanssen and why he spies become the film''s story. Can O''Neill help catch red-handed "the worst spy in history" and hold onto his personal life?',
 				'https://www.youtube.com/watch?v=XJuLFKeRoJg',
 				'http://ia.media-imdb.com/images/M/MV5BMzY1NjgxMjk0Ml5BMl5BanBnXkFtZTcwOTc4NzI0MQ@@._V1._SX94_SY140_.jpg');
@@ -3572,7 +3572,7 @@ VALUES ('Drama', 320, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (321, 'Wrath of the Titans', 5940000, '2012-03-30', 'PG-13',
+VALUES (321, 'Wrath of the Titans', 5940000, '2012-03-30', 'PG_13',
 				'A decade after his heroic defeat of the monstrous Kraken, Perseus-the demigod son of Zeus-is attempting to live a quieter life as a village fisherman and the sole parent to his 10-year old son, Helius. Meanwhile, a struggle for supremacy rages between the gods and the Titans. Dangerously weakened by humanity''s lack of devotion, the gods are losing control of the imprisoned Titans and their ferocious leader, Kronos, father of the long-ruling brothers Zeus, Hades and Poseidon. The triumvirate had overthrown their powerful father long ago, leaving him to rot in the gloomy abyss of Tartarus, a dungeon that lies deep within the cavernous underworld. Perseus cannot ignore his true calling when Hades, along with Zeus'' godly son, Ares (Edgar Ram�rez), switch loyalty and make a deal with Kronos to capture Zeus. The Titans'' strength grows stronger as Zeus'' remaining godly powers are siphoned, and hell is unleashed on earth. Enlisting the help of the warrior Queen Andromeda (Rosamund Pike), Poseidon''s demigod son, Argenor (Toby Kebbell), and fallen god Hephaestus (Bill Nighy), Perseus bravely embarks on a treacherous quest into the underworld to rescue Zeus, overthrow the Titans and save mankind.',
 				'https://www.youtube.com/watch?v=Xs7fzOrUopc',
 				'http://ia.media-imdb.com/images/M/MV5BMjMyMzk1Nzg3OF5BMl5BanBnXkFtZTcwOTQ2NjcxNw@@._V1._SX94_SY140_.jpg');
@@ -3591,7 +3591,7 @@ VALUES ('Fantasy', 321, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (322, 'Longest Ride, The', 7680000, '2015-04-30', 'PG-13',
+VALUES (322, 'Longest Ride, The', 7680000, '2015-04-30', 'PG_13',
 				'Based on the bestselling novel by master storyteller Nicholas Sparks, THE LONGEST RIDE centers on the star-crossed love affair between Luke, a former champion bull rider looking to make a comeback, and Sophia, a college student who is about to embark upon her dream job in New York City''s art world. As conflicting paths and ideals test their relationship, Sophia and Luke make an unexpected and fateful connection with Ira, whose memories of his own decades-long romance with his beloved wife deeply inspire the young couple. Spanning generations and two intertwining love stories, THE LONGEST RIDE explores the challenges and infinite rewards of enduring love.',
 				'https://www.youtube.com/watch?v=FUS_Q7FsfqU',
 				'http://ia.media-imdb.com/images/M/MV5BMzIzMjg0NjQwNF5BMl5BanBnXkFtZTgwODAwOTE4MzE@._V1._SX95_SY140_.jpg');
@@ -3667,7 +3667,7 @@ VALUES ('Romance', 325, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (326, 'Pixels', 6360000, '2015-07-23', 'PG-13',
+VALUES (326, 'Pixels', 6360000, '2015-07-23', 'PG_13',
 				'Sam Brenner, Will Cooper, Ludlow Lamonsoff, and Eddie "The Fire Blaster" Plant all played classic arcade video games as teenagers. But now they have to use their skills to try to save the world from aliens. The aliens watched video feeds that they thought was a declaration of war. So they send down the classic arcade games to destroy earth. They also get help from a military specialist. They have three lives and if all three get used then earth will be destroyed, and every time they lose a live the aliens take someone''s life. Who will win, us or the aliens? It''s an all-out battle to save our planet and everyone on it.',
 				'https://www.youtube.com/watch?v=diqZBS-RTAw',
 				'http://ia.media-imdb.com/images/M/MV5BMTYxMzM4NDY5N15BMl5BanBnXkFtZTgwNzg1NTI3MzE@._V1._SX100_SY140_.jpg');
@@ -3689,7 +3689,7 @@ VALUES ('Sci-Fi', 326, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (327, '10 Things I Hate About You', 5820000, '1999-03-31', 'PG-13',
+VALUES (327, '10 Things I Hate About You', 5820000, '1999-03-31', 'PG_13',
 				'Adapted from William Shakespeare''s play "The Taming of the Shrew," 10 Things I Hate About You starts off with Cameron, new student at Padua High, sitting in the office of the quirky guidance counselor Ms. Perky. He is then shown around the school by Michael, who will become his best friend. During his tour is when Cameron first sees Bianca Stratford, a beautiful sophomore with one problem: she isn''t allowed to date. And neither is her "shrew" sister, Katarina, a senior who loves indie rock and feminist prose and hates conformity. But Kat and Bianca''s father alters his house rule: now, Bianca can date... as long as Kat has a date, too. Now, in order for Cameron to date Bianca, he has to find someone to date Kat. So Michael helps him enlist the help of pretty-boy/jerk/model Joey Donner, tricking him into thinking that *he* will get to take Bianca out if he pays someone to take out Kat. His choice: Patrick Verona, a bad-boy with a mysterious reputation--some say he ate a live duck once, others that he lit a state trooper on fire, and even more claim that he had a brief porn career. Will Patrick win Kat''s heart? Will Cameron win Bianca''s? Or will everything hit the fan...?',
 				'https://www.youtube.com/watch?v=AWmjzCZr0Jw',
 				'http://ia.media-imdb.com/images/M/MV5BMTI4MzU5OTc2MF5BMl5BanBnXkFtZTYwNzQxMjc5._V1._SX98_SY140_.jpg');
@@ -3708,7 +3708,7 @@ VALUES ('Romance', 327, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (328, 'Social Network, The', 7200000, '2010-10-01', 'PG-13',
+VALUES (328, 'Social Network, The', 7200000, '2010-10-01', 'PG_13',
 				'On a fall night in 2003, Harvard undergrad and computer programming genius Mark Zuckerberg sits down at his computer and heatedly begins working on a new idea. In a fury of blogging and programming, what begins in his dorm room soon becomes a global social network and a revolution in communication. A mere six years and 500 million friends later, Mark Zuckerberg is the youngest billionaire in history... but for this entrepreneur, success leads to both personal and legal complications.',
 				'https://www.youtube.com/watch?v=lB95KLmpLR4',
 				'http://ia.media-imdb.com/images/M/MV5BMTM2ODk0NDAwMF5BMl5BanBnXkFtZTcwNTM1MDc2Mw@@._V1._SX89_SY140_.jpg');
@@ -3724,7 +3724,7 @@ VALUES ('Drama', 328, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (329, 'Pitch Perfect', 6720000, '2012-09-28', 'PG-13',
+VALUES (329, 'Pitch Perfect', 6720000, '2012-09-28', 'PG_13',
 				'The Barden Bellas are a collegiate, all-girls a cappella singing group thriving on female pop songs and their perfect looks. After a disastrous failing at last year''s finals, they are forced to regroup. Among the new recruits is freshman Beca, an independent, aspiring DJ with no interest in the college life. But after she meets Jesse, from the rival all-male a cappella group, Beca has a new outlook and takes it upon herself to help the Bellas find their new look and sound and get back into the competition.',
 				'www.youtube.com/watch?v=j7QrKOi_JK4',
 				'http://ia.media-imdb.com/images/M/MV5BMTcyMTMzNzE5N15BMl5BanBnXkFtZTcwNzg5NjM5Nw@@._V1._SX88_SY140_.jpg');
@@ -3819,7 +3819,7 @@ VALUES ('Crime', 333, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (334, 'Break-Up, The', 6360000, '2006-06-02', 'PG-13',
+VALUES (334, 'Break-Up, The', 6360000, '2006-06-02', 'PG_13',
 				'In Chicago, the art dealer Brooke Meyers feels not appreciated and neglected by her immature boyfriend Gary Grobowski, who is partner with his two brothers in a tourism business, and decides to break-up with him to make Gary miss her. Gary misunderstands her true intention, both follow the wrong advice of family members and friends, beginning a war of sexes with no winner.',
 				'https://www.youtube.com/watch?v=VEZbIfDQQyw',
 				'http://ia.media-imdb.com/images/M/MV5BMTQ4OTcwNDUxMV5BMl5BanBnXkFtZTYwMTAxNDY3._V1._SX95_SY140_.jpg');
@@ -3854,7 +3854,7 @@ VALUES ('Thriller', 335, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (336, 'Poltergeist', 6840000, '2015-05-22', 'TV-MA',
+VALUES (336, 'Poltergeist', 6840000, '2015-05-22', 'TV_MA',
 				'A young family are visited by ghosts in their home. At first the ghosts appear friendly, moving objects around the house to the amusement of everyone, then they turn nasty and start to terrorise the family before they "kidnap" the youngest daughter.',
 				'https://www.youtube.com/watch?v=YCmAaNk_iIQ',
 				'http://ia.media-imdb.com/images/M/MV5BMTUwMTI2NTM5MV5BMl5BanBnXkFtZTgwMTgwNDgwNzE@._V1._SX92_SY140_.jpg');
@@ -3974,7 +3974,7 @@ VALUES ('War', 341, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (342, 'Moneyball', 7980000, '2011-09-19', 'PG-13',
+VALUES (342, 'Moneyball', 7980000, '2011-09-19', 'PG_13',
 				'Oakland A''s GM Billy Beane is handicapped with the lowest salary constraint in baseball. If he ever wants to win the World Series, Billy must find a competitive advantage. Billy is about to turn baseball on its ear when he uses statistical data to analyze and place value on the players he picks for the team.',
 				'https://www.youtube.com/watch?v=AiAHlZVgXjk',
 				'http://ia.media-imdb.com/images/M/MV5BMjAxOTU3Mzc1M15BMl5BanBnXkFtZTcwMzk1ODUzNg@@._V1._SX95_SY140_.jpg');
@@ -3993,7 +3993,7 @@ VALUES ('Sport', 342, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (343, 'Knight and Day', 6540000, '2010-06-23', 'PG-13',
+VALUES (343, 'Knight and Day', 6540000, '2010-06-23', 'PG_13',
 				'June Havens finds her everyday life tangled with that of a secret agent who has realized he isn''t supposed to survive his latest mission. As their campaign to stay alive stretches across the globe, they soon learn that all they can count on is each other.',
 				'https://www.youtube.com/watch?v=JGPl86DBNNs',
 				'http://ia.media-imdb.com/images/M/MV5BMTM0Mzg0MzI3Ml5BMl5BanBnXkFtZTcwNjIyNzk1Mw@@._V1._SX95_SY140_.jpg');
@@ -4050,7 +4050,7 @@ VALUES ('Thriller', 345, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (346, 'Aloha', 6300000, '2015-01-23', 'PG-13',
+VALUES (346, 'Aloha', 6300000, '2015-01-23', 'PG_13',
 				'A celebrated military contractor returns to the site of his greatest career triumphs - the US Space program in Honolulu, Hawaii - and reconnects with a long-ago love while unexpectedly falling for the hard-charging Air Force watchdog assigned to him.',
 				'https://www.youtube.com/watch?v=O3mf_ewjc7s',
 				'http://ia.media-imdb.com/images/M/MV5BMTg4Mjc0NTE1NV5BMl5BanBnXkFtZTgwNzcwNTQ3NTE@._V1._SX90_SY140_.jpg');
@@ -4136,7 +4136,7 @@ VALUES ('Comedy', 350, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (351, 'Catch Me If You Can', 8460000, '2002-12-25', 'PG-13',
+VALUES (351, 'Catch Me If You Can', 8460000, '2002-12-25', 'PG_13',
 				'New Rochelle, the 1960s. High schooler Frank Abagnale Jr. idolizes his father, who''s in trouble with the IRS. When his parents separate, Frank runs away to Manhattan with $25 in his checking account, vowing to regain dad''s losses and get his parents back together. Just a few years later, the FBI tracks him down in France; he''s extradited, tried, and jailed for passing more than $4,000,000 in bad checks. Along the way, he''s posed as a Pan Am pilot, a pediatrician, and an attorney. And, from nearly the beginning of this life of crime, he''s been pursued by a dour FBI agent, Carl Hanratty. What starts as cat and mouse becomes something akin to father and son.',
 				'https://www.youtube.com/watch?v=hFj3OXVL_wQ',
 				'http://ia.media-imdb.com/images/M/MV5BMTY5MzYzNjc5NV5BMl5BanBnXkFtZTYwNTUyNTc2._V1._SX94_SY140_.jpg');
@@ -4155,7 +4155,7 @@ VALUES ('Drama', 351, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (352, 'Cloudy with a Chance of Meatballs', 5400000, '2009-09-18', 'TV-PG',
+VALUES (352, 'Cloudy with a Chance of Meatballs', 5400000, '2009-09-18', 'TV_PG',
 				'Flint Lockwood thinks he''s a genius. But none of the things he invented are things that make sense or are useful. However, he has the support of his mother but when she dies, he''s left alone with his father who thinks he should give it up. When the community that he lives in is in an economic crisis because their primary source of income, a sardine cannery, was shut down, Flint decides to try his latest invention, a machine that can turn water into food. But something goes wrong and the machine ends up in the atmosphere. Later it starts raining food. The shifty mayor tries to use this as a way to help their community, but when Flint senses something wrong with the machine, the mayor convinces him to ignore it. However, as Flint predicts, chaos ensues.',
 				'https://www.youtube.com/watch?v=6ceXQaPQD6k',
 				'http://ia.media-imdb.com/images/M/MV5BMTg0MjAwNDI5MV5BMl5BanBnXkFtZTcwODkyMzg2Mg@@._V1._SX94_SY140_.jpg');
@@ -4212,7 +4212,7 @@ VALUES ('Family', 354, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (355, 'American Pie', 5700000, '1999-07-09', 'NC-17',
+VALUES (355, 'American Pie', 5700000, '1999-07-09', 'NC_17',
 				'Jim, Oz, Finch and Kevin are four friends who make a pact that before they graduate they will all lose their virginity. The hard job now is how to reach that goal by prom night. Whilst Oz begins singing to grab attention and Kevin tries to persuade his girlfriend, Finch tries any easy route of spreading rumors and Jim fails miserably. Whether it is being caught on top of a pie or on the Internet, Jim always end up with his trusty sex advice from his father. Will they achieve their goal of getting laid by prom night? or will they learn something much different.',
 				'https://www.youtube.com/watch?v=Sithad108Og',
 				'http://ia.media-imdb.com/images/M/MV5BMTg3ODY5ODI1NF5BMl5BanBnXkFtZTgwMTkxNTYxMTE@._V1._SX95_SY140_.jpg');
@@ -4225,7 +4225,7 @@ VALUES ('Comedy', 355, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (356, 'What Happens in Vegas', 5940000, '2008-06-01', 'PG-13',
+VALUES (356, 'What Happens in Vegas', 5940000, '2008-06-01', 'PG_13',
 				'Set in Sin City, story revolves around two people who discover they''ve gotten married following a night of debauchery, with one of them winning a huge jackpot after playing the other''s quarter. Unhappy pair try to undermine each other and get their hands on the money -- falling in love along the way.',
 				'https://www.youtube.com/watch?v=YJGAsbcfuRs',
 				'http://ia.media-imdb.com/images/M/MV5BMTIxNzMwOTU3OF5BMl5BanBnXkFtZTcwMzk0NTM2MQ@@._V1._SX95_SY140_.jpg');
@@ -4241,7 +4241,7 @@ VALUES ('Romance', 356, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (357, '27 Dresses', 6660000, '2008-01-09', 'PG-13',
+VALUES (357, '27 Dresses', 6660000, '2008-01-09', 'PG_13',
 				'Two things about Jane: she never says no to her friends (she''s been a bridesmaid 27 times and selflessly plans friends'' weddings), and she''s in love with her boss, George, nurturing dreams of a lovely, romantic wedding of her own. She meets Kevin, a cynical writer who finds her attractive, and that same week her flirtatious younger sister Tess comes to town. Jane silently watches George fall for Tess, a manipulative pretender. Worse, Jane may be called upon to plan their wedding. Meanwhile, Kevin tries to get Jane''s attention and has an idea that may advance his career. Can Jane uncork her feelings?',
 				'https://www.youtube.com/watch?v=M3MrRmBfwS8',
 				'http://ia.media-imdb.com/images/M/MV5BMzI5OTM0OTg2MF5BMl5BanBnXkFtZTcwNjAyMTU1MQ@@._V1._SX94_SY140_.jpg');
@@ -4257,7 +4257,7 @@ VALUES ('Romance', 357, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (358, 'Signs', 6360000, '2002-07-29', 'PG-13',
+VALUES (358, 'Signs', 6360000, '2002-07-29', 'PG_13',
 				'Preacher Graham Hess, played by Mel Gibson, has lost his faith in God after his wife dies in a brutal car accident. He along with his son and daughter and his brother Merrill lives in a farmhouse. Crop circles begin to appear in their corn fields which Graham dismisses as mischief by miscreants. After hearing strange noises and watching news coverage on crop circles appearing all over the world, the family grows suspicious of demonic activities. Now they must stick together and believe, as a family to survive the ordeal and find a way to escape.',
 				'www.youtube.com/watch?v=M74vEZMHsGo',
 				'http://ia.media-imdb.com/images/M/MV5BNDUwMDUyMDAyNF5BMl5BanBnXkFtZTYwMDQ3NzM3._V1._SX94_SY140_.jpg');
@@ -4415,7 +4415,7 @@ VALUES ('War', 365, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (366, 'Edge of Tomorrow', 6780000, '2014-06-06', 'PG-13',
+VALUES (366, 'Edge of Tomorrow', 6780000, '2014-06-06', 'PG_13',
 				'An alien race has hit the Earth in an unrelenting assault, unbeatable by any military unit in the world. Major William Cage (Cruise) is an officer who has never seen a day of combat when he is unceremoniously dropped into what amounts to a suicide mission. Killed within minutes, Cage now finds himself inexplicably thrown into a time loop-forcing him to live out the same brutal combat over and over, fighting and dying again...and again. But with each battle, Cage becomes able to engage the adversaries with increasing skill, alongside Special Forces warrior Rita Vrataski (Blunt). And, as Cage and Vrataski take the fight to the aliens, each repeated encounter gets them one step closer to defeating the enemy!',
 				'https://www.youtube.com/watch?v=yUmSVcttXnI',
 				'http://ia.media-imdb.com/images/M/MV5BMTc5OTk4MTM3M15BMl5BanBnXkFtZTgwODcxNjg3MDE@._V1._SX94_SY140_.jpg');
@@ -4469,7 +4469,7 @@ VALUES ('Sport', 368, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (369, 'Waitress', 6480000, '2007-05-02', 'PG-13',
+VALUES (369, 'Waitress', 6480000, '2007-05-02', 'PG_13',
 				'Jenna is unhappily married, squirreling away money, and hoping to win a pie-baking contest so, with the prize money, she''ll have enough cash to leave her husband Earl. She finds herself pregnant, which throws her plans awry. She bakes phenomenal pies at Joe''s diner, listens to old Joe''s wisdom, tolerates her sour boss Cal, is friends with Dawn and Becky (her fellow waitresses), and finds a mutual attraction with the new doctor in town. As the pregnancy advances, life with Earl seems less tolerable, a way out less clear, and the affair with the doctor complicated by his marriage. What options does a waitress have?',
 				'www.youtube.com/watch?v=qa99hR4dOC0',
 				'http://ia.media-imdb.com/images/M/MV5BMTc4ODI2MjU2M15BMl5BanBnXkFtZTcwOTAzNzU0MQ@@._V1._SX94_SY140_.jpg');
@@ -4488,7 +4488,7 @@ VALUES ('Romance', 369, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (370, 'Trouble with the Curve', 6660000, '2012-09-21', 'PG-13',
+VALUES (370, 'Trouble with the Curve', 6660000, '2012-09-21', 'PG_13',
 				'Gus is a baseball scout. The team he works for thinks he should retire. He asks them to let him do one more scouting job to prove himself. His friend, Pete, asks Gus''s estranged daughter, Mickey, if she could go with him to make sure he''s OK as his eyes are failing. The doctor tells Gus he should get his eyes treated but he insists on doing his scouting assignment, which takes him to North Carolina. Mickey decides to put her work on hold to go with him and she wants him to explain why he pushed her away. Whilst there he runs into Johnny, a scout from another team who was a promising player Gus once scouted. Johnny and Mickey take an interest in each other.',
 				'https://www.youtube.com/watch?v=UdJPvXLemVs',
 				'http://ia.media-imdb.com/images/M/MV5BMTUwNjMyMzQ3M15BMl5BanBnXkFtZTcwMjcwNDMyOA@@._V1._SX95_SY140_.jpg');
@@ -4504,7 +4504,7 @@ VALUES ('Sport', 370, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (371, 'Vow, The', 6240000, '2012-02-12', 'PG-13',
+VALUES (371, 'Vow, The', 6240000, '2012-02-12', 'PG_13',
 				'Leo and Paige are a couple who just got married. After an accident, Paige is left unconscious, and when she awakes she doesn''t remember Leo. Her parents, whom she hasn''t seen since she and Leo got together, come and visit her. She can''t believe that she hasn''t seen them for such a long time. Leo wants to bring her home with him but her parents want her to go with them. She goes with Leo but when she doesn''t recognize anything, she goes to her parents. And she wonders why did she cut off contact with her family. She also runs into her ex and wonders why they broke up. Leo tries to win her back by courting her again.',
 				'https://www.youtube.com/watch?v=7JoXHO3ceUY',
 				'http://ia.media-imdb.com/images/M/MV5BMjE1OTU5MjU0N15BMl5BanBnXkFtZTcwMzI3OTU5Ng@@._V1._SX94_SY140_.jpg');
@@ -4520,7 +4520,7 @@ VALUES ('Romance', 371, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (372, 'Thousand Words, A', 5460000, '2012-03-09', 'PG-13',
+VALUES (372, 'Thousand Words, A', 5460000, '2012-03-09', 'PG_13',
 				'Jack McCall, played by Eddie Murphy, finds an unusual tree in his yard after an encounter with a spiritual guru. After discovering that with each word he speaks, a leaf drops off of the tree, Jack refuses to speak at all, as doing so will keep the tree, and him, alive. However, his work, marriage, and friendships are all affected by his choice. Can Jack figure out an alternative method of survival? Or will he simply have to live the rest of his life to the fullest?',
 				'https://www.youtube.com/watch?v=m2MO_ID4ltA',
 				'http://ia.media-imdb.com/images/M/MV5BMTAzODAwODkwMjBeQTJeQWpwZ15BbWU3MDI4MDE3NDc@._V1._SX94_SY140_.jpg');
@@ -4536,7 +4536,7 @@ VALUES ('Drama', 372, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (373, 'Eagle Eye', 7080000, '2008-09-16', 'PG-13',
+VALUES (373, 'Eagle Eye', 7080000, '2008-09-16', 'PG_13',
 				'Jerry Shaw is an amiable slacker with an over-achieving twin brother. After his twin dies in an accident, strange things happen to Jerry at a dizzying pace: a fortune shows up in his bank account, weapons are delivered to his flat, and a voice on his cell phone tells him the police are on their way. Jerry follows the voice''s instructions, and soon he and a woman he''s never met are racing through the city, on to a plane, and eventually to the Pentagon, chased by the FBI. She is Rachel Holloman, a single mom; the voice has threatened her son''s death if she doesn''t cooperate. The voice seems to know everything. Who is behind it, what is being planned, and why Jerry and Rachel?',
 				'https://www.youtube.com/watch?v=_wkqo_Rd3_Q',
 				'http://ia.media-imdb.com/images/M/MV5BMjA5MTMzMDMzNl5BMl5BanBnXkFtZTcwMzUwNDUzMw@@._V1._SX94_SY140_.jpg');
@@ -4644,7 +4644,7 @@ VALUES ('Thriller', 378, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (379, 'Bad Teacher', 5520000, '2011-06-20', 'TV-MA',
+VALUES (379, 'Bad Teacher', 5520000, '2011-06-20', 'TV_MA',
 				'When her wealthy fianc� breaks it off, gold digger Elizabeth Halsey returns to middle school: she''s an awful teacher but wants to save for breast-implant surgery. She brightens when Scott, a new teacher, turns out to be rich, and she stops showing films and sleeping in class when told there''s a bonus for the teacher whose class scores highest on the state exam. Her competition for Scott and the bonus is cheery and tightly wound Amy. Amy digs for dirt on Elizabeth who cheats her way toward Scott''s bed and the money. Honesty with students seems to be her only skill. She ignores Russell, a droll gym teacher, who looks on. Will she succeed with Scott and get those new breasts?',
 				'www.youtube.com/watch?v=0oMa_S91aL8',
 				'http://ia.media-imdb.com/images/M/MV5BMTQ5NDI4MDM0Nl5BMl5BanBnXkFtZTcwNDYwODU2NA@@._V1._SX94_SY140_.jpg');
@@ -4670,7 +4670,7 @@ VALUES ('Drama', 380, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (381, 'Invasion, The', 5940000, '2007-08-17', 'PG-13',
+VALUES (381, 'Invasion, The', 5940000, '2007-08-17', 'PG_13',
 				'While returning to Earth, the space shuttle explodes and the fragments bring an alien virus that recodes the human DNA. In Washington, the psychiatrist Carol Bennell observes the modification of the behavior of one of her clients first, then in her former husband and finally in the population in general. Together with her friend Dr. Ben Driscoll the researcher Dr. Stephen Galeano, they discover that the extraterrestrial epidemic affects human beings while sleeping and that her son Ollie, who had chickenpox when he was a baby, is immune to the disease and may save mankind from the outbreak.',
 				'https://www.youtube.com/watch?v=-ZjiGfdzQmM',
 				'http://ia.media-imdb.com/images/M/MV5BMTQ1NzM0NjI4M15BMl5BanBnXkFtZTcwOTg2NjUzMw@@._V1._SX95_SY140_.jpg');
@@ -4737,7 +4737,7 @@ VALUES ('Thriller', 384, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (385, 'Way Way Back, The', 6180000, '2010-12-29', 'PG-13',
+VALUES (385, 'Way Way Back, The', 6180000, '2010-12-29', 'PG_13',
 				'Duncan (',
 				'https://www.youtube.com/watch?v=87kezJTpyMI',
 				'http://ia.media-imdb.com/images/M/MV5BNTU5ODk5NDg0Nl5BMl5BanBnXkFtZTcwNzQwMjI1OQ@@._V1._SX94_SY140_.jpg');
@@ -4753,7 +4753,7 @@ VALUES ('Drama', 385, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (386, 'Wild Wild West', 6360000, '1999-06-30', 'PG-13',
+VALUES (386, 'Wild Wild West', 6360000, '1999-06-30', 'PG_13',
 				'Jim West is a guns-a-blazing former Civil War hero. Artemus Gordon is an inventive U.S. Marshal who excels in disguise. When the United States is threatened by psychotic Confederate Arliss Loveless, President Ulysses Grant teams the duo up to bring him to justice. On a hazard-packed train journey from Washington D.C. to Utah, West and Gordon must combine their skills to best Loveless and his diabolical machines.',
 				'https://www.youtube.com/watch?v=mLkSl0dKOsI',
 				'http://ia.media-imdb.com/images/M/MV5BNDI5NDk5MjgxMl5BMl5BanBnXkFtZTcwNjI1MTUyMQ@@._V1._SX100_SY140_.jpg');
@@ -4775,7 +4775,7 @@ VALUES ('Sci-Fi', 386, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (387, 'RED', 6660000, '2010-10-15', 'PG-13',
+VALUES (387, 'RED', 6660000, '2010-10-15', 'PG_13',
 				'Frank (Bruce Willis) is retired, bored and lonely living off his government pension in a nondescript suburb in an equally nondescript house. The only joy in Frank''s life are his calls to the government pension processing center when he gets to talk to his case worker Sarah (Mary-Louis Parker). Sarah is as bored and lonely as Frank and marks her conversations with the unknown Frank and her spy novels as the only things fun in her life. When something in Frank''s past forces Frank back into his old line of work and puts an unwitting Sarah in the middle of the intrigue, Frank and Sarah begin a journey into Frank''s past and the people he used to work with. Like Frank they are all RED ... Retired Extremely Dangerous.',
 				'www.youtube.com/watch?v=SHPti5AVZXU',
 				'http://ia.media-imdb.com/images/M/MV5BMzg2Mjg1OTk0NF5BMl5BanBnXkFtZTcwMjQ4MTA3Mw@@._V1._SX94_SY140_.jpg');
@@ -4845,7 +4845,7 @@ VALUES ('Drama', 390, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (391, 'Pearl Harbor', 10980000, '2001-05-25', 'PG-13',
+VALUES (391, 'Pearl Harbor', 10980000, '2001-05-25', 'PG_13',
 				'Pearl Harbor is a classic tale of romance set during a war that complicates everything. It all starts when childhood friends Rafe and Danny become Army Air Corps pilots and meet Evelyn, a Navy nurse. Rafe falls head over heels and next thing you know Evelyn and Rafe are hooking up. Then Rafe volunteers to go fight in Britain and Evelyn and Danny get transferred to Pearl Harbor. While Rafe is off fighting everything gets completely whack and next thing you know everybody is in the middle of an air raid we now know as "Pearl Harbor."',
 				'https://www.youtube.com/watch?v=oGYcxjywx0o',
 				'http://ia.media-imdb.com/images/M/MV5BMTQ3MDc0MDc1NF5BMl5BanBnXkFtZTYwODI1ODY2._V1._SX95_SY140_.jpg');
@@ -4870,7 +4870,7 @@ VALUES ('War', 391, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (392, 'Man on a Ledge', 6120000, '2012-01-27', 'PG-13',
+VALUES (392, 'Man on a Ledge', 6120000, '2012-01-27', 'PG_13',
 				'An ex-cop turned con threatens to jump to his death from a Manhattan hotel rooftop. The nearest New York Police officer immediately responds to a screaming woman and calls dispatch. More Officers arrive with SWAT and tactical command along with fire-fighters. The police then dispatch a police psychologist personally requested to talk him down from the ledge. However, things aren''t as they seem.',
 				'https://www.youtube.com/watch?v=sBJSfqdhyTg',
 				'http://ia.media-imdb.com/images/M/MV5BMTc5MTE4MzY2N15BMl5BanBnXkFtZTcwNjMwNDc3Ng@@._V1._SX94_SY140_.jpg');
@@ -4908,7 +4908,7 @@ VALUES ('Sport', 393, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (394, 'Never Back Down', 6600000, '2008-03-14', 'PG-13',
+VALUES (394, 'Never Back Down', 6600000, '2008-03-14', 'PG_13',
 				'At his new high school, a rebellious teen Jake Tyler is lured into an ultimate underground fighting club in a Backyard Fight, where he finds a mentor in a mixed martial arts veteran. After receiving threats to the safety of his friends and family, Jake seeks the mentoring of a veteran fighter, to train his mind and body for one final no-holds-barred elimination fight with his unrelenting personal nemesis and local martial arts champion Ryan McCarthy.',
 				'https://www.youtube.com/watch?v=2tc-RPjZRm8',
 				'http://ia.media-imdb.com/images/M/MV5BMTkzNDg3MTIyMF5BMl5BanBnXkFtZTcwOTAwNDc1MQ@@._V1._SX96_SY140_.jpg');
@@ -4946,7 +4946,7 @@ VALUES ('Mystery', 395, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (396, 'Malcolm X', 12120000, '1992-11-18', 'PG-13',
+VALUES (396, 'Malcolm X', 12120000, '1992-11-18', 'PG_13',
 				'Biograpical epic of Malcolm X, the legendary African American leader. Born Malcolm Little, his father (a Garveyite Baptist minister) was killed by the Ku Klux Klan. Malcolm became a gangster, and while in jail discovered the Nation of Islam writings of Elijah Muhammad. He preaches the teachings when let out of jail, but later on goes on a pilgrimage to the city of Mecca, there he converts to the original Islamic religion and becomes a Sunni Muslim and changes his name to El-Hajj Malik Al-Shabazz. He is assassinated on February 21, 1965 and dies a Muslim martyr.',
 				'https://www.youtube.com/watch?v=sx4sEvhYeVE',
 				'http://ia.media-imdb.com/images/M/MV5BOTc4NzgxMDc4MF5BMl5BanBnXkFtZTgwOTA4MDc3NjE@._V1._SX92_SY140_.jpg');
@@ -5006,7 +5006,7 @@ VALUES ('History', 398, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (399, 'Unbroken', 8220000, '2014-11-17', 'PG-13',
+VALUES (399, 'Unbroken', 8220000, '2014-11-17', 'PG_13',
 				'The life of Louie Zamperini.',
 				'https://www.youtube.com/watch?v=kk1M_HwmFMM',
 				'http://ia.media-imdb.com/images/M/MV5BMTY3ODg2OTgyOF5BMl5BanBnXkFtZTgwODk1OTAwMzE@._V1._SX88_SY140_.jpg');

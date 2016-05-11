@@ -61,9 +61,9 @@ CREATE TABLE Episode (
 
 
 CREATE TABLE User_Review (
-  id              int AUTO_INCREMENT,
+  id              bigint AUTO_INCREMENT,
   username        varchar(30),
-  star_rating     real,
+  star_rating     int,
   review_date     date,
   title           varchar(50),
   body            varchar(500),
@@ -72,7 +72,7 @@ CREATE TABLE User_Review (
 
 CREATE TABLE review_movie (
   id              int AUTO_INCREMENT,
-  review_id       int,
+  review_id       bigint,
   movie_id        int,
 
   PRIMARY KEY (id),

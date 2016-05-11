@@ -18,12 +18,10 @@ module.exports = React.createClass({
             }.bind(this)
         })
     },
-    handleMovieFormSubmit: function() {
-        console.log('adding a movie')
-    },
     getInitialState: function() {
         return {data: []};
     },
+    
     componentDidMount: function() {
         this.loadInfoFromServer();
         //setInterval(this.loadInfoFromServer, this.props.pollInterval)
@@ -33,7 +31,6 @@ module.exports = React.createClass({
         return (
             <div className="movieBox">
                 <MovieList data={this.state.data} />
-                <MovieForm onMovieSubmit={this.handleMovieFormSubmit} />
             </div>
         )
     }

@@ -1,6 +1,6 @@
 body {
     background: #1B1D26;
-    color: #425955;
+    color: #AAA;
     font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
 }
 
@@ -84,7 +84,7 @@ body {
     top: 20px;
     left: 20px;
     display: none;
-    font-size: 1.3vw;
+    font-size: 15px;
 }
 
 .moviePoster:hover .movieInfoOverlay {

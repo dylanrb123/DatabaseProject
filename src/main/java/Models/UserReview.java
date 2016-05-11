@@ -1,19 +1,21 @@
 package Models;
 
 import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
 
 /**
  * Grant Salk <gas7933@rit.edu>
  */
 public class UserReview {
-    private int reviewId;
+    private long reviewId;
     private String userName;
     private int starRating;
     private DateTime date;
     private String title;
     private String body;
 
-    public UserReview(int reviewID, String userName, int starRating,
+    public UserReview(long reviewId, String userName, int starRating,
                       DateTime date, String title, String body) {
         this.reviewId = reviewId;
         this.userName = userName;
@@ -23,11 +25,11 @@ public class UserReview {
         this.body = body;
     }
 
-    public int getReviewID() {
+    public long getReviewID() {
         return reviewId;
     }
 
-    public void setReviewID(int reviewId) {
+    public void setReviewID(long reviewId) {
         this.reviewId = reviewId;
     }
 
@@ -39,7 +41,7 @@ public class UserReview {
         this.userName = userName;
     }
 
-    public float getStarRating() {
+    public int getStarRating() {
         return starRating;
     }
 
@@ -79,6 +81,12 @@ public class UserReview {
         // user reviews are equal if they have the same ID or same username and date
         return (this.getReviewID() == ur.getReviewID()) ||
                 (this.getUserName().equals(ur.getUserName()) && this.getDate().equals(ur.getDate()));
+
+    }
+
+    public String getDateString() {
+        DateTimeFormatter fmt = DateTimeFormat.forPattern("yyyy-MM-dd");
+        return fmt.print( this.date );
 
     }
 
