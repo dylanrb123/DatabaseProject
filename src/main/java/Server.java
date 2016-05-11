@@ -124,11 +124,11 @@ public class Server {
         post("/api/movies/reviews/:id", (req, res) -> {
             int movieId = Integer.parseInt(req.params("id"));
             long reviewId = Long.parseLong(req.queryParams("reviewId"));
-            String userName = req.queryParams("username");
+            String userName = req.queryParams("username").replace("'", "''");
             int starRating = Integer.parseInt(req.queryParams("starRating"));
             DateTime reviewDate = new DateTime(Long.parseLong(req.queryParams("date")));
-            String title = req.queryParams("title");
-            String body = req.queryParams("body");
+            String title = req.queryParams("title").replace("'", "''");
+            String body = req.queryParams("body").replace("'", "''");
 
             UserReview newReview = new UserReview(reviewId, userName, starRating, reviewDate, title, body);
             movieDao.addReview(movieId, newReview);

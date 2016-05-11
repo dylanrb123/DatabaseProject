@@ -46,8 +46,8 @@ module.exports = React.createClass({
         return (
             <div className="reviewBox container">
                 <h2>Reviews</h2>
-                <ReviewList reviews={this.state.reviews} />
                 <ReviewForm onReviewSubmit={this.handleReviewSubmit} />
+                <ReviewList reviews={this.state.reviews} />
             </div>
         )
     }

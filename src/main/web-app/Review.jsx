@@ -4,7 +4,7 @@ var StarRatingComponent = require('react-star-rating-component');
 module.exports = React.createClass({
     render: function() {
         return (
-            <div className="review">
+            <div className="review" style={{marginTop: '25px', marginBottom: '25px', padding: '25px', backgroundColor: 'rgba(0,0,0,.6)'}}>
                 <StarRatingComponent
                     name="reviewRating"
                     starCount={5}
@@ -15,10 +15,9 @@ module.exports = React.createClass({
                         }
                     }
                 />
-                <h4 className="reviewTitle">{this.props.title}</h4>
-                <h5>By: {this.props.user}</h5>
-                <h5>Date: {this.props.date}</h5>
-                <span>{this.props.children}</span>
+                <h3 className="reviewTitle" style={{marginTop: '0px'}}>{this.props.title}</h3>
+                <h5 style={{color: '#777'}}>Reviewed by: {this.props.user} | Reviewed on: {new Date(this.props.date).toDateString()}</h5>
+                <span className="reviewText" style={{fontSize: '18px'}}>{this.props.children}</span>
             </div>
         )
     }

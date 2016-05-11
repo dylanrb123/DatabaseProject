@@ -13,8 +13,9 @@ module.exports = React.createClass({
     },
     handleRatingChange: function(nextValue, prevValue, name) {
         console.log(nextValue);
-        console.log(prevValue);
-        this.setState({starRating: nextValue})
+        console.log(this.state.starRating);
+        this.setState({starRating: nextValue});
+        console.log(this.state.starRating);
     },
     handleTitleChange: function(e) {
         this.setState({title: e.target.value})
