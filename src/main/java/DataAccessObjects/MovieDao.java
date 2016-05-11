@@ -2,6 +2,7 @@ package DataAccessObjects;
 
 import Enums.MpaaRating;
 import Models.Movie;
+import Models.UserReview;
 import org.joda.time.DateTime;
 
 import java.sql.SQLException;
@@ -20,4 +21,5 @@ public interface MovieDao {
     List<Movie> getByGenre(String genre) throws SQLException;
     List<Movie> getByMPAA(MpaaRating mpaa_rating) throws SQLException;
     List<Movie> getByRelDate(DateTime relDate) throws SQLException;
+    void addReview(int movieId, UserReview review) throws SQLException;
 }

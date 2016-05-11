@@ -5,7 +5,6 @@ import org.joda.time.DateTime;
 import org.joda.time.Duration;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
-import sun.util.resources.cldr.aa.CurrencyNames_aa;
 
 import java.util.List;
 
@@ -22,9 +21,10 @@ public class Movie {
     private String summary;
     private String trailerUrl;
     private String posterUrl;
+    private List<UserReview> reviews;
 
     public Movie(int movieID, String movieName, Duration runtime, DateTime releaseDate, MpaaRating rating,
-                 List<String> genres, String summary, String trailerUrl, String posterUrl) {
+                 List<String> genres, String summary, String trailerUrl, String posterUrl, List<UserReview> reviews) {
         this.movieID = movieID;
         this.movieName = movieName;
         this.runtime = runtime;
@@ -34,6 +34,7 @@ public class Movie {
         this.summary = summary;
         this.trailerUrl = trailerUrl;
         this.posterUrl = posterUrl;
+        this.setReviews(reviews);
     }
 
     public int getMovieID() {
@@ -128,5 +129,13 @@ public class Movie {
     @Override
     public String toString() {
         return this.movieName;
+    }
+
+    public List<UserReview> getReviews() {
+        return reviews;
+    }
+
+    public void setReviews(List<UserReview> reviews) {
+        this.reviews = reviews;
     }
 }
