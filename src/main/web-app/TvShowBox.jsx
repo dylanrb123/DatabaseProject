@@ -21,8 +21,7 @@ module.exports = React.createClass({
     render: function() {
         return (
             <div className="showBox">
-                <h1>Shows</h1>
-                <ShowList data={this.state.data} />            
+                <ShowList data={this.state.data} />
             </div>
         )
     }

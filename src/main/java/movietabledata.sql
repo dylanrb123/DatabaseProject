@@ -5050,7 +5050,7 @@ VALUES ('Thriller', 400, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (401, 'World War Z', 6960000, '2013-06-21', 'PG-13',
+VALUES (401, 'World War Z', 6960000, '2013-06-21', 'PG_13',
 				'Life for former United Nations investigator Gerry Lane and his family seems content. Suddenly, the world is plagued by a mysterious infection turning whole human populations into rampaging mindless zombies. After barely escaping the chaos, Lane is persuaded to go on a mission to investigate this disease. What follows is a perilous trek around the world where Lane must brave horrific dangers and long odds to find answers before human civilization falls.',
 				'https://www.youtube.com/watch?v=HcwTxRuq-uk',
 				'http://ia.media-imdb.com/images/M/MV5BMTg0NTgxMjIxOF5BMl5BanBnXkFtZTcwMDM0MDY1OQ@@._V1._SX91_SY140_.jpg');
@@ -5075,7 +5075,7 @@ VALUES ('Thriller', 401, NULL);
 
 
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
-VALUES (402, 'Fight Club', 8340000, '1999-10-15', 'TV-MA',
+VALUES (402, 'Fight Club', 8340000, '1999-10-15', 'R',
 				'A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground "fight clubs" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.',
 				'https://www.youtube.com/watch?v=J8FRBYOFu2w',
 				'http://ia.media-imdb.com/images/M/MV5BMjIwNTYzMzE1M15BMl5BanBnXkFtZTcwOTE5Mzg3OA@@._V1._SX94_SY140_.jpg');

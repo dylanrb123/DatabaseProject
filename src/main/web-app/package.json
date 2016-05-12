@@ -17,6 +17,7 @@
     "react-bootstrap": "^0.29.3",
     "react-dom": "^15.0.2",
     "react-router": "^2.4.0",
+    "react-search-input": "^0.8.1",
     "react-star-rating-component": "^1.0.0",
     "react-youtube": "^6.1.0"
   },
