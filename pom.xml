@@ -55,6 +55,11 @@
             <artifactId>commons-io</artifactId>
             <version>2.5</version>
         </dependency>
+        <dependency>
+            <groupId>com.dylanbannon.dbproject</groupId>
+            <artifactId>db-project</artifactId>
+            <version>1.0</version>
+        </dependency>
 
 
     </dependencies>
