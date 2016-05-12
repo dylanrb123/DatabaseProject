@@ -4,6 +4,7 @@ import DataAccessObjects.ShowDao;
 import Models.Episode;
 import Models.Season;
 import Models.Show;
+import Models.UserReview;
 import Scripts.DatabaseScripts;
 import org.joda.time.DateTime;
 import org.joda.time.Duration;
@@ -28,7 +29,8 @@ public class ShowDataSourceH2 implements ShowDao {
         ResultSet resultSet = stmt.executeQuery("SELECT * from Show;");
 
         List<Show> shows = new ArrayList<>();
-
+        List<UserReview> reviews = new ArrayList<>();
+        String showPosterUrl = "";
         while(resultSet.next()){
             int showID = resultSet.getInt("id");
             String showName = resultSet.getString("name");
@@ -44,19 +46,39 @@ public class ShowDataSourceH2 implements ShowDao {
                 genres.add(genreSet.getString("name"));
             }
 
+            Statement reviewStatement = conn.createStatement();
+            ResultSet reviewSet = reviewStatement.executeQuery("SELECT review_id FROM review_show WHERE show_id = " + showID + ";");
+            while(reviewSet.next()) {
+                long reviewId = reviewSet.getLong("review_id");
+                Statement reviewListStatement = conn.createStatement();
+                ResultSet reviewListSet = reviewListStatement.executeQuery("SELECT * FROM User_Review WHERE id = " + reviewId + ";");
+                while(reviewListSet.next()) {
+                    String userName = reviewListSet.getString("username");
+                    int starRating = reviewListSet.getInt("star_rating");
+                    String reviewDateString = reviewListSet.getString("review_date");
+                    String title = reviewListSet.getString("title");
+                    String body = reviewListSet.getString("body");
+
+                    DateTimeFormatter fmt = DateTimeFormat.forPattern("yyyy-MM-dd");
+                    DateTime reviewDate = fmt.parseDateTime(reviewDateString);
+
+                    reviews.add(new UserReview(reviewId, userName, starRating, reviewDate, title, body));
+                }
+            }
+
             List<Season> seasons = new ArrayList<>();
             Statement seasonRelationStatement = conn.createStatement();
-            ResultSet seasonRelationSet = seasonRelationStatement.executeQuery(String.format("SELECT season_id FROM show_season WHERE show_id = %d", showID));
+            ResultSet seasonRelationSet = seasonRelationStatement.executeQuery(String.format("SELECT season_id FROM show_season WHERE show_id = %d;", showID));
             while(seasonRelationSet.next()) {
                 int seasonId = seasonRelationSet.getInt("season_id");
                 Statement seasonStatement = conn.createStatement();
-                ResultSet seasonSet = seasonStatement.executeQuery(String.format("SELECT * from Season WHERE id = %d", seasonId));
+                ResultSet seasonSet = seasonStatement.executeQuery(String.format("SELECT * from Season WHERE id = %d;", seasonId));
                 while(seasonSet.next()) {
                     int seasonNumber = seasonSet.getInt("number");
                     String startDateString = seasonSet.getString("start_date");
                     String endDateString = seasonSet.getString("end_date");
                     String posterUrl = seasonSet.getString("poster_url");
-
+                    showPosterUrl = posterUrl;
                     DateTimeFormatter fmt = DateTimeFormat.forPattern("yyyy-MM-dd");
                     DateTime startDate = fmt.parseDateTime(startDateString);
                     DateTime endDate = fmt.parseDateTime(endDateString);
@@ -93,7 +115,7 @@ public class ShowDataSourceH2 implements ShowDao {
                 }
             }
 
-            shows.add(new Show(showID, showName, startYear, endYear, rating, genres, summary, seasons));
+            shows.add(new Show(showID, showName, startYear, endYear, rating, genres, summary, seasons, showPosterUrl, reviews));
         }
 
         return shows;
@@ -146,8 +168,22 @@ public class ShowDataSourceH2 implements ShowDao {
         }
     }
 
+    @Override
+    public void addReview(int showId, UserReview review) throws SQLException {
+        String addReviewQuery = String.format("INSERT INTO User_Review " +
+                "(id, username, star_rating, review_date, title, body) " +
+                "VALUES (%d, '%s', %d, '%s', '%s', '%s');", review.getReviewID(), review.getUserName(), review.getStarRating(), review.getDateString(), review.getTitle(), review.getBody());
 
+        String createRelation = String.format("INSERT INTO review_show " +
+                "(review_id, show_id) " +
+                "VALUES(%d, %d)", review.getReviewID(), showId);
 
+        Connection conn = DatabaseScripts.getConnection();
+        Statement stmt = conn.createStatement();
+        stmt.execute(addReviewQuery);
+        stmt.execute(createRelation);
+
+    }
 
 
 }

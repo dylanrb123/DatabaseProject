@@ -7,6 +7,7 @@ import DataAccessObjects.ShowDao;
 import DataSources.MovieDataSourceH2;
 import DataSources.ShowDataSourceH2;
 import Models.Movie;
+import Models.Show;
 import Models.UserReview;
 import org.apache.commons.io.FileUtils;
 import org.joda.time.DateTime;
@@ -87,6 +88,38 @@ public class Server {
 
         // get all TV shows
         get("/api/shows", (req, res) -> showDao.getAllShows(), JsonUtil.json());
+
+        // get specific show
+        get("/api/shows/:showId", (req, res) -> {
+            int showId = Integer.parseInt(req.params(":showId"));
+            Show show = showDao.getShow(showId);
+            if(show != null) return show;
+            res.status(400);
+            return new ResponseError("No show found with ID %s", req.params(":showId"));
+        }, JsonUtil.json());
+
+        get("api/shows/reviews/:id", (req, res) -> {
+            int id = Integer.parseInt(req.params(":id"));
+            List<UserReview> reviews = showDao.getShow(id).getReviews();
+            if(reviews != null) return reviews;
+            return new ResponseError("No reviews found for show with ID %s", req.params("id"));
+        }, JsonUtil.json());
+
+        post("/api/shows/reviews/:id", (req, res) -> {
+            int id = Integer.parseInt(req.params(":id"));
+            long reviewId = Long.parseLong(req.queryParams("reviewId"));
+            String userName = req.queryParams("username").replace("'", "''");
+            int starRating = Integer.parseInt(req.queryParams("starRating"));
+            DateTime reviewDate = new DateTime(Long.parseLong(req.queryParams("date")));
+            String title = req.queryParams("title").replace("'", "''");
+            String body = req.queryParams("body").replace("'", "''");
+
+            UserReview newReview = new UserReview(reviewId, userName, starRating, reviewDate, title, body);
+            showDao.addReview(id, newReview);
+
+            res.status(200);
+            return showDao.getShow(id).getReviews();
+        }, JsonUtil.json());
 
         // set all API calls to return JSON
         after("/api/*", (req, res) -> res.type("application/json"));

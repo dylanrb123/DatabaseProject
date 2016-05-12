@@ -8,14 +8,17 @@ var hashHistory = require('react-router').hashHistory;
 
 var MovieBox = require('./MovieBox');
 var TvShowBox = require('./TvShowBox');
-var ActorShowBox = require('./ActorBox');
+var ActorBox = require('./ActorBox');
 var Navbar = require('./Navbar');
 var Movie = require('./Movie');
+var Show = require('./Show');
 
 var TvShowBoxWrapper = React.createClass({
     render: function() {
         return (
-            <div></div>
+            <div>
+                <TvShowBox url="http://localhost:4567/api/shows" />
+            </div>
         )
 
     }
@@ -75,6 +78,33 @@ var MovieWrapper = React.createClass({
     }
 });
 
+var ShowWrapper = React.createClass({
+    componentDidMount: function() {
+        var url = "http://localhost:4567/api/shows/" + this.props.params.showId;
+        $.ajax({
+            url: url,
+            dataType: 'json',
+            cache: false,
+            success: function(data) {
+                this.setState({show: data});
+            }.bind(this),
+            error: function(xhr, status, err) {
+                console.error(url, status, err.toString())
+            }.bind(this)
+        })
+    },
+    getInitialState: function() {
+        return {show: {}}
+    },
+    render: function() {
+        return (
+            <div>
+                <Show show={this.state.show} />
+            </div>
+        )
+    }
+});
+
 var Index = React.createClass({
     render: function() {
         return (
@@ -92,7 +122,8 @@ ReactDOM.render(
             <IndexRedirect to="/movies" />
             <Route path="movies" component={MovieBoxWrapper} />
             <Route path="/movies/:movieId" component={MovieWrapper}/>
-            <Route path="tv-shows" component={TvShowBoxWrapper} />
+            <Route path="shows" component={TvShowBoxWrapper} />
+            <Route path="/shows/:showId" component={ShowWrapper} />
             <Route path="actors" component={ActorBoxWrapper} />
         </Route>
     </Router>,

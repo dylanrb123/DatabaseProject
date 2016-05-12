@@ -16,6 +16,19 @@ body {
     width: 100%;
 }
 
+.showPoster {
+    display: inline-block;
+    padding: 20px;
+    width:25%;
+    position: relative;
+    z-index: 1;
+}
+
+.showPoster img {
+    width: 100%;
+}
+
+
 .nav ul {
     list-style: none;
     background-color: #444;
@@ -90,6 +103,24 @@ body {
 .moviePoster:hover .movieInfoOverlay {
     display: inline;
 }
+
+.showInfoOverlay {
+    position: absolute;
+    z-index: 2;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    padding: 20px;
+    background: rgba(0,0,0,.9);
+    top: 20px;
+    left: 20px;
+    display: none;
+    font-size: 15px;
+}
+
+.showPoster:hover .showInfoOverlay {
+    display: inline;
+}
+
 
 .detailsButton {
     position:absolute;

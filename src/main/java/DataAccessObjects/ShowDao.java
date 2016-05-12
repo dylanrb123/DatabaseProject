@@ -1,6 +1,7 @@
 package DataAccessObjects;
 
 import Models.Show;
+import Models.UserReview;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -15,4 +16,5 @@ public interface ShowDao {
     void deleteShow(int showID) throws SQLException;
     void deleteShow(String showName) throws SQLException;
     void addShow(Show show) throws SQLException;
+    void addReview(int showId, UserReview review) throws SQLException;
 }

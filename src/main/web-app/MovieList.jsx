@@ -1,6 +1,4 @@
-
 var React = require("react");
-var Movie = require("./Movie");
 var MovieLink = require('./MovieLink');
 
 module.exports = React.createClass({

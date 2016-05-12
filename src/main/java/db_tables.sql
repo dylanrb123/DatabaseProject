@@ -149,11 +149,11 @@ CREATE TABLE show_doer (
   FOREIGN KEY (person_id) REFERENCES Person,
   FOREIGN KEY (show_id) REFERENCES Show);
 
-CREATE TABLE review_episode (
+CREATE TABLE review_show (
   id             int AUTO_INCREMENT,
-  review_id       int,
-  episode_id      int,
+  review_id       bigint,
+  show_id      int,
 
   PRIMARY KEY (id),
   FOREIGN KEY (review_id) REFERENCES User_Review,
-  FOREIGN KEY (episode_id) REFERENCES Episode);
+  FOREIGN KEY (show_id) REFERENCES Show);

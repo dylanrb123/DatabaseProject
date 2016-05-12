@@ -2,7 +2,6 @@
 
 var React = require("react");
 var MovieList = require("./MovieList");
-var MovieForm = require("./MovieForm");
 
 module.exports = React.createClass({
     loadInfoFromServer: function() {
