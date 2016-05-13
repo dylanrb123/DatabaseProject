@@ -32,7 +32,7 @@ var ActorBoxWrapper = React.createClass({
 
     }
 });
-
+var blah;
 var MovieBoxWrapper = React.createClass({
     render: function() {
         return (

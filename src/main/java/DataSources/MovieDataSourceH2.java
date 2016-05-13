@@ -3,6 +3,7 @@ package DataSources;
 import DataAccessObjects.MovieDao;
 import Enums.MpaaRating;
 import Models.Movie;
+import Models.Person;
 import Models.UserReview;
 import Scripts.DatabaseScripts;
 import org.joda.time.DateTime;
@@ -61,7 +62,7 @@ public class MovieDataSourceH2 implements MovieDao {
                                          0,0);
 
             // If this movie already exists in the list, just add the genre
-            int i = movies.indexOf( new Movie(id, name, null, date, null, null, null,null,null, new ArrayList<>()) );
+            int i = movies.indexOf( new Movie(id, name, null, date, null, null, null,null,null, new ArrayList<>(), new ArrayList<>()) );
             if(i >= 0){
                 movies.get(i).addGenre( rs.getString("genre_name") );
                 continue;
@@ -111,8 +112,27 @@ public class MovieDataSourceH2 implements MovieDao {
                     reviews.add(review);
                 }
             }
+            List<Person> persons = new ArrayList<>();
 
-            movies.add(new Movie(id, name, length, date, rating, genre_lst, summary, trailerUrl, posterUrl, reviews));
+
+            String q = "SELECT person_id, role FROM movie_doer WHERE movie_id = " + id;
+            ResultSet getActorIdRs = exeSQL(q);
+            while(getActorIdRs.next()) {
+                int actorId = getActorIdRs.getInt("person_id");
+                String personRole = getActorIdRs.getString("role");
+                ResultSet getPersonRs = exeSQL("SELECT * FROM Person WHERE id = " + actorId);
+                getPersonRs.next();
+                String personName = getPersonRs.getString("name");
+                String dobString = getPersonRs.getString("DOB");
+                String personBio = getPersonRs.getString("biography");
+
+                DateTimeFormatter dtf = DateTimeFormat.forPattern("yyyy-MM-dd");
+                DateTime personDob = dtf.parseDateTime(dobString);
+                persons.add(new Person(actorId, personName, personDob, personBio, personRole));
+            }
+
+
+            movies.add(new Movie(id, name, length, date, rating, genre_lst, summary, trailerUrl, posterUrl, reviews, persons));
         }
 
         return movies;

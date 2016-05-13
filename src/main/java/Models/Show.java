@@ -16,9 +16,10 @@ public class Show {
     private List<Season> seasons;
     private String posterUrl;
     private List<UserReview> reviews;
+    private List<Person> persons;
 
     public Show(int showID, String showName, int startYear, int endYear, String rating,
-        List<String> genres, String summary, List<Season> seasons, String posterUrl, List<UserReview> reviews){
+        List<String> genres, String summary, List<Season> seasons, String posterUrl, List<UserReview> reviews, List<Person> persons){
         this.showID = showID;
         this.showName = showName;
         this.startYear = startYear;
@@ -29,6 +30,7 @@ public class Show {
         this.setSeasons(seasons);
         this.setPosterUrl(posterUrl);
         this.setReviews(reviews);
+        this.persons = persons;
     }
 
     public int getShowId(){
@@ -122,5 +124,9 @@ public class Show {
 
     public void setReviews(List<UserReview> reviews) {
         this.reviews = reviews;
+    }
+
+    public List<Person> getPersons() {
+        return persons;
     }
 }
