@@ -114,13 +114,10 @@ public class MovieDataSourceH2 implements MovieDao {
             }
             List<Person> persons = new ArrayList<>();
 
-            System.out.println("here");
 
             String q = "SELECT person_id, role FROM movie_doer WHERE movie_id = " + id;
-            System.out.println(q);
             ResultSet getActorIdRs = exeSQL(q);
             while(getActorIdRs.next()) {
-                System.out.println("here");
                 int actorId = getActorIdRs.getInt("person_id");
                 String personRole = getActorIdRs.getString("role");
                 ResultSet getPersonRs = exeSQL("SELECT * FROM Person WHERE id = " + actorId);
