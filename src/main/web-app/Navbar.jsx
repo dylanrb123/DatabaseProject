@@ -18,10 +18,6 @@ module.exports = React.createClass({
             {
                 text: 'TV Shows',
                 linkTo: 'shows'
-            },
-            {
-                text: 'Actors',
-                linkTo: ''
             }
         ];
         var temp = this;
