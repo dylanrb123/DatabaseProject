@@ -52,7 +52,6 @@ module.exports = React.createClass({
                     personRow.Role = person.role;
                     return personRow;
                 });
-                console.log(actorTableRows);
             }
             return (
                 <div className="movie container" style={{paddingTop: '30px'}}>
