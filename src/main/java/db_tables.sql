@@ -12,7 +12,7 @@ CREATE TABLE Movie (
 
 CREATE TABLE Person (
   id      int AUTO_INCREMENT,
-  name            varchar(15),
+  name            varchar(50),
   DOB             date,
   biography       varchar(500),
 
@@ -24,7 +24,7 @@ CREATE TABLE Award (
   isWinner        int,
   name            varchar(30),
   year            int,
-  category        varchar(20),
+  category        varchar(100),
 
   PRIMARY KEY (id));
 

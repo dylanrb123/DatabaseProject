@@ -53,10 +53,10 @@ VALUES (3, 'Akiva Schaffer', '1977-12-01',
 
 
 INSERT INTO movie_doer (id, person_id, movie_id, role)
-VALUES (1, (SELECT id FROM Person WHERE name = 'Andy Samberg'), (SELECT id FROM Movie WHERE name = 'Hot Rod'), 'Actor');
+VALUES (4, (SELECT id FROM Person WHERE name = 'Andy Samberg'), (SELECT id FROM Movie WHERE name = 'Hot Rod'), 'Actor');
 
 INSERT INTO movie_doer (id, person_id, movie_id, role)
-VALUES (1, (SELECT id FROM Person WHERE name = 'Akiva Schaffer'), (SELECT id FROM Movie WHERE name = 'Hot Rod'), 'Director');
+VALUES (5, (SELECT id FROM Person WHERE name = 'Akiva Schaffer'), (SELECT id FROM Movie WHERE name = 'Hot Rod'), 'Director');
 
 
 INSERT INTO Person (id, name, DOB, biography)
@@ -380,7 +380,7 @@ VALUES (172, 124, 127, 'Actor');
 
 INSERT INTO Person (id, name, DOB, biography)
 VALUES (125, 'David Arquette', '1971-09-08',
-        'David Arquette is an American actor, film director, producer, screenwriter, fashion designer and former professional wrestler.')
+        'David Arquette is an American actor, film director, producer, screenwriter, fashion designer and former professional wrestler.');
 
 INSERT INTO movie_doer (id, person_id, movie_id, role)
 VALUES (173, 125, 124, 'Actor');
