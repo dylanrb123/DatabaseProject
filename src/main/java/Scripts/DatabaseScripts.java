@@ -63,7 +63,9 @@ public final class DatabaseScripts {
         createTables();
         Statement stmt = conn.createStatement();
         stmt.execute(readSQLFile("src/main/java/movietabledata.sql") +
-                    readSQLFile("src/main/java/tvtabledata.sql") + readSQLFile("src/main/java/personawarddata.sql"));
+                    readSQLFile("src/main/java/tvtabledata.sql") +
+                    readSQLFile("src/main/java/userreviewdata.sql") +
+                    readSQLFile("src/main/java/personawarddata.sql"));
     }
 
     private static String readSQLFile(String location) {
