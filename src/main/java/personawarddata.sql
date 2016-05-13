@@ -1,5 +1,5 @@
 INSERT INTO Person (id, name, DOB, biography)
-VALUES (1, 'Brad Pitt', '1963-12-18',
+VALUES (1, 'Benedict Cumberbatch', '1963-12-18',
             'William Bradley "Brad" Pitt is an American actor and producer. He has received a Golden Globe Award, a Screen Actors Guild Award, and three Academy Award nominations in acting categories, and received three further Academy Award nominations, winning one, as producer under his own company Plan B Entertainment.');
 
 INSERT INTO movie_doer (id, person_id, movie_id, role)
@@ -190,3 +190,48 @@ VALUES (10, 0, 'Best Adapted Screenplay', 1994, 'Academy Awards');
 
 INSERT INTO award_movie_person (id, award_id, movie_id, person_id)
 VALUES (10, 10, (SELECT id FROM Movie WHERE name = 'The Shawshank Redemption'), 11);
+
+
+
+
+
+INSERT INTO Person (id, name, DOB, biography)
+VALUES (12, 'Benedict Cumberbatch', '1976-07-19',
+            'Benedict Timothy Carlton Cumberbatch CBE is an English actor and film producer who has performed in film, television, theatre and radio.');
+
+INSERT INTO show_doer (id, person_id, show_id, role)
+VALUES (12, 12, (SELECT id FROM Show WHERE name = 'Sherlock'), 'Actor');
+
+
+
+
+
+
+INSERT INTO Person (id, name, DOB, biography)
+VALUES (13, 'Martin Freeman', '1971-09-08',
+            'Martin John Christopher Freeman is an English actor, best known for portraying Tim Canterbury in the original UK version of sitcom mockumentary The Office, Dr. John Watson in the British crime drama Sherlock, Bilbo Baggins in Peter Jackson''s The Hobbit film trilogy, and Lester Nygaard in the dark comedy-crime drama TV series Fargo.');
+
+INSERT INTO show_doer (id, person_id, show_id, role)
+VALUES (13, 13, (SELECT id FROM Show WHERE name = 'Sherlock'), 'Actor');
+
+
+
+
+
+INSERT INTO Person (id, name, DOB, biography)
+VALUES (14, 'Paul McGuigan', '1963-09-19',
+            'Paul McGuigan was born on September 19, 1963 in Bellshill, Scotland. He is a director and producer, known for Lucky Number Slevin (2006), Push (2009) and Wicker Park (2004).');
+
+INSERT INTO show_doer (id, person_id, show_id, role)
+VALUES (14, 14, (SELECT id FROM Show WHERE name = 'Sherlock'), 'Director');
+
+
+
+
+
+INSERT INTO Person (id, name, DOB, biography)
+VALUES (15, 'Rachel Talalay', '1958-08-16',
+            'Rachel Talalay is an American film and television director and producer. She is also a University of British Columbia film professor.');
+
+INSERT INTO show_doer (id, person_id, show_id, role)
+VALUES (15, 15, (SELECT id FROM Show WHERE name = 'Sherlock'), 'Director');

@@ -217,4 +217,3 @@ VALUES (20, 20, (SELECT id FROM Movie WHERE name = 'Hot Rod'));
 
 
 
-
