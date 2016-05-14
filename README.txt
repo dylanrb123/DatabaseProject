@@ -1,0 +1,35 @@
+OMDb - Our Movie Database
+CS-320 Project Readme file
+
+## REQUIREMENTS
+-Linux
+--Tested on Ubuntu 16.04LTS
+
+-Oracle Java JDK 8
+-Latest version of nodejs, node, npm
+-Apache Maven 3.3.9
+
+## SETUP INSTRUCTIONS
+
+To set up the server and prepare for execution, open up a terminal in the root directory (Database Project) and enter the following command:
+	sh setup.sh
+A file called runServer.jar should appear in the directory
+
+## RUN THE SERVER
+
+To run the server, open up a terminal in the root directory (Database Project) and enter the following command:
+	sh start.sh
+
+If you see the message "webpack: bundle is now VALID.", then the server is running successfully.  LEAVE THE TERMINAL OPEN!
+
+## ACCESSING THE WEB INTERFACE
+
+Open up your web browser of choice and enter "localhost:8090" into the url bar.  After a few seconds the interface should be up and running
+
+## KILLING THE SERVER
+
+In the terminal where the server is running, press Ctrl+C to kill the server, and close the terminal.  YOU MUST CLOSE THE TERMINAL TO PREVENT FILE LOCK ISSUES.
+
+## TROUBLESHOOTING
+
+If you see Java errors show up while the server is initializing, close the terminal and run the start script in a new one.  This is likely a database lock issue because the previous server instance is still running.
