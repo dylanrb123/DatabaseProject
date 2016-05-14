@@ -1,10 +1,7 @@
 package DataSources;
 
 import DataAccessObjects.ShowDao;
-import Models.Episode;
-import Models.Season;
-import Models.Show;
-import Models.UserReview;
+import Models.*;
 import Scripts.DatabaseScripts;
 import org.joda.time.DateTime;
 import org.joda.time.Duration;
@@ -114,12 +111,42 @@ public class ShowDataSourceH2 implements ShowDao {
 
                 }
             }
+            List<Person> persons = new ArrayList<>();
 
-            shows.add(new Show(showID, showName, startYear, endYear, rating, genres, summary, seasons, showPosterUrl, reviews));
+            String q = "SELECT person_id, role FROM show_doer WHERE show_id = " + showID;
+            ResultSet getActorIdRs = exeSQL(q);
+            while(getActorIdRs.next()) {
+                int actorId = getActorIdRs.getInt("person_id");
+                String personRole = getActorIdRs.getString("role");
+                ResultSet getPersonRs = exeSQL("SELECT * FROM Person WHERE id = " + actorId);
+                getPersonRs.next();
+                String personName = getPersonRs.getString("name");
+                String dobString = getPersonRs.getString("DOB");
+                String personBio = getPersonRs.getString("biography");
+
+                DateTimeFormatter dtf = DateTimeFormat.forPattern("yyyy-MM-dd");
+                DateTime personDob = dtf.parseDateTime(dobString);
+                persons.add(new Person(actorId, personName, personDob, personBio, personRole));
+            }
+
+
+            shows.add(new Show(showID, showName, startYear, endYear, rating, genres, summary, seasons, showPosterUrl, reviews, persons));
         }
 
         return shows;
     }
+
+    private ResultSet exeSQL(String q) throws SQLException{
+        // Create SQL connection
+        Connection conn = DatabaseScripts.getConnection();
+
+        // Execute query
+        Statement stmt = conn.createStatement();
+
+        // Return result
+        return stmt.executeQuery( q );
+    }
+
 
     public Show getShow(int showID) throws SQLException{
         List<Show> shows = getAllShows();

@@ -11,12 +11,14 @@ public class Person {
     private String name;
     private DateTime DOB;
     private String biography;
+    private String role;
 
-    public Person(int personID, String name, DateTime DOB, String biography){
+    public Person(int personID, String name, DateTime DOB, String biography, String role){
         this.personID = personID;
         this.name = name;
         this.DOB = DOB;
         this.biography = biography;
+        this.role = role;
     }
 
     public int getPersonID(){
@@ -56,5 +58,9 @@ public class Person {
         //people can be uniquely identified by either ID or name and DOB
         return this.getPersonID() == p.getPersonID() ||
                 ((this.getName().equals(p.getName())) && (this.getDOB() == p.getDOB()));
+    }
+
+    public String getRole() {
+        return role;
     }
 }

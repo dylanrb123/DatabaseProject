@@ -31,7 +31,17 @@ module.exports = React.createClass({
             genresString = this.props.show.genres.join(", ")
         }
         if(this.props.show.seasons) {
+            var actorTableRows = this.props.show.persons.map(function (person) {
+                var personRow = {};
+                personRow.Name = person.name;
+                personRow['Birth Date'] = new Date(person.DOB.iMillis).toDateString();
+                personRow.Biography = person.biography;
+                personRow.Role = person.role;
+                return personRow;
+            });
+
             return (
+
                 <div className="tvShow container" style={{paddingTop: '30px'}}>
                     <div className="row">
                         <div className="col-md-3">
@@ -58,7 +68,8 @@ module.exports = React.createClass({
                                 </div>
                             )
                         })}
-
+                        <h3>Actors</h3>
+                        <JsonTable rows={actorTableRows} className="table" />
                         <ReviewBox url={"http://localhost:4567/api/shows/reviews/" + this.props.show.showID}/>
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 INSERT INTO MOVIE (id, name, length, release_date, mpaa_rating, summary, trailer_url, poster_url)
 VALUES (1, 'The Avengers', 8580000, '2012-05-04', 'PG_13',
-	'Earths mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity.',
+	'Loki, the stepbrother of Thor, teams-up with the Chitauri Army and uses the Tesseract power to travel from Asgard to Earth to plot the invasion of Earth by the Chitauri and become the king of Earth. The director of the agency S.H.I.E.L.D., Nick Fury, sets in motion the project The Avengers, joining Tony Stark a.k.a. the Iron Man; Steve Rogers, a.k.a. Captain America; Bruce Banner, a.k.a. The Hulk; Thor; Natasha Romanoff, a.k.a. Black Widow; and Clint Barton, a.k.a. Hawkeye, to save the world from the powerful Loki and the alien invasion.
+',
 	'https://www.youtube.com/watch?v=eOrNdBpGMv8',
 	'http://ia.media-imdb.com/images/M/MV5BMTk2NTI1MTU4N15BMl5BanBnXkFtZTcwODg0OTY0Nw@@._V1_SX640_SY720_.jpg');
 

@@ -19,11 +19,19 @@ module.exports = React.createClass({
             else return 0;
         });
 
-        var filterKeys = ['movieName'];
+        var filterKeys = ['movieName', 'genreString', 'ratingDash'];
 
         var filteredMovies = movies.filter(createFilter(this.state.searchTerm, filterKeys));
 
-        var movieNodes = filteredMovies.map(function(movie) {
+        var searchMovies = filteredMovies.map(function(movie) {
+            var genreString = movie.genres.join(' ');
+            var ratingDash = movie.rating.replace(/_/, '-');
+            movie.genreString = genreString;
+            movie.ratingDash = ratingDash;
+            return movie;
+        });
+
+        var movieNodes = searchMovies.map(function(movie) {
             var videoId = movie.trailerUrl.split('v=')[1];
             var ampersandPos = videoId.indexOf('&');
             if(ampersandPos != -1) {

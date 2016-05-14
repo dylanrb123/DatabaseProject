@@ -22,9 +22,10 @@ public class Movie {
     private String trailerUrl;
     private String posterUrl;
     private List<UserReview> reviews;
+    private List<Person> persons;
 
     public Movie(int movieID, String movieName, Duration runtime, DateTime releaseDate, MpaaRating rating,
-                 List<String> genres, String summary, String trailerUrl, String posterUrl, List<UserReview> reviews) {
+                 List<String> genres, String summary, String trailerUrl, String posterUrl, List<UserReview> reviews, List<Person> persons) {
         this.movieID = movieID;
         this.movieName = movieName;
         this.runtime = runtime;
@@ -35,6 +36,7 @@ public class Movie {
         this.trailerUrl = trailerUrl;
         this.posterUrl = posterUrl;
         this.setReviews(reviews);
+        this.persons = persons;
     }
 
     public int getMovieID() {
@@ -137,5 +139,9 @@ public class Movie {
 
     public void setReviews(List<UserReview> reviews) {
         this.reviews = reviews;
+    }
+
+    public List<Person> getPersons() {
+        return persons;
     }
 }
