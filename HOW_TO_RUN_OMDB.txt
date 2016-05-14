@@ -14,7 +14,8 @@ CS-320 Project Readme file
 To run the server, open up a terminal in the root directory (Database Project) and enter the following command:
 	sh start.sh
 
-If you see the message "webpack: bundle is now VALID.", then the server is running successfully.  LEAVE THE TERMINAL OPEN!
+You might see some red NPM error messages.  Ignore them.
+When you see the message "webpack: bundle is now VALID.", then the server is running successfully.  LEAVE THE TERMINAL OPEN!
 
 ## ACCESSING THE WEB INTERFACE
 
